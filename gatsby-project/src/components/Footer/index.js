@@ -1,6 +1,9 @@
 import React from 'react'
 import styles from './style.module.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab, faCcVisa, faCcMastercard, faCcDinersClub } from '@fortawesome/free-brands-svg-icons';
+library.add(fab);
   
   const Footer = () => (
     <footer className={styles.footer}>
@@ -37,7 +40,11 @@ import styles from './style.module.css'
             <li className={styles.creditcards}>
                Karticama: 
             </li>
-            
+            <li className={styles.cc}>
+            <FontAwesomeIcon icon={faCcVisa} className={styles.VisaIcon} />
+              <FontAwesomeIcon icon={faCcMastercard} className={styles.MCIcon} />
+              <FontAwesomeIcon icon={faCcDinersClub} className={styles.DinersIcon} />
+            </li>
             
         </ul>
 

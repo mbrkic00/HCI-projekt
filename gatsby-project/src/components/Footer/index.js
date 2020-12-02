@@ -21,12 +21,12 @@ library.add(fab);
               Vukovarska 8
             </li>
             <li className={styles.workinghours}>
-              Radno vrijeme: 8:00-17:00
+              Radno vrijeme: 8-17 sati
             </li>
         </ul>
 
         <ul className={styles.copyright}>
-              <p>eFlower d.o.o. 2020</p>
+              <span>eFlower 2020</span>
             
         </ul>
 
@@ -41,9 +41,10 @@ library.add(fab);
                Karticama: 
             </li>
             <li className={styles.cc}>
-            <FontAwesomeIcon icon={faCcVisa} className={styles.VisaIcon} />
+              <FontAwesomeIcon icon={faCcVisa} className={styles.VisaIcon} /> 
               <FontAwesomeIcon icon={faCcMastercard} className={styles.MCIcon} />
               <FontAwesomeIcon icon={faCcDinersClub} className={styles.DinersIcon} />
+              
             </li>
             
         </ul>

@@ -1,0 +1,10 @@
+.navigationHeader {
+    height:90px;
+    margin-left: 200px;
+    margin-right: 210px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    background-color: white; 
+}
+

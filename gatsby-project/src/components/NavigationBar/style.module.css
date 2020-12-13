@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+.navigationBar {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    width: 500px;
+    align-items: center;
+    margin-left:100px;
+    
+  }
+  
+  .navigationBar li {
+    padding: 14px 15px 7px;
+    list-style: none;
+    width: fit-content;
+    font-size: 15px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #555;
+    border:1px solid white;
+    font-family: 'Nunito', sans-serif;
+
+  }
+  .navigationBar li:hover {
+    border-bottom: 1px solid #555555;
+    cursor: pointer;
+
+  }
+  
+  .navigationBar .active, .navigationBar .active:hover{
+    border-bottom: 1px solid black;
+  }

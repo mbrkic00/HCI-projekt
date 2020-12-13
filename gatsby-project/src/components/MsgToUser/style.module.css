@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+.msgToUser{
+    height:35px;
+    width: 100px;
+    padding:12px 2px 50px 15px;
+}
+
+.msgText{
+    color: #E12F8F;
+    font-family: 'Courgette', cursive;
+    font-size: 12px;   
+}

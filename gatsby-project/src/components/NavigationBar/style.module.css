@@ -3,30 +3,31 @@
     display: flex;
     justify-content: space-between;
     flex-flow: row;
-    width: 500px;
+    width: 600px;
     align-items: center;
     margin-left:100px;
+    /*border: 2px solid yellow;*/
+    
     
   }
   
   .navigationBar li {
-    padding: 14px 15px 7px;
+    padding: 14px 20px 10px;
     list-style: none;
-    width: fit-content;
+    width:fit-content;
     font-size: 16px;
     line-height: 22px;
     text-transform: uppercase;
     color: #555;
     border:1px solid white;
     font-family: 'Nunito', sans-serif;
-
   }
+
   .navigationBar li:hover {
     border-bottom: 1px solid #555555;
     cursor: pointer;
-
   }
   
   .navigationBar .active, .navigationBar .active:hover{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #555555;
   }

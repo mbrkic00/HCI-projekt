@@ -8,10 +8,11 @@ function getGreeting(user) {
     }
     return <h1>Hello, newUser!</h1>;
   }
+  
 
 const MsgToUser = () => (
     <main className={styles.msgToUser}>
-        <span className={styles.msgText}>{getGreeting(user)}</span>
+      <span className={styles.msgText}>{getGreeting(user)}</span> 
     </main>
 
 )

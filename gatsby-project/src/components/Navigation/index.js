@@ -12,6 +12,7 @@ const Navigation = () => (
     <NavigationBar/>
     <FontAwesomeIcon icon={faShoppingCart} className={styles.ShoppingCart}/>
     <MsgToUser/>
+    {/*<input className={styles.SearchBar} type = 'search' placeholder='Trazi...'/>*/}
     </section>
 )
 

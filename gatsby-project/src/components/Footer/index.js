@@ -22,7 +22,7 @@ const Footer = () => (
         </ul>
 
         <ul className={styles.copyright}>
-            eFlower 2020
+            eFlower d.o.o. 2020
         </ul>
 
         <ul className={styles.payment}>
@@ -33,7 +33,7 @@ const Footer = () => (
                 Pouzećem
             </li>
             <li className={styles.creditcards}>
-                Karticama:
+                Karticom
             </li>
 
         </ul>

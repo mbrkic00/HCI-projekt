@@ -1,9 +1,8 @@
 import React from 'react'
 import styles from './style.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faPhoneAlt} from '@fortawesome/free-solid-svg-icons'
-import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
-import {faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
+import {faPhoneAlt, faEnvelope, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
+import {fab, faCcVisa, faCcMastercard, faCcAmex} from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => (
     <footer className={styles.footer}>
@@ -41,6 +40,11 @@ const Footer = () => (
             </li>
             <li className={styles.creditcards}>
                 Karticom
+            </li>
+            <li className={styles.cc}>
+                <FontAwesomeIcon icon={faCcVisa} className={styles.visaIcon}/>
+                <FontAwesomeIcon icon={faCcMastercard} className={styles.mastercardIcon}/>
+                <FontAwesomeIcon icon={faCcAmex} className={styles.amexIcon}/>
             </li>
 
         </ul>

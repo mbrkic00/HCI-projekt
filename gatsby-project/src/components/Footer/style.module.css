@@ -30,12 +30,25 @@
     margin: 5px;
 }
 
+.phone .phoneIcon {
+   /* margin-left: 10px;*/
+    margin-right: 10px;
+}
+
 .email {
     margin: 5px;
 }
 
+.email .envelopeIcon {
+    margin-right: 10px;
+}
+
 .address {
     margin: 5px;
+}
+
+.address .pinIcon {
+    margin-right: 15px;
 }
 
 .workinghours {
@@ -57,7 +70,6 @@
     text-align: left;
     padding-left: 200px;
     padding-right: 170px;
-    
 }
 
 .waysofpaying {
@@ -66,7 +78,7 @@
     margin-bottom: 20px;
     margin-top: 10px;
     font-family: 'Nunito';
-    
+    margin-right: 45px;
 }
 
 .cash {

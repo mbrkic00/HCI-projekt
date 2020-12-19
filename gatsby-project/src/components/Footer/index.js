@@ -1,5 +1,9 @@
 import React from 'react'
 import styles from './style.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faPhoneAlt} from '@fortawesome/free-solid-svg-icons'
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import {faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => (
     <footer className={styles.footer}>
@@ -8,12 +12,15 @@ const Footer = () => (
                 Kontakt:
             </li>
             <li className={styles.phone}>
+            <FontAwesomeIcon icon={faPhoneAlt} className={styles.phoneIcon}/>
                 021 556 728
             </li>
             <li className={styles.email}>
+            <FontAwesomeIcon icon={faEnvelope} className={styles.envelopeIcon}/>
                 eflower@gmail.com
             </li>
             <li className={styles.address}>
+            <FontAwesomeIcon icon={faMapMarkerAlt} className={styles.pinIcon}/>
                 Vukovarska 8
             </li>
             <li className={styles.workinghours}>

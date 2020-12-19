@@ -1,0 +1,49 @@
+.footer {
+    background-color: #E12F8F;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    
+} 
+
+.footer .info {
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    font-family: 'Nunito';
+}
+
+.contact {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    /*font-weight: 540;*/
+}
+
+.phone {
+    margin: 5px;
+}
+
+.email {
+    margin: 5px;
+}
+
+.address {
+    margin: 5px;
+}
+
+.workinghours {
+    margin: 5px;
+}
+
+.copyright {
+    display: flex;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 160px;
+    font-family: 'Courgette', cursive;
+}

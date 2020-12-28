@@ -1,9 +1,9 @@
 import React from "react"
 import HeaderFooterLayout from "../layouts/headerFooter"
  
-const webShop0Page = () => (
-    <HeaderFooterLayout activeTab="Web shop">
+const blogPage = () => (
+    <HeaderFooterLayout activeTab="Blog">
     </HeaderFooterLayout>
 )
  
-export default webShop0Page
+export default blogPage

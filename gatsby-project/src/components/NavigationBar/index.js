@@ -1,13 +1,15 @@
 import React from 'react'
 import styles from './style.module.css'
+import {Link} from 'gatsby'
 
 
-
-const navTabs = ['Naslovna', 'Web shop', 'Blog', 'Prijavi se']
+const navTabs = [{tab: 'Naslovna', to: '/'}, {tab: 'Web shop', to: 'webShop0'}, {tab: 'Blog', to: '/'}, {tab: 'Prijavi se', to:'/'}]
 const NavigationBar = ({activeTab}) => (
     <nav className={styles.navigationBar}>
-        {navTabs.map(tab => <li className={tab == activeTab ? styles.active : ''}> 
-            {tab}</li>
+          {navTabs.map(({tab, to}) => (
+          <Link to={to} >
+              <li className={tab === activeTab ? styles.active : ''}>{tab}</li>
+          </Link>)
         )}
     </nav>
 )

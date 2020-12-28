@@ -9,6 +9,8 @@ const FrontPage = () => (
             <li>Online cvjećarnica, dostupna 24/7</li>
         </ul>
 
+        <button className={styles.webshopbutton}>WEB SHOP</button>
+
        <div className={styles.text}>
         <p><span className={styles.a}> Dragi naši </span> kupci, </p>
         
@@ -30,6 +32,13 @@ const FrontPage = () => (
             <section className={styles.image1}></section>
             <section className={styles.image2}></section>
             <section className={styles.image3}></section>
+            <button className={styles.morebutton}>VIŠE </button>
+        </section>
+
+        <section className={styles.flowers}>
+            <section className={styles.roses}>Jednostavne ruže u rozom</section>
+            <section className={styles.bonsai}>Bonsai</section>
+            <section className={styles.box}>Cvjetna kutija roze ruže</section>
         </section>
 
     </frontpage>

@@ -13,6 +13,15 @@
     line-height: 3;
 }
 
+.webshopbutton {
+   background-color:  #E12F8F;
+   border: #E12F8F;
+   color: white;
+   height: 40px;
+   width: 130px;
+   font-size: 20px;
+}
+
 .text {
     display: flex;
     flex-flow: column; 
@@ -62,4 +71,35 @@
     width: 350px;
     background: url("https://cvjetnibuketi.hr/images/made/slike/princess-flower-box-79.jpg");
     background-size: cover;
+    
 }
+
+.flowers {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    
+}
+
+.roses {
+    padding-left: 340px;
+}
+
+.bonsai {
+    
+    padding-left: 150px;
+}
+
+.box {
+    padding-left: 190px;
+}
+
+.morebutton {
+    background-color: #E12F8F;
+    border: #E12F8F;
+    color: white;
+    height: 40px;
+    width: 130px;
+    font-size: 20px;
+    
+ }

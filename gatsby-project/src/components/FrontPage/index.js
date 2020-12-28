@@ -24,6 +24,14 @@ const FrontPage = () => (
         <p className={styles.sign}>Vaš e-Flower tim</p> 
         </div>
 
+        <div className={styles.bestsellers}>Bestselleri</div>
+
+        <section className={styles.pictures}>
+            <section className={styles.image1}></section>
+            <section className={styles.image2}></section>
+            <section className={styles.image3}></section>
+        </section>
+
     </frontpage>
 )
 

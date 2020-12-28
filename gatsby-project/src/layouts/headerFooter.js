@@ -6,8 +6,9 @@ import Footer from '../modules/Footer'
 const HeaderFooterLayout = ({children, activeTab}) => (
   <>
     <NavigationHeader activeTab={activeTab} />
+    <TitleImage/>
       {children}
-      <TitleImage/>
+      
     <Footer />
   </>
 )

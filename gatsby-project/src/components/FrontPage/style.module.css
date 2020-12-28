@@ -1,0 +1,28 @@
+.frontpage {
+    font-family: 'Nunito';
+
+}
+
+.welcome {
+    list-style: none;
+    color: #E12F8F;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    line-height: 3;
+}
+
+.text {
+    display: flex;
+    flex-flow: column; 
+    text-align: left;
+    padding-left: 300px;
+}
+
+.a {
+    color: #E12F8F;
+}
+
+.sign {
+    padding-left: 550px;
+}

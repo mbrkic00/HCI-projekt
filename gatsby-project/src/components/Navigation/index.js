@@ -5,8 +5,6 @@ import {faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import MsgToUser from '../MsgToUser'
 import styles from './style.module.css'
 
-
-
 const Navigation = () => (
     <section className={styles.navigation}>
     <NavigationBar/>

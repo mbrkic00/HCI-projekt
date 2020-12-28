@@ -5,9 +5,9 @@ import {faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import MsgToUser from '../MsgToUser'
 import styles from './style.module.css'
 
-const Navigation = () => (
+const Navigation = ({activeTab}) => (
     <section className={styles.navigation}>
-    <NavigationBar/>
+    <NavigationBar activeTab = {activeTab}/>
     <FontAwesomeIcon icon={faShoppingCart} className={styles.ShoppingCart}/>
     <MsgToUser/>
     {/*<input className={styles.SearchBar} type = 'search' placeholder='Trazi...'/>*/}

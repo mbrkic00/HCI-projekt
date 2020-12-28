@@ -6,7 +6,7 @@ import FrontPage from '../components/FrontPage'
 const IndexPage = () => (
   <main>
     {/*<p style={{paddingLeft: '3rem'}}>Online cvjećarnica u izradi...</p>*/}
-    <NavigationHeader/>
+    <NavigationHeader activeTab = "Naslovna"/>
     <TitleImage/>
     <FrontPage/>
     <Footer/>

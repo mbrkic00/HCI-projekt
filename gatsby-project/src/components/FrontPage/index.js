@@ -16,11 +16,11 @@ const FrontPage = () => (
         
         <p>vršimo dostavu cvijeća u dogovoreno vrijeme na Vama željenu adresu na području Republike Hrvatske.</p>
            
-        <p> Od ponedjeljka do subote narudžbe za isti dan zaprimamo <span className={styles.a}> do 16 sati </span>. <br></br>
-            Nedjeljom narudžbe za isti dan zaprimamo <span className={styles.a}>do 12 sati</span>. <br></br>
+        <p> Od ponedjeljka do subote narudžbe za isti dan zaprimamo <span className={styles.a}> do 16 sati </span>.<br/>
+            Nedjeljom narudžbe za isti dan zaprimamo <span className={styles.a}>do 12 sati</span>.<br/>
             Radno vrijeme naših poslovnica je <span className={styles.a}>8:00 - 17:00</span>.
         </p>
-        <p> Dostava je besplatna na području Zagreba, Splita, Rijeke, Osijeka i Dubrovnika. <br></br>
+        <p> Dostava je besplatna na području Zagreba, Splita, Rijeke, Osijeka i Dubrovnika.<br/>
             Za druga mjesta dostava iznosi 30 kn, osim ako je narudžba u iznosu većem od 350 kn.
         </p>
         <p className={styles.sign}>Vaš e-Flower tim</p> 

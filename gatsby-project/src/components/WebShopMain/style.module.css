@@ -25,21 +25,22 @@
     height:290px;
     border:1px solid #cecece;
     background: url("https://cvjetnibuketi.hr/images/made/slike/ljiljani-i-ruze-48.jpg");
-    background-size: cover;
+    background-size: 275px 290px;
 }
 .image2{
     width:275px;
     height:290px;
     border:1px solid #cecece;
-    background: url("https://cvjetnibuketi.hr/images/made/slike/ljiljani-i-ruze-48.jpg");
-    background-size: cover;
+    background: url("https://cvjetnibuketi.hr/images/made/slike/princess-flower-box-78.jpg");
+    background-size: 275px 290px;
 }
 .image3{
     width:275px;
     height:290px;
     border:1px solid #cecece;
-    background: url("https://cvjetnibuketi.hr/images/made/slike/ljiljani-i-ruze-48.jpg");
-    background-size: cover;
+    background: url("http://bloemenbezorgenbergenopzoom.nl/wp-content/uploads/2016/03/bloemenwinkel-bergen-op-zoom-4.jpg");
+    background-size: 300px 270px;
+    
 }
 .titles{
     text-align: center;

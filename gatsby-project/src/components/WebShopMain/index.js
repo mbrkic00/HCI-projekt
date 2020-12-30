@@ -10,18 +10,15 @@ const WebShopMain = () => (
         <section className={styles.categories}>
             <div className={styles.flowerCategory}>
                 <section className={styles.image1}></section>
-                <p className={styles.titles}>Buketi (15)</p>
-                <button className={styles.openButton}><span>OTVORI</span></button>
+                <button className={styles.openButton}><span>Buketi (15)</span></button>
             </div>
             <div className={styles.flowerCategory}>
                 <section className={styles.image2}></section>
-                <p className={styles.titles}>Cvijeće u kutiji (10)</p>
-                <button className={styles.openButton}><span>OTVORI</span></button>
+                <button className={styles.openButton}><span>Cvijeće u kutiji (10)</span></button>
             </div>
             <div className={styles.flowerCategory}>
                 <section className={styles.image3}></section>
-                <p className={styles.titles}>Aranžmani (7)</p>
-                <button className={styles.openButton}><span>OTVORI</span></button>
+                <button className={styles.openButton}><span>Aranžmani (7)</span></button>
             </div>
             
         </section>

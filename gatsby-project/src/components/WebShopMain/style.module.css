@@ -42,17 +42,23 @@
     background-size: 300px 270px;
     
 }
-.titles{
-    text-align: center;
+.buttonedUp{
+    width: 274px;
+    height: 50px;
+    border:2px solid #E12F8F;
+    
 }
+
 
 .openButton{
     background-color: #E12F8F;
     border: none;
-    width:100px;
-    height: 40px;
+    width:274px;
+    height: 50px;
    float:right;
    outline: none;
+   margin-top: 15px;
+   
 }
 .openButton span{
     color:white;

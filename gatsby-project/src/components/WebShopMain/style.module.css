@@ -1,0 +1,60 @@
+.webTitle{
+    margin-top: 45px;
+    margin-left: 75px;
+    color:#E12F8F;
+    font-size: 27px;
+}
+.webMsg{
+    margin-left: 75px;
+    margin-top:45px;
+    margin-bottom: 50px;
+}
+.categories{
+    padding-left: 150px;
+    display: flex;
+    padding-right: 150px;
+}
+.flowerCategory{
+   /* background-color: yellow;*/
+    width:277px;
+    height: 430px;
+    padding-right: 180px;
+}
+.image1{
+    width:275px;
+    height:290px;
+    border:1px solid #cecece;
+    background: url("https://cvjetnibuketi.hr/images/made/slike/ljiljani-i-ruze-48.jpg");
+    background-size: cover;
+}
+.image2{
+    width:275px;
+    height:290px;
+    border:1px solid #cecece;
+    background: url("https://cvjetnibuketi.hr/images/made/slike/ljiljani-i-ruze-48.jpg");
+    background-size: cover;
+}
+.image3{
+    width:275px;
+    height:290px;
+    border:1px solid #cecece;
+    background: url("https://cvjetnibuketi.hr/images/made/slike/ljiljani-i-ruze-48.jpg");
+    background-size: cover;
+}
+.titles{
+    text-align: center;
+}
+
+.openButton{
+    background-color: #E12F8F;
+    border: none;
+    width:100px;
+    height: 40px;
+   float:right;
+   outline: none;
+}
+.openButton span{
+    color:white;
+    font-size: 16px;
+    
+}

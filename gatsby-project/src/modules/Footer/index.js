@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './style.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faPhoneAlt, faEnvelope, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
-import {fab, faCcVisa, faCcMastercard, faCcAmex} from '@fortawesome/free-brands-svg-icons'
+import {faCcVisa, faCcMastercard, faCcAmex} from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => (
     <footer className={styles.footer}>

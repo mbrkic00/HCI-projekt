@@ -8,3 +8,63 @@
 .text {
     padding-left: 70px;
 }
+
+.a {
+  display: flex;
+  flex-flow: row;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 3px;
+  border: 2px solid darkgray;
+  /* padding: 0.25em 1em; */
+  transition: 0.5s all ease-out;
+  margin: 30px 70px 30px 70px;
+  height: 180;
+}
+
+.a:hover {
+    background-color: darkgray;
+    color: white; 
+}
+
+.image1 {
+    height: 180px;
+    width: 200px;
+    background: url("https://ultra.ba/wordpress/wp-content/uploads/2019/01/buket.jpg");
+    background-size: cover;
+    font-size: 30px;
+}
+
+.image2 {
+    height: 185px;
+    width: 233px;
+    background: url("https://i0.hippopx.com/photos/225/82/340/rose-bouquet-flowers-gift-preview.jpg");
+    background-size: cover;
+    font-size: 30px;
+}
+
+.image3 {
+    height: 185px;
+    width: 253px;
+    background: url("https://www.angellivingonline.com/wp-content/uploads/2018/04/flower-3033228_1920-640x400.jpg");
+    background-size: cover;
+    font-size: 30px;
+}
+
+.article {
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 50px;
+}
+
+.h {
+    padding-left: 50px;
+    color: #E12F8F;
+    font-size: 20px;
+    line-height: 0.5;
+}
+
+.news {
+    padding-left: 50px;
+    font-size: 18px;
+}

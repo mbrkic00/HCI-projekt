@@ -11,7 +11,7 @@ const FrontPage = () => (
 
         <button className={styles.webshopbutton}>WEB SHOP</button>
 
-       <div className={styles.text}>
+        <div className={styles.text}>
         <p><span className={styles.a}> Dragi naši </span> kupci, </p>
         
         <p>vršimo dostavu cvijeća u dogovoreno vrijeme na Vama željenu adresu na području Republike Hrvatske.</p>

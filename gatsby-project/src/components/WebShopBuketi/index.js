@@ -1,12 +1,17 @@
 import React from 'react'
+import Combobox from '../ComboBox'
+
 import styles from './style.module.css'
 
 const WebShopBuketi = () => (
     <webShopPage className={styles.webShop}>
         <div>
             <p className={styles.webTitle}>Web shop/ Buketi</p>
-            <div>
-                <input type="search" placeholder=" Trazi..." className={styles.searchBar} />
+            <div className={styles.searchAndSort}>
+                <div>
+                    <input type="search" placeholder=" Trazi..." className={styles.searchBar} />
+                </div>
+            <Combobox />
             </div>
         </div>
         <section className={styles.categories}>

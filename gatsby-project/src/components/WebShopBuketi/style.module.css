@@ -13,6 +13,11 @@
     outline: none;
     
 }
+.searchAndSort{
+    display: flex;
+    flex-flow: row;
+   
+}
 .categories{
     
     margin-left: 45px;
@@ -20,7 +25,7 @@
     display:flex;
     flex-flow: row;
     flex-wrap: wrap;     
-    padding-top: 30px;
+    padding-top: 80px;
     
 }
 .flowerCategory{

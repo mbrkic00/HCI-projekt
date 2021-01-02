@@ -78,6 +78,7 @@
     font-size: 22px;
     margin-left: 1000px;
     margin-bottom: 130px;
+    outline: none;
  }
 
  .chevronIcon {
@@ -93,4 +94,5 @@
      font-size: 20px;
      color: #555555;
      margin-left: 650px;
+     outline: none;
  }

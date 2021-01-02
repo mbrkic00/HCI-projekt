@@ -1,5 +1,4 @@
 import React from "react"
- 
 import HeaderFooterLayout from "../layouts/headerFooter"
 import FrontPage from "../components/FrontPage"
  

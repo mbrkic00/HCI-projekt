@@ -36,7 +36,7 @@
     line-height: 2;
 }
 
-.return {
+.returnButton {
     background: transparent;
      border: transparent;
      text-decoration: underline;
@@ -45,4 +45,5 @@
      margin-left: 950px;
      margin-top: 150px;
      margin-bottom: 50px;
+     width: 250px;
 }

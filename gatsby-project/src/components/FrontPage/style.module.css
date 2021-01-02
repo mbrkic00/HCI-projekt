@@ -21,6 +21,7 @@
    width: 130px;
    font-size: 20px;
    margin-left: 700px;
+   outline: none;
 }
 
 .text {
@@ -64,15 +65,13 @@
     width: 300px;
     background: url("https://media.jardinitis.com/product/bonsai-ligustrum-sp-800x800.jpeg");
     background-size: cover;
-    
 }
 
 .image3 {
-    height: 350px;
+    height: 330px;
     width: 350px;
     background: url("https://cvjetnibuketi.hr/images/made/slike/princess-flower-box-79.jpg");
     background-size: cover;
-    
 }
 
 .flowers {
@@ -103,4 +102,11 @@
     width: 130px;
     font-size: 20px;
     margin-top: 140px;
+    outline: none;
  }
+
+ .chevronIcon {
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+}

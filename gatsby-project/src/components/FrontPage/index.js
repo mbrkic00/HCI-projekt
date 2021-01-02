@@ -1,5 +1,8 @@
 import React from 'react'
 import styles from './style.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+
 
 
 const FrontPage = () => (
@@ -23,7 +26,7 @@ const FrontPage = () => (
         <p> Dostava je besplatna na području Zagreba, Splita, Rijeke, Osijeka i Dubrovnika.<br/>
             Za druga mjesta dostava iznosi 30 kn, osim ako je narudžba u iznosu većem od 350 kn.
         </p>
-        <p className={styles.sign}>Vaš e-Flower tim</p> 
+        <p className={styles.sign}>Vaš e-Flower tim</p>
         </div>
 
         <div className={styles.bestsellers}>Bestselleri</div>
@@ -32,7 +35,7 @@ const FrontPage = () => (
             <section className={styles.image1}></section>
             <section className={styles.image2}></section>
             <section className={styles.image3}></section>
-            <button className={styles.morebutton}>VIŠE </button>
+            <button className={styles.morebutton}>VIŠE<FontAwesomeIcon icon={faChevronRight} className={styles.chevronIcon}/></button>
         </section>
 
         <section className={styles.flowers}>

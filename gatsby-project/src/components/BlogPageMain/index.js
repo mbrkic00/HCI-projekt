@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style.module.css'
 
-const BlogPage = () => (
+const BlogPageMain = () => (
     <blogPage>
         <span>
         <div className={styles.blog}>Blog</div>
@@ -36,4 +36,4 @@ const BlogPage = () => (
     </blogPage>
 )
 
-export default BlogPage
+export default BlogPageMain

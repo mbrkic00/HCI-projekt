@@ -13,7 +13,7 @@
     border-radius: 3px;
     border: 2px solid darkgray;
     margin: 30px 70px 30px 70px;
-    height: 600px;
+    height: 900px;
 }
 
 .image {
@@ -34,4 +34,15 @@
     margin-left: 60px;
     margin-right: 60px;
     line-height: 2;
+}
+
+.return {
+    background: transparent;
+     border: transparent;
+     text-decoration: underline;
+     font-size: 20px;
+     color: #555555;
+     margin-left: 950px;
+     margin-top: 150px;
+     margin-bottom: 50px;
 }

@@ -17,7 +17,10 @@ const BlogPageNews1 = () => (
             - Muškarci ne smiju darivati cvijeće u posudi, već samo rezano cvijeće.<br/>
             - Tegle s cvijećem mogu se darovati samo ženi.<br/>
             </div>
+            <button className={styles.return}>Povratak na ostale teme...</button>
         </section>
+
+        
     </blogPageNews1>
 )
 

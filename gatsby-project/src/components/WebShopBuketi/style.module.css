@@ -104,27 +104,47 @@
     background: url("https://cvjetnibuketi.hr/images/made/slike/margarete-u-rozom-43.jpg");
     background-size: 275px 290px;
 }
-.productName{
+.product_name{
     color: #555555;
     text-align:start;
     font-size: 20px;
 }
-.productPrice{
+.product_price{
     color: #000000;
     font-size: 19px;
     text-align: start; 
     
 }
-
+.productInfo{
+    padding-top: 20px;
+    font-size: 20px;
+    justify-content: center;
+    width: 267px;
+    height: 60px;
+    text-align: center;
+   text-decoration: underline;
+}
+.productInfo span{
+    color:black;
+    display: block;
+    text-align: center;
+    font-size: 19px;
+    text-decoration:none;
+}
 .openButton{
     background-color: #E12F8F;
     border: none;
     width:100px;
-    height: 40px;
-    float:right;
+    width: 267px;
+    height: 30px;
+    
     outline: none;
+    justify-content: center;
+    text-align: center;
+
 }
 .openButton span{
     color:white;
     font-size: 18px;
+    
 }

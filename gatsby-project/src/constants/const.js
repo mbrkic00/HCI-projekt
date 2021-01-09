@@ -33,24 +33,29 @@ export const productsBuketi =[
     },
     {
         productName: "Egzotični mix",
-        productPrice: "300.00 kn" 
+        productPrice: "300.00 kn",
+        productImage: require("../../src/images/image4.jpg")
     },
     {
         productName: "Šareni tulipani",
-        productPrice: "220.00 kn" 
+        productPrice: "220.00 kn",
+        productImage: require("../../src/images/image5.jpg") 
     },
     
     {
         productName: "Šareni buket",
-        productPrice: "180.00 kn" 
+        productPrice: "180.00 kn",
+        productImage: require("../../src/images/image6.jpg") 
     },
     {
         productName: "Buket Amarilis",
-        productPrice: "190.00 kn" 
+        productPrice: "190.00 kn",
+        productImage: require("../../src/images/image7.jpg") 
     },
     {
         productName: "Margarete u rozom",
-        productPrice: "170.00 kn" 
+        productPrice: "170.00 kn",
+        productImage: require("../../src/images/image8.jpg") 
     }
 ];
 

@@ -17,7 +17,6 @@ const WebShopBuketi = () => (
             </div>
             <div className={styles.categories}>
                 {productsBuketi.map(({productName, productPrice, productImage}) => (
-                    
                         <div className={styles.flowerCategory}>
                             <img src={productImage} alt="img001" className={styles.imageStyle} />
                             <div className={styles.productInfo}>{productName}<span>{productPrice}</span></div>

@@ -17,7 +17,7 @@
     display:flex;
     flex-flow: row;
     flex-wrap: wrap;     
-
+    padding-top:30px;
 
 }
 .flowerCategory{
@@ -29,35 +29,13 @@
    /* border:3px solid red;*/
     
 }
-.image1{
-    width:275px;
-    height:290px;
+.imageStyle{
+    width:265px;
+    height:280px;
     border:1px solid #cecece;
-    background: url("https://cvjetnibuketi.hr/images/made/slike/ljiljani-i-ruze-48.jpg");
     background-size: 275px 290px;
 }
-.image2{
-    width:275px;
-    height:290px;
-    border:1px solid #cecece;
-    background: url("https://cvjetnibuketi.hr/images/made/slike/princess-flower-box-78.jpg");
-    background-size: 275px 290px;
-}
-.image3{
-    width:275px;
-    height:290px;
-    border:1px solid #cecece;
-    background: url("http://bloemenbezorgenbergenopzoom.nl/wp-content/uploads/2016/03/bloemenwinkel-bergen-op-zoom-4.jpg");
-    background-size: 300px 270px;
-    
-}
-.image4{
-    width:275px;
-    height:290px;
-    border:1px solid #cecece;
-    background: url("https://cdn.loods5.nl/images/0004D/00000096CD-0000030EE3.jpg");
-    background-size: 275px 290px;
-}
+
 .image5{
     width:275px;
     height:290px;
@@ -68,15 +46,15 @@
 
 
 
-.openButton{
-    background-color: #E12F8F;
-    border: none;
-    width:274px;
-    height: 50px;
-   float:right;
-   outline: none;
-   margin-top: 15px;
-   
+.categoryInfo{
+    padding-top: 20px;
+    font-size: 22px;
+    justify-content: center;
+    width: 267px;
+    height: 60px;
+    text-align: center;
+   text-decoration: underline; 
+   color:#E12F8F;
 }
 .openButton span{
     color:white;

@@ -1,9 +1,4 @@
-export const sortingField = [
-    {
-        title: "Sortiraj ▼",
-        name: "default"
-    }
-];
+
 export const sortings = [
     {
         sorting: "Preporučeno ★",
@@ -19,47 +14,66 @@ export const sortings = [
     },
 ];
 
+export const productCategories = [
+    {
+        categoryName: "Buketi",
+        categoryImage: require("../../src/images/buketiNaslovna.jpg")
+    },
+    {
+        categoryName: "Cvijeće u kutiji",
+        categoryImage: require("../../src/images/kutijeNaslovna.jpg")
+    },
+    {
+        categoryName: "Aranžmani",
+        categoryImage: require("../../src/images/aranzmaniNaslovna.jpg")
+    },
+    {
+        categoryName: "Lončanice",
+        categoryImage: require("../../src/images/loncaniceNaslovna.jpg")
+    }
+];
+
 export const productsBuketi =[
     {
         productName: "Ljiljani i ruže mix",
         productPrice: "175.00 kn",
-        productImage: require("../../src/images/image1.jpg")
+        productImage: require("../../src/images/buketi1.jpg")
     },
     {
         productName: "Jednostavne ruže",
         productPrice: "250.00 kn",
-        productImage: require("../../src/images/image2.jpg")
+        productImage: require("../../src/images/buketi2.jpg")
     },
     {
         productName: "Nježne orhideje",
         productPrice: "210.00 kn",
-        productImage: require("../../src/images/image3.jpg")
+        productImage: require("../../src/images/buketi3.jpg")
     },
     {
         productName: "Egzotični mix",
         productPrice: "300.00 kn",
-        productImage: require("../../src/images/image4.jpg")
+        productImage: require("../../src/images/buketi4.jpg")
     },
     {
         productName: "Šareni tulipani",
         productPrice: "220.00 kn",
-        productImage: require("../../src/images/image5.jpg") 
+        productImage: require("../../src/images/buketi5.jpg") 
     },
     
     {
         productName: "Šareni buket",
         productPrice: "180.00 kn",
-        productImage: require("../../src/images/image6.jpg") 
+        productImage: require("../../src/images/buketi6.jpg") 
     },
     {
         productName: "Buket Amarilis",
         productPrice: "190.00 kn",
-        productImage: require("../../src/images/image7.jpg") 
+        productImage: require("../../src/images/buketi7.jpg") 
     },
     {
         productName: "Margarete u rozom",
         productPrice: "170.00 kn",
-        productImage: require("../../src/images/image8.jpg") 
+        productImage: require("../../src/images/buketi8.jpg") 
     }
 ];
 

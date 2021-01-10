@@ -20,13 +20,19 @@
 }
 .categories{
     
-    margin-left: 45px;
+   /* margin-left: 45px;
     margin-right: 45px;
     display:flex;
     flex-flow: row;
     flex-wrap: wrap;     
-    padding-top: 80px;
+    padding-top: 30px;*/
     
+    margin-left: 185px;
+    margin-right: 184px;
+    display:flex;
+    flex-flow: row;
+    flex-wrap: wrap;     
+    padding-top:30px;
 }
 .flowerCategory{
    /* background-color: yellow;*/
@@ -57,18 +63,19 @@
 }
 .productInfo{
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 22px;
     justify-content: center;
     width: 267px;
     height: 60px;
     text-align: center;
-   text-decoration: underline;
+    color:#E12F8F;
+    text-decoration: underline;
 }
 .productInfo span{
     color:black;
     display: block;
     text-align: center;
     font-size: 19px;
-    text-decoration:none;
+    text-decoration: none;
 }
 

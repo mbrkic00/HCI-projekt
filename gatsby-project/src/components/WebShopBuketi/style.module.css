@@ -38,70 +38,10 @@
    /* border:3px solid red;*/
     
 }
-.image1{
+.imageStyle{
     width:265px;
     height:280px;
     border:1px solid #cecece;
-    background: url("https://cvjetnibuketi.hr/images/made/slike/ljiljani-i-ruze-48.jpg");
-    background-size: 275px 290px;
-}
-.image2{
-    width:265px;
-    height:280px;
-    border:1px solid #cecece;
-    background: url("https://cvjetnibuketi.hr/images/made/slike/jednostavne-ruze-53.jpg");
-    background-size: 275px 290px;
-}
-.image3{
-    width:265px;
-    height:280px;
-    border:1px solid #cecece;
-    background: url("https://cvjetnibuketi.hr/images/made/slike/njezna-orhideja-47.jpg"); 
-    background-size: 275px 270px;
-    
-}
-.image4{
-    width:265px;
-    height:280px;
-    border:1px solid #cecece;
-    background: url("https://cvjetnibuketi.hr/images/made/slike/egzotican-buket-56.jpg");
-    background-size: 275px 290px;
-}
-.image5{
-    width:265px;
-    height:280px;
-    border:1px solid #cecece;
-    background: url("https://cvjetnibuketi.hr/images/made/slike/rozi-ljiljan-41.jpg");
-    background-size: 275px 290px;
-}
-
-.image6{
-    width:265px;
-    height:280px;;
-    border:1px solid #cecece;
-    background: url("https://cvjetnibuketi.hr/images/made/slike/sareni-tulipani-55.jpg");
-    background-size: 275px 290px;
-}
-.image7{
-    width:265px;
-    height:280px;
-    border:1px solid #cecece;
-    background: url("https://cvjetnibuketi.hr/images/made/slike/sareni-buket-40.jpg");
-    background-size: 275px 290px;
-}
-.image8{
-    width:265px;
-    height:280px;
-    border:1px solid #cecece;
-    background: url("https://cvjetnibuketi.hr/images/made/slike/buket-amarilis-42.jpg");
-    background-size: 275px 290px;
-}
-
-.image9{
-    width:265px;
-    height:280px;
-    border:1px solid #cecece;
-    background: url("https://cvjetnibuketi.hr/images/made/slike/margarete-u-rozom-43.jpg");
     background-size: 275px 290px;
 }
 .product_name{
@@ -131,20 +71,4 @@
     font-size: 19px;
     text-decoration:none;
 }
-.openButton{
-    background-color: #E12F8F;
-    border: none;
-    width:100px;
-    width: 267px;
-    height: 30px;
-    
-    outline: none;
-    justify-content: center;
-    text-align: center;
 
-}
-.openButton span{
-    color:white;
-    font-size: 18px;
-    
-}

@@ -1,6 +1,10 @@
-
+export const sortingField = [
+    {
+        title: "Sortiraj ▼",
+        name: "default"
+    }
+];
 export const sortings = [
-    
     {
         sorting: "Preporučeno ★",
         name: "recommended"

@@ -3,8 +3,6 @@ import styles from './style.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
-
-
 const FrontPage = () => (
     <frontpage className={styles.frontpage}>
         <ul className={styles.welcome}>

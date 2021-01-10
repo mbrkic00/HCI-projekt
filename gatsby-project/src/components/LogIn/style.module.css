@@ -8,12 +8,13 @@
   display: flex;
   flex-flow: column;
   text-align: center;
+  color: rgba(17, 0, 0, 0.75);
 }
 
 .container {
   position: absolute;
   width: 360px;
-  height: 400px;
+  height: 420px;
   left: 558px;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -30,7 +31,7 @@
 .container2 {
   position: absolute;
   width: 360px;
-  height: 400px;
+  height: 420px;
   left: 980px;
   top: 50%;
   transform: translate(-50%, -50%);

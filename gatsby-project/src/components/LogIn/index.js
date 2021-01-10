@@ -89,7 +89,7 @@ const Login = () => {
         <input name="password" type="password" onChange={e => setPassword(e.target.value)} />
       </section>
       <p className={`${styles[error !== "Success" ? 'error' : 'success']} ${error ? styles.show : ''}`}>{error}</p>
-      <button className={styles.loginButton2} onClick={() => submit()}>
+      <button className={styles.signupButton} onClick={() => submit()}>
         {loading ? 'Loading...' : 'REGISTRIRAJ SE'}
       </button>
     </section>

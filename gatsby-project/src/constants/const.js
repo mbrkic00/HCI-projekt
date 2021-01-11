@@ -77,3 +77,17 @@ export const productsBuketi =[
     }
 ];
 
+export const Bestsellers = [
+    {
+        bestseller: "Jednostavne ruže u rozom",
+        productImage: require("../../src/images/bestseller1.jpg")
+    },
+    {
+        bestseller: "Bonsai",
+        productImage: require("../../src/images/bestseller2.jpeg")
+    },
+    {
+        bestseller: "Cvjetna kutija roze ruže",
+        productImage: require("../../src/images/bestseller3.jpeg")
+    }
+];

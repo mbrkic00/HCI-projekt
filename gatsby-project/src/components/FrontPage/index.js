@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './style.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { Bestsellers } from '../../constants/const'
 
 const FrontPage = () => (
     <frontpage className={styles.frontpage}>
@@ -29,18 +30,15 @@ const FrontPage = () => (
 
         <div className={styles.bestsellers}>Bestselleri</div>
 
-        <section className={styles.pictures}>
-            <section className={styles.image1}></section>
-            <section className={styles.image2}></section>
-            <section className={styles.image3}></section>
+        <div className={styles.bestsellers1}>
+            {Bestsellers.map(({bestseller, productImage}) => (
+                    <div className={styles.bestsellerStyle}>
+                        <img src={productImage} alt="img001" className={styles.imageStyle} />
+                        <div className={styles.bestsellerName}>{bestseller}</div>
+                    </div>
+                    ))}
             <button className={styles.morebutton}>VIŠE<FontAwesomeIcon icon={faChevronRight} className={styles.chevronIcon}/></button>
-        </section>
-
-        <section className={styles.flowers}>
-            <section className={styles.roses}>Jednostavne ruže u rozom</section>
-            <section className={styles.bonsai}>Bonsai</section>
-            <section className={styles.box}>Cvjetna kutija roze ruže</section>
-        </section>
+        </div>
 
     </frontpage>
 )

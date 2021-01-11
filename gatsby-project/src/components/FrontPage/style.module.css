@@ -47,51 +47,37 @@
     margin-bottom: 20px;
 }
 
-.pictures {
+.bestsellers1 {
+    margin-left: 165px;
+    margin-right: 164px;
+    display:flex;
+    flex-flow: row;
+    flex-wrap: wrap;     
+    padding-top:30px;
+    padding-left: 35px;
+}
+
+.bestsellerStyle {
+    padding-right: 20px;
+    padding-left: 50px;
+}
+
+.imageStyle {
+    height: 265px;
+    width: 260px;
+    background-size: cover;
+    border:1px solid #cecece;
     display: flex;
     flex-flow: row;
-    padding-left: 300px;
 }
 
-.image1 {
-    height: 300px;
-    width: 300px;
-    background: url("https://cvjetnibuketi.hr/images/made/slike/jednostavne-ruze-u-rozom-52.jpg");
-    background-size: cover;
-}
-
-.image2 {
-    height: 300px;
-    width: 300px;
-    background: url("https://media.jardinitis.com/product/bonsai-ligustrum-sp-800x800.jpeg");
-    background-size: cover;
-}
-
-.image3 {
-    height: 330px;
-    width: 350px;
-    background: url("https://cvjetnibuketi.hr/images/made/slike/princess-flower-box-79.jpg");
-    background-size: cover;
-}
-
-.flowers {
-    list-style: none;
-    display: flex;
-    flex-flow: row;
-    
-}
-
-.roses {
-    padding-left: 340px;
-}
-
-.bonsai {
-    
-    padding-left: 150px;
-}
-
-.box {
-    padding-left: 190px;
+.bestsellerName {
+    padding-top: 20px;
+    font-size: 22px;
+    justify-content: center;
+    width: 267px;
+    height: 60px;
+    text-align: center;
 }
 
 .morebutton {

@@ -17,7 +17,7 @@ export const sortings = [
 export const productCategories = [
     {
         categoryName: "Buketi",
-        categoryImage: require("../../src/images/buketiNaslovna.jpg")
+        categoryImage: require("../../src/images/buketiNaslovna.jpg")      
     },
     {
         categoryName: "Cvijeće u kutiji",

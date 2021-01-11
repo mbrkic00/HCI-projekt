@@ -42,11 +42,39 @@
     font-size: 21px;
     text-shadow: 2px 2px 8px #cecece;
 }
-.quantity{
+/*.quantity{
     border: 1px solid #555555;
     width: 70px;
     height: 35px;
     margin-bottom: 25px;
+}*/
+.numBox{
+    width: 35px;
+    height: 31px;
+    text-align: center;
+    border: 1px solid #cecece;
+    margin-bottom: 25px;
+    font-size: 19px;
+    outline: #555555;
+    background-color: whitesmoke;
+}
+.minus{
+    width: 30px;
+    height: 35px;
+    border: 1px solid #cecece;
+    background-color: whitesmoke;
+    text-align: center;
+    outline: #555555;
+    font-size: 19px;
+}
+.plus{
+    width: 30px;
+    height: 35px;
+    border: 1px solid #cecece;
+    background-color: whitesmoke;
+    text-align: center;
+    outline: #555555;
+    font-size: 19px;
 }
 .addButton{
     background-color:#06C206;

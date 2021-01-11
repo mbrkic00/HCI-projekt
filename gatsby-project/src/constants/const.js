@@ -17,19 +17,23 @@ export const sortings = [
 export const productCategories = [
     {
         categoryName: "Buketi",
-        categoryImage: require("../../src/images/buketiNaslovna.jpg")      
+        categoryImage: require("../../src/images/buketiNaslovna.jpg"),
+        to: '/webShop1Buketi'      
     },
     {
         categoryName: "Cvijeće u kutiji",
-        categoryImage: require("../../src/images/kutijeNaslovna.jpg")
+        categoryImage: require("../../src/images/kutijeNaslovna.jpg"),
+        to: '/' 
     },
     {
         categoryName: "Aranžmani",
-        categoryImage: require("../../src/images/aranzmaniNaslovna.jpg")
+        categoryImage: require("../../src/images/aranzmaniNaslovna.jpg"),
+        to: '/' 
     },
     {
         categoryName: "Lončanice",
-        categoryImage: require("../../src/images/loncaniceNaslovna.jpg")
+        categoryImage: require("../../src/images/loncaniceNaslovna.jpg"),
+        to: '/' 
     }
 ];
 

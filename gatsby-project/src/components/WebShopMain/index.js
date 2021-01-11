@@ -1,6 +1,7 @@
 import React from 'react'
 import { productCategories } from '../../constants/const'
 import styles from './style.module.css'
+import {Link} from 'gatsby'
 
 const WebShopMain = () => (
     <webShopPage className={styles.webShop}>
@@ -10,10 +11,12 @@ const WebShopMain = () => (
         </div>
         
             <div className={styles.categories}>
-                {productCategories.map(({categoryName, categoryImage}) => (
+                {productCategories.map(({categoryName, categoryImage, to}) => (
                     <div className={styles.flowerCategory}>
+                        <Link to={to}>
                         <img src={categoryImage} alt="img001" className={styles.imageStyle} />
                         <div className={styles.categoryInfo}>{categoryName}</div>
+                        </Link>
                     </div>
                     ))}
             

@@ -2,10 +2,10 @@ import React from "react"
 import HeaderFooterLayout from "../layouts/headerFooter"
 import WebShopBuketi from "../components/WebShopBuketi"
  
-const webShop1Page = () => (
+const webShop1Buketi = () => (
     <HeaderFooterLayout activeTab="Web shop">
     <WebShopBuketi/>
     </HeaderFooterLayout>
 )
  
-export default webShop1Page
+export default webShop1Buketi

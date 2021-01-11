@@ -42,7 +42,7 @@ export const productsBuketi =[
         productName: "Ljiljani i ruže mix",
         productPrice: "175.00 kn",
         productImage: require("../../src/images/buketi1.jpg"),
-        to: '/webShop3_LjiljaniIRuze'
+        to: '/ljiljaniIRuze'
     },
     {
         productName: "Jednostavne ruže",

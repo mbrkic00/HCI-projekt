@@ -1,10 +1,10 @@
 import React from "react"
 import HeaderFooterLayout from "../layouts/headerFooter"
-import WebShopBuketi from "../components/webShop3_LjiljaniIRuze"
+import webShop3_LjiljaniIRuze from "../components/webShop3_LjiljaniIRuze"
  
 const ljiljaniIRuze = () => (
     <HeaderFooterLayout activeTab="Web shop">
-    <WebShop3_LjiljaniIRuze/>
+    <webShop3_LjiljaniIRuze/>
     </HeaderFooterLayout>
 )
  

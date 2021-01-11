@@ -1,7 +1,7 @@
 import React from 'react'
 import { productsBuketi } from '../../constants/const'
 import Combobox from '../ComboBox'
-import {Link} from 'gatsby'
+
 import styles from './style.module.css'
 
 
@@ -16,12 +16,10 @@ const WebShopBuketi = () => (
             <Combobox />
             </div>
             <div className={styles.categories}>
-                {productsBuketi.map(({productName, productPrice, productImage, to}) => (
+                {productsBuketi.map(({productName, productPrice, productImage}) => (
                         <div className={styles.flowerCategory}>
-                            <Link to={to}>
                             <img src={productImage} alt="img001" className={styles.imageStyle} />
                             <div className={styles.productInfo}>{productName}<span>{productPrice}</span></div>
-                            </Link>
                         </div>
                 ))};
             </div> 

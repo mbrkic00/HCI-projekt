@@ -9,76 +9,69 @@
     padding-left: 70px;
 }
 
-.a {
+ .a {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.blogStyle {
   display: flex;
   flex-flow: row;
   cursor: pointer;
   background: transparent;
   border-radius: 3px;
   border: 2px solid darkgray;
-  /* padding: 0.25em 1em; */
   transition: 0.5s all ease-out;
   margin: 30px 70px 30px 70px;
   height: 200px;
 }
 
-.a:hover {
+.blogStyle:hover {
     background-color: darkgray;
     color: white; 
-}
+} 
 
-.image1 {
-    height: 200px;
-    width: 203px;
-    background: url("https://ultra.ba/wordpress/wp-content/uploads/2019/01/buket.jpg");
-    background-size: cover;
-    font-size: 30px;
-}
-
-.image2 {
-    height: 200px;
-    width: 233px;
-    background: url("https://i0.hippopx.com/photos/225/82/340/rose-bouquet-flowers-gift-preview.jpg");
-    background-size: cover;
-    font-size: 30px;
-}
-
-.image3 {
-    height: 200px;
-    width: 253px;
-    background: url("https://www.angellivingonline.com/wp-content/uploads/2018/04/flower-3033228_1920-640x400.jpg");
-    background-size: cover;
-    font-size: 30px;
-}
-
-.article {
+.subblogStyle {
     display: flex;
     flex-flow: column;
-    padding-bottom: 50px;
+    cursor: pointer;
+}
+
+.imageStyle {
+    height: 200px;
+    width: 203px;
+    background-size: cover;
+    font-size: 30px;
+    margin-bottom: 10px;
 }
 
 .h {
     padding-left: 50px;
+    padding-top: 15px;
     color: #E12F8F;
-    font-size: 20px;
-    line-height: 0.5;
+    font-size: 30px;
+    line-height: 1;
 }
 
 .news {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
     padding-left: 50px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .button {
-    background-color: #E12F8F;
+    background-color: whitesmoke;
     border: #E12F8F;
-    color: white;
+    color:  #E12F8F;
     height: 50px;
     width: 100px;
     font-size: 22px;
     margin-left: 1000px;
     margin-bottom: 130px;
     outline: none;
+    text-decoration: underline;
  }
 
  .chevronIcon {

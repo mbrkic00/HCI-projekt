@@ -91,3 +91,21 @@ export const Bestsellers = [
         productImage: require("../../src/images/bestseller3.jpeg")
     }
 ];
+
+export const blogNews = [
+    {
+        heading: "Simbolika cvijeća",
+        image: require("../../src/images/blog1.jpg"),
+        newsContent: "Ne znate koji buket odabrati? U današnjem članku donosimo Vam listu najtraženijih cvjetova s njihovim značenjima..."
+     },
+    {
+        heading: "Cvijeće za rođendan",
+        image: require("../../src/images/blog2.jpg"),
+        newsContent: "Sigurno ponekad ne znate što pokloniti nekome za rođendan. Neka to bude cvijeće. Otkrit ćemo Vam koje se cvijeće ne stavlja u buket za rođendan, tko ga uručuje..."
+    },
+    {
+        heading: "Briga o lončanicama",
+        image: require("../../src/images/blog3.jpg"),
+        newsContent: "Postoji mnogo razloga zašto je uzgoj biljaka u loncima toliko popularan: omogućava vrtlarima koji izazivaju prostor da se prepune nizu cvijeća, povrća, patuljastih stabala i grmlja..."
+    }
+];

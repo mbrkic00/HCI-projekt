@@ -11,6 +11,9 @@ const WebShop3_LjiljaniIRuze = () => (
             <div className={styles.productInfo}>
                 <p className={styles.title}>Opis proizvoda:</p>
                 <div className={styles.description}>Buket sadrži ruže, ljiljane, gumbeke i dekorativno zelenilo, umotan u elegantan papir sa satenskom mašnom.</div>
+                <p className={styles.price}>200.00 kn</p>
+                <div className={styles.quantity}></div>
+                <button className={styles.addButton}><span>Dodaj u košaricu</span></button>
             </div>
         </div>
     </div>

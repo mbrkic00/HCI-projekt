@@ -6,7 +6,6 @@ import styles from './style.module.css'
 
 
 const WebShopBuketi = () => (
-    <webShopPage className={styles.webShop}>
         <div>
             <p className={styles.webTitle}>Web shop/ Buketi</p>
             <div className={styles.searchAndSort}>
@@ -26,6 +25,6 @@ const WebShopBuketi = () => (
                 ))};
             </div> 
         </div>
-    </webShopPage>
+   
 )
 export default WebShopBuketi

@@ -4,7 +4,7 @@ import styles from './style.module.css'
 import {Link} from 'gatsby'
 
 const WebShopMain = () => (
-    <webShopPage className={styles.webShop}>
+    <webShopPage>
         <div>
             <p className={styles.webTitle}>Web shop</p>
             <p className={styles.webMsg}>Odaberite željenu kategoriju i uživajte u kupovini!</p>

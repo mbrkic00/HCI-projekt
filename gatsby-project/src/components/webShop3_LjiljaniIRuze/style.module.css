@@ -4,3 +4,35 @@
     color:#E12F8F;
     font-size: 27px;
 }
+.allInfo{
+    display:flex;
+    flex-flow:row;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 350px;
+    margin-left: 200px;
+    padding-top: 30px;
+}
+.productInfo{
+    display:flex;
+    flex-flow:column;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    height: 150px;
+    width: 500px;
+}
+.imageStyle{
+    width:330px;
+    height: 350px;
+    margin-left: 0px;
+    border:1px solid #cecece;
+    background-image: url("../../images/buketi1.jpg");
+    background-size: 330px 350px;
+}
+.title{
+    text-decoration: underline;
+    padding-left: 0px;
+}
+.description{
+    width: 500px;
+}

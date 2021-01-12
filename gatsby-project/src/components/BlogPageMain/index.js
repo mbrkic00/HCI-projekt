@@ -3,6 +3,7 @@ import styles from './style.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { blogNews } from '../../constants/const'
+import {Link} from 'gatsby'
 
 const BlogPageMain = () => (
     <blogPage>
@@ -12,13 +13,13 @@ const BlogPageMain = () => (
         </span>
 
         <div className={styles.a}>
-            {blogNews.map(({heading, image, newsContent}) => (
+            {blogNews.map(({heading, image, newsContent, to}) => (
                     <div className={styles.blogStyle}>
                         <img src={image} alt="img001" className={styles.imageStyle} />
                         <section className={styles.subblogStyle}>
                             <h className={styles.h}>{heading}</h>
                             <p className={styles.news}>{newsContent}</p>
-                            <button className={styles.button}>Otvori<FontAwesomeIcon icon={faChevronRight} className={styles.chevronIcon}/></button>
+                            <Link to={to}><button className={styles.button}>Otvori<FontAwesomeIcon icon={faChevronRight} className={styles.chevronIcon}/></button></Link>
                         </section>
                     </div>
                     

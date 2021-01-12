@@ -101,9 +101,20 @@
     flex-flow: row;
 
 }
+.suggestionBox{
+    display:flex;
+    flex-flow: column;  
+}
 .galleryImage{
     width:170px;
     height: 190px;
     border: 1px solid #cecece;
-    margin:30px
+    margin:30px;
+    margin-bottom: -10px;
+    background-size: 170px 190px;
+}
+.imageName{
+    text-decoration: underline;
+    padding-top: 10px;
+    text-align: center;
 }

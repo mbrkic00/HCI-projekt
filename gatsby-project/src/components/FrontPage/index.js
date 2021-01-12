@@ -3,6 +3,7 @@ import styles from './style.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { Bestsellers } from '../../constants/const'
+import {Link} from 'gatsby'
 
 const FrontPage = () => (
     <frontpage className={styles.frontpage}>
@@ -31,13 +32,15 @@ const FrontPage = () => (
         <div className={styles.bestsellers}>Bestselleri</div>
 
         <div className={styles.bestsellers1}>
-            {Bestsellers.map(({bestseller, productImage}) => (
+            {Bestsellers.map(({bestseller, productImage, to}) => (
                     <div className={styles.bestsellerStyle}>
+                        <Link to={to}>
                         <img src={productImage} alt="img001" className={styles.imageStyle} />
                         <div className={styles.bestsellerName}>{bestseller}</div>
+                        </Link>
                     </div>
                     ))}
-            <button className={styles.morebutton}>VIŠE<FontAwesomeIcon icon={faChevronRight} className={styles.chevronIcon}/></button>
+            <Link to='webShop0'><button className={styles.morebutton}>VIŠE<FontAwesomeIcon icon={faChevronRight} className={styles.chevronIcon}/></button></Link>
         </div>
 
     </frontpage>

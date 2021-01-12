@@ -20,6 +20,14 @@ const WebShop3_LjiljaniIRuze = () => (
                 <button className={styles.addButton}><span>Dodaj u košaricu</span></button>
             </div>
         </div>
+        <p className={styles.suggestionTitle}>Možda Vam se sviđa:</p>
+        <div className={styles.suggestionsGallery}>
+            <div className={styles.galleryImage}></div>
+            <div className={styles.galleryImage}></div>
+            <div className={styles.galleryImage}></div>
+            <div className={styles.galleryImage}></div>
+            <div className={styles.galleryImage}></div>
+        </div>
     </div>
 )
 

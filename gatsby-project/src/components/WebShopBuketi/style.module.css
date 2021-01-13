@@ -59,14 +59,20 @@
     width: 267px;
     height: 60px;
     text-align: center;
-    color:#E12F8F;
-    text-decoration: underline;
 }
-.productInfo span{
+.productInfo .justPrice{
     color:black;
     display: block;
     text-align: center;
     font-size: 19px;
     text-decoration: none;
+    color: #E12F8F;
+    padding-top: 10px;
+    font-weight: bold;
 }
-
+.productInfo .justName{
+    text-decoration: underline;
+    font-size: 22px;
+    text-align: center;
+    color: #555555;
+}

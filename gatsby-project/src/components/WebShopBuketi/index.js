@@ -19,10 +19,10 @@ const WebShopBuketi = () => (
                         <div className={styles.flowerCategory}>
                             <Link to={to}>
                             <img src={productImage} alt="img001" className={styles.imageStyle} />
-                            <div className={styles.productInfo}>{productName}<span>{productPrice}</span></div>
+                            <div className={styles.productInfo}><span className={styles.justName}>{productName}</span><span className={styles.justPrice}>{productPrice}</span></div>
                             </Link>
                         </div>
-                ))};
+                ))}
             </div> 
         </div>
    

@@ -1,0 +1,43 @@
+.h1 {
+    font-size: 30px;
+    line-height: 3;
+    color: #E12F8F;
+    padding-left: 70px;
+}
+
+.h2 {
+    font-size: 25px;
+    line-height: 3;
+    color: #E12F8F;
+    padding-left: 70px;
+}
+
+.frame {
+    border: 2px solid darkgray;
+    margin-left: 70px;
+    width: 750px;
+    height: 370px;
+    display: flex;
+    flex-flow: column;
+    /* position: absolute;
+    box-sizing: border-box; */
+}
+
+.description {
+    padding-top: 10px;
+    padding-left: 480px;
+}
+
+.product1 {
+    display: flex;
+    flex-flow: row;
+    border-top: 2px solid darkgray;
+    margin-top: 20px;
+
+}
+
+.product2 {
+    display: flex;
+    flex-flow: row;
+    border-top: 2px solid darkgray;
+}

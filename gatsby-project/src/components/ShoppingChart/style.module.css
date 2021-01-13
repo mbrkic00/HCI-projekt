@@ -16,7 +16,7 @@
     border: 2px solid darkgray;
     margin-left: 70px;
     width: 750px;
-    height: 370px;
+    height: 570px;
     display: flex;
     flex-flow: column;
     /* position: absolute;
@@ -25,7 +25,17 @@
 
 .description {
     padding-top: 10px;
-    padding-left: 480px;
+    padding-left: 450px;
+    display: flex;
+    flex-flow: row;
+}
+
+.price {
+    margin-right: 35px;
+}
+
+.sum {
+    margin-left: 35px;
 }
 
 .product1 {
@@ -33,7 +43,13 @@
     flex-flow: row;
     border-top: 2px solid darkgray;
     margin-top: 20px;
+}
 
+.product1Image {
+    width: 175px;
+    height: 190px;
+    border: 1px solid #cecece;
+    background: url("https://cvjetnibuketi.hr/images/made/slike/sareni-tulipani-55.jpg");
 }
 
 .product2 {

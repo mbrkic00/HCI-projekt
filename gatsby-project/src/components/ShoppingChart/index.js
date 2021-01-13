@@ -9,14 +9,20 @@ const ShoppingChart = () => (
         </span>
 
         <section className={styles.frame}>
-            <div className={styles.description}>cijena količina zajedno</div>
+            <div className={styles.description}>
+                <p className={styles.price}>cijena</p>
+                <p className={styles.quantity}>količina</p> 
+                <p className={styles.sum}>zajedno</p>
+            </div>
             <section className={styles.product1}>
-                <p>Šareni tulipan</p>
-                <p>250.00 kn</p>
-                <p>2x</p>
-                <p>500.00 kn</p>
+                <div className={styles.product1Image}></div>
+                <p className={styles.name1}>Šareni tulipan</p>
+                <p className={styles.price1}>250.00 kn</p>
+                <p className={styles.quantity1}>2x</p>
+                <p className={styles.sum1}>500.00 kn</p>
             </section>
             <section className={styles.product2}>
+                <div className={styles.product2Image}></div>
                 <p>Jednostavne ruže</p>
                 <p>215.00 kn</p>
                 <p>1x</p>

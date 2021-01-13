@@ -127,3 +127,20 @@ export const blogNews = [
         to: '/'
     }
 ];
+
+export const inChart = [
+    {
+        image: require("../../src/images/sareni-tulipani.jpg"),
+        name: "Šareni tulipani",
+        price: "250.00 kn",
+        quantity: "2x",
+        sum: "500.00 kn"
+     },
+    {
+        image: require("../../src/images/jednostavne-ruze.jpg"),
+        name: "Jednostavne ruže",
+        price: "215.00 kn",
+        quantity: "1x",
+        sum: "215.00 kn"
+    }
+];

@@ -12,7 +12,7 @@ const FrontPage = () => (
             <li>Online cvjećarnica, dostupna 24/7</li>
         </ul>
 
-        <button className={styles.webshopbutton}>WEB SHOP</button>
+        <Link to='webShop0'><button className={styles.webshopbutton}>WEB SHOP</button></Link>
 
         <div className={styles.text}>
         <p><span className={styles.a}> Dragi naši </span> kupci, </p>

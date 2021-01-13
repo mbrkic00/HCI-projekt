@@ -27,8 +27,8 @@ export const productCategories = [
     },
     {
         categoryName: "Aranžmani",
-        categoryImage: require("../../src/images/aranzmaniNaslovna.jpg"),
-        to: '/' 
+        categoryImage: require("../../src/images/aranzman1.jpg"),
+        to: '/webShop1Aranzmani' 
     },
     {
         categoryName: "Lončanice",
@@ -130,6 +130,38 @@ export const productsFlowerboxes = [
         productName: "Cvjetna kutija siva",
         productPrice: "280.00 kn",
         productImage: require("../../src/images/flowerbox7.jpg"),
+        to: '/'
+    }
+];
+export const productsAranzmani = [
+    {
+        productName: "Nježni aranžman",
+        productPrice: "550.00 kn",
+        productImage: require("../../src/images/aranzman1.jpg"),
+        to: '/'
+    },
+    {
+        productName: "Rozi aranžman",
+        productPrice: "50.00 kn",
+        productImage: require("../../src/images/aranzman2.jpg"),
+        to: '/'
+    },
+    {
+        productName: "Aranžmani ruže i irisi",
+        productPrice: "750.00 kn",
+        productImage: require("../../src/images/aranzman3.jpg"),
+        to: '/'
+    },
+    {
+        productName: "Crveno bijeli aranžman",
+        productPrice: "550.00 kn",
+        productImage: require("../../src/images/aranzman4.jpg"),
+        to: '/'
+    },
+    {
+        productName: "Aranžman crveni gerberi",
+        productPrice: "600.00 kn",
+        productImage: require("../../src/images/aranzman5.jpg"),
         to: '/'
     }
 ];

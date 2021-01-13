@@ -7,7 +7,6 @@ import styles from './style.module.css'
 const ComboBox = () => {
   const [selectedItem, setSelectedItem] = useState(sortings.find(el => el.name === "recommended"))
   const [open, setOpen] = useState(false)
-  
   return (
     <div className={styles.combobox} onClick={() => setOpen(!open)}>
         {open ? 

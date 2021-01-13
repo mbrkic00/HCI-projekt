@@ -32,8 +32,8 @@ export const productCategories = [
     },
     {
         categoryName: "Lončanice",
-        categoryImage: require("../../src/images/loncaniceNaslovna.jpg"),
-        to: '/' 
+        categoryImage: require("../../src/images/loncanice5.jpg"),
+        to: '/webShop1Loncanice' 
     }
 ];
 
@@ -142,7 +142,7 @@ export const productsAranzmani = [
     },
     {
         productName: "Rozi aranžman",
-        productPrice: "50.00 kn",
+        productPrice: "500.00 kn",
         productImage: require("../../src/images/aranzman2.jpg"),
         to: '/'
     },
@@ -162,6 +162,44 @@ export const productsAranzmani = [
         productName: "Aranžman crveni gerberi",
         productPrice: "600.00 kn",
         productImage: require("../../src/images/aranzman5.jpg"),
+        to: '/'
+    }
+];
+export const productsLoncanice = [
+    {
+        productName: "Monstera",
+        productPrice: "110.00 kn",
+        productImage: require("../../src/images/loncanice1.jpg"),
+        to: '/'
+    },
+    {
+        productName: "Agava",
+        productPrice: "140.00 kn",
+        productImage: require("../../src/images/loncanice2.jpg"),
+        to: '/'
+    },
+    {
+        productName: "Fejka",
+        productPrice: "220.00 kn",
+        productImage: require("../../src/images/loncanice3.jpg"),
+        to: '/'
+    },
+    {
+        productName: "Fikus",
+        productPrice: "200.00 kn",
+        productImage: require("../../src/images/loncanice4.jpg"),
+        to: '/'
+    },
+    {
+        productName: "Drvo života",
+        productPrice: "550.00 kn",
+        productImage: require("../../src/images/loncanice5.jpg"),
+        to: '/'
+    },
+    {
+        productName: "Yucca",
+        productPrice: "300.00 kn",
+        productImage: require("../../src/images/loncanice6.jpg"),
         to: '/'
     }
 ];

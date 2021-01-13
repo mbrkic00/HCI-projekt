@@ -1,15 +1,17 @@
 import React, {useState} from 'react'
 import {navigate} from 'gatsby'
- 
 import styles from './style.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import {Link} from 'gatsby'
  
 const users = [
 {
-  email: "mate@gmail.com",
+  email: "marko@gmail.com",
   password: "123"
 },
 {
-  email: "jure@gmail.com",
+  email: "ana@gmail.com",
   password: "123"
 },
 ]
@@ -63,6 +65,7 @@ const Login = () => {
     </section>
 
     <section className={styles.container2}>
+      <Link to='/'><FontAwesomeIcon icon={faTimes} className={styles.xIcon}/></Link>
       <p className={styles.h}>Registracija</p>
       <section className={styles.field2}>
         <label htmlFor="email">

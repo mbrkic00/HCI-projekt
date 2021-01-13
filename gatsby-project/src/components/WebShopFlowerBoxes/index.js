@@ -7,7 +7,7 @@ import styles from './style.module.css'
 
 const WebShopFlowerBoxes = () => (
         <div>
-            <p className={styles.webTitle}>Web shop/ Cvjetne kutije</p>
+            <p className={styles.webTitle}>Web shop - Cvjetne kutije</p>
             <div className={styles.searchAndSort}>
                 <div>
                     <input type="search" placeholder=" Trazi..." className={styles.searchBar} />

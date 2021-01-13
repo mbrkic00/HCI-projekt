@@ -17,13 +17,13 @@ export const sortings = [
 export const productCategories = [
     {
         categoryName: "Buketi",
-        categoryImage: require("../../src/images/buketiNaslovna.jpg"),
+        categoryImage: require("../../src/images/buketi1.jpg"),
         to: '/webShop1Buketi'      
     },
     {
         categoryName: "Cvijeće u kutiji",
-        categoryImage: require("../../src/images/kutijeNaslovna.jpg"),
-        to: '/' 
+        categoryImage: require("../../src/images/flowerbox1.jpg"),
+        to: '/webShop1FlowerBoxes' 
     },
     {
         categoryName: "Aranžmani",
@@ -89,6 +89,50 @@ export const productsBuketi =[
     }
 ];
 
+export const productsFlowerboxes = [
+    {
+        productName: "Cvjetna kutija 'Princeza'",
+        productPrice: "450.00 kn",
+        productImage: require("../../src/images/flowerbox1.jpg"),
+        to: '/'
+    },
+    {
+        productName: "Cvjetna kutija 'Ruža crvena'",
+        productPrice: "400.00 kn",
+        productImage: require("../../src/images/flowerbox2.jpg"),
+        to: '/'
+    },
+    {
+        productName: "Cvjetna kutija 'Snježna kraljica'",
+        productPrice: "260.00 kn",
+        productImage: require("../../src/images/flowerbox3.jpg"),
+        to: '/'
+    },
+    {
+        productName: "Cvjetna kutija 'Naranča'",
+        productPrice: "250.00 kn",
+        productImage: require("../../src/images/flowerbox4.jpg"),
+        to: '/'
+    },
+    {
+        productName: "Cvjetna kutija 'Misterij'",
+        productPrice: "400.00 kn",
+        productImage: require("../../src/images/flowerbox5.jpg"),
+        to: '/'
+    },
+    {
+        productName: "Cvjetna kutija 'Proljeće'",
+        productPrice: "250.00 kn",
+        productImage: require("../../src/images/flowerbox6.jpg"),
+        to: '/'
+    },
+    {
+        productName: "Cvjetna kutija siva",
+        productPrice: "280.00 kn",
+        productImage: require("../../src/images/flowerbox7.jpg"),
+        to: '/'
+    }
+];
 export const Bestsellers = [
     {
         bestseller: "Jednostavne ruže u rozom",

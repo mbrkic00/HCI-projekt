@@ -128,7 +128,7 @@ export const blogNews = [
     }
 ];
 
-export const inChart = [
+export const InChart = [
     {
         image: require("../../src/images/sareni-tulipani.jpg"),
         name: "Šareni tulipani",

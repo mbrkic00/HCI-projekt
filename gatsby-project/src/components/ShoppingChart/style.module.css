@@ -12,7 +12,13 @@
     padding-left: 70px;
 }
 
-.frame {
+.frames {
+    display: flex;
+    flex-flow: row;
+    
+}
+
+.frame1 {
     border: 2px solid darkgray;
     margin-left: 70px;
     width: 750px;
@@ -25,7 +31,7 @@
 
 .description {
     padding-top: 10px;
-    padding-left: 450px;
+    padding-left: 410px;
     display: flex;
     flex-flow: row;
 }
@@ -55,22 +61,114 @@
 
 .xIcon {
     color: red;
+    padding-top: 95px;
+    margin-left: 10px;
 }
 
 .imageStyle {
     width: 175px;
     height: 190px;
     border: 1px solid #cecece;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nameStyle {
+    padding-top: 95px;
+    margin-right: 50px;
 }
 
 .priceStyle {
-    
+    padding-top: 95px;
+    margin-right: 30px;
 }
 
 .quantityStyle {
-
+    padding-top: 95px;
+    margin-right: 10px;
 }
 
 .sumStyle {
-    
+    padding-top: 95px;
+    margin-right: 10px;
+}
+
+.frame2 {
+    margin-left: 40px;
+    border: 2px solid darkgray;
+    display: flex;
+    flex-flow: column;
+    width: 330px;
+}
+
+.total {
+    text-align: center;
+    padding-top: 20px;
+    height: 30px;
+}
+
+.productPrice {
+    display: flex;
+    flex-flow: row;
+    border-top: 2px solid darkgray;
+    padding-left: 20px;
+}
+
+.pP1 {
+    margin-left: 60px;
+}
+
+.pP2 {
+    margin-left: 95px;
+}
+
+.pP3 {
+    margin-left: 37px;
+    color: #06C206;
+}
+
+.shipping {
+    display: flex;
+    flex-flow: row;
+    padding-left: 20px;
+}
+
+.billing {
+    display: flex;
+    flex-flow: row;
+    border-bottom: 2px solid darkgray;
+    padding-left: 20px;
+    color: black;
+}
+
+.buttonStyle {
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+}
+
+.continue {
+    background-color: #06C206;
+    border: #06C206;
+    color: white;
+    height: 40px;
+    width: 250px;
+    font-size: 20px;
+    align-items: center;
+    outline: none;
+}
+
+.chevronIcon {
+    /* font-size: 20px; */
+    margin-left: 20px;
+    height: 17px;
+    width: 17px;
+}
+
+.delivery {
+    border-bottom: 2px solid darkgray;
+    border-top: 2px solid darkgray;
+    height: 70px;
+    padding-top: 15px;
+    padding-left: 20px;
 }

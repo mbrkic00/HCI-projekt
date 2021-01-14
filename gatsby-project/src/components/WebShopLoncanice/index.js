@@ -1,13 +1,13 @@
 import React from 'react'
-import { productsBuketi } from '../../constants/const'
+import { productsLoncanice } from '../../constants/const'
 import Combobox from '../ComboBox'
 import {Link} from 'gatsby'
 import styles from './style.module.css'
 
 
-const WebShopBuketi = () => (
+const WebShopLoncanice = () => (
         <div>
-            <p className={styles.webTitle}>Web shop - Buketi</p>
+            <p className={styles.webTitle}>Web shop - Lončanice</p>
             <div className={styles.searchAndSort}>
                 <div>
                     <input type="search" placeholder=" Trazi..." className={styles.searchBar} />
@@ -15,7 +15,7 @@ const WebShopBuketi = () => (
             <Combobox />
             </div>
             <div className={styles.categories}>
-                {productsBuketi.map(({productName, productPrice, productImage, to}) => (
+                {productsLoncanice.map(({productName, productPrice, productImage, to}) => (
                         <div className={styles.flowerCategory}>
                             <Link to={to}>
                             <img src={productImage} alt="img001" className={styles.imageStyle} />
@@ -27,4 +27,4 @@ const WebShopBuketi = () => (
         </div>
    
 )
-export default WebShopBuketi
+export default WebShopLoncanice

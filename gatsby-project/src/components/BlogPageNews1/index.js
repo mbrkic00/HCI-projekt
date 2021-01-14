@@ -3,7 +3,7 @@ import styles from './style.module.css'
 
 const BlogPageNews1 = () => (
     <blogPageNews1>
-        <p className={styles.blog1Title}>Blog/Cvijeće za rođendan</p>
+        <p className={styles.blog1Title}>Blog - Cvijeće za rođendan</p>
         <section className={styles.frame}>
         <section className={styles.image}></section>
             <p className={styles.newsTitle}>Cvijeće za rođendan</p>

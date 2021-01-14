@@ -1,10 +1,10 @@
 import React from "react"
 import HeaderFooterLayout from "../layouts/headerFooter"
-import Payment from "../components/Payment"
+import PaymentForm from "../components/PaymentForm"
  
 const payment = () => (
     <HeaderFooterLayout>
-    <Payment/>
+    <PaymentForm/>
     </HeaderFooterLayout>
 )
  

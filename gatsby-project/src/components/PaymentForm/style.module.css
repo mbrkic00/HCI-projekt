@@ -1,0 +1,132 @@
+.webTitle{
+    margin-top: 45px;
+    margin-left: 75px;
+    color:#E12F8F;
+    font-size: 27px;
+}
+.paymentPage{
+    margin-left: 400px;
+    margin-right: 450px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 800px;
+    font-size: 19px;
+}
+.instructionTitle{
+    color:#E12F8F;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.rowInfo{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 550px;
+}
+
+.name{
+    margin-bottom: 10px;
+}
+.nameInput{
+    outline: none;
+    width: 220px;
+    height: 30px;
+    margin-right: 45px;
+    border:1px solid #cecece;
+    font-size: 18px;
+    color:black;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+
+.adressInput{
+    outline: none;
+    width: 490px;
+    height: 30px;
+    border:1px solid #cecece;
+    font-size: 18px;
+    color:black;
+}
+.dialingNum{
+    outline: none;
+    width: 55px;
+    height: 30px;
+    margin-right: 15px;
+    border:1px solid #cecece;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+.numInput{
+    outline: none;
+    width: 140px;
+    height: 30px;
+    border:1px solid #cecece;
+    font-size: 18px;
+    color:black;
+    margin-bottom: 35px;
+    margin-top: 35px;
+}
+.title{
+    text-decoration: underline;
+    margin-bottom: 0px;
+}
+.cashPayment{
+    display: flex;
+    flex-flow: row;
+}
+.radioButtonText{
+    padding-right: 15px;
+    margin-bottom: 0px;
+}
+.radioButton{
+    border-radius: 100px;
+    height: 15px;
+    width: 15px;
+    margin-top:25px;
+    outline: none;
+    background-color: white;
+}
+.cardPayments{
+    display: flex;
+    flex-flow: row;
+}
+
+.ibanInput{
+    outline: none;
+    width: 250px;
+    height: 30px;
+    border:1px solid #cecece;
+    font-size: 18px;
+    color:black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.controlNum{
+    outline: none;
+    max-width: 50px;
+    height: 30px;
+    margin-right: 15px;
+    border:1px solid #cecece;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.payButton{
+    background-color:#06C206;
+    outline: none;
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin-left:1135px;
+    margin-bottom:120px;
+}
+.payButton span{
+    color:white;
+    text-align: center;
+    font-size: 19px;
+}

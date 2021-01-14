@@ -53,6 +53,10 @@
     /* border-bottom: 2px solid darkgray; */
 }
 
+.xIcon {
+    color: red;
+}
+
 .imageStyle {
     width: 175px;
     height: 190px;

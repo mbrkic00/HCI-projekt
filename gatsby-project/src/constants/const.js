@@ -238,7 +238,7 @@ export const blogNews = [
         heading: "Briga o lončanicama",
         image: require("../../src/images/blog3.jpg"),
         newsContent: "Postoji mnogo razloga zašto je uzgoj biljaka u loncima toliko popularan: omogućava vrtlarima koji izazivaju prostor da se prepune nizu cvijeća, povrća, patuljastih stabala i grmlja...",
-        to: '/blog3'
+        to: '/'
     }
 ];
 

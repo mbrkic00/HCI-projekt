@@ -172,3 +172,25 @@
     padding-top: 15px;
     padding-left: 20px;
 }
+
+.creditCards {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.visaIcon {
+    margin-right: 50px;
+    font-size: 35px;
+    stroke-width:50px
+}
+
+.mastercardIcon {
+    margin-right: 50px;
+    font-size: 35px;
+}
+
+.amexIcon {
+    /* margin-right: 50px; */
+    font-size: 35px;
+    
+}

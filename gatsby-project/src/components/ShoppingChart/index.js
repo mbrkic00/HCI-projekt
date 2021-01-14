@@ -3,6 +3,7 @@ import styles from './style.module.css'
 import { InChart } from '../../constants/const'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import {faCcVisa, faCcMastercard, faCcAmex} from '@fortawesome/free-brands-svg-icons'
 
 const ShoppingChart = () => (
     <shoppingchartpage>
@@ -50,7 +51,11 @@ const ShoppingChart = () => (
             </div>
             <div className={styles.buttonStyle}><button className={styles.continue}>Nastavi<FontAwesomeIcon icon={faChevronRight} className={styles.chevronIcon}/></button></div>
             <div className={styles.delivery}>Za sigurnu dostavu brine se HP Express/Overseas.</div>
-            <div className={styles.creditCards}></div>
+            <div className={styles.creditCards}>
+                <FontAwesomeIcon icon={faCcVisa} className={styles.visaIcon}/>
+                <FontAwesomeIcon icon={faCcMastercard} className={styles.mastercardIcon}/>
+                <FontAwesomeIcon icon={faCcAmex} className={styles.amexIcon}/>
+            </div>
         </section>
     </section>
 

@@ -38,7 +38,8 @@ const Login = () => {
         setError('Wrong username or password')
     }, 2000)
   }
- 
+  
+  
   return (
   <main className={styles.background} onKeyDown={key => {
     if (key.key === "Enter")
@@ -97,6 +98,10 @@ const Login = () => {
       </button>
     </section>
   </main>
-)}
+)
+
+}
+
+
  
 export default Login

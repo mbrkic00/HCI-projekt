@@ -9,7 +9,7 @@ import {Link} from 'gatsby'
 const Navigation = ({activeTab}) => (
     <section className={styles.navigation}>
     <NavigationBar activeTab = {activeTab}/>
-    <Link to='kosarica'><FontAwesomeIcon icon={faShoppingCart} className={styles.ShoppingCart}/></Link>
+    <Link to='/kosarica'><FontAwesomeIcon icon={faShoppingCart} className={styles.ShoppingCart}/></Link>
     <MsgToUser/>
     {/*<input className={styles.SearchBar} type = 'search' placeholder='Trazi...'/>*/}
     </section>

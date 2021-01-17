@@ -49,6 +49,7 @@
     flex-flow: column;
     /* border-top: 2px solid darkgray; */
     margin-top: 20px;
+    overflow-y: scroll;
 }
 
 .productStyle {

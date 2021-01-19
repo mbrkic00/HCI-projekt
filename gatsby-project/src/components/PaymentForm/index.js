@@ -1,11 +1,14 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faCcVisa, faCcMastercard, faCcAmex} from '@fortawesome/free-brands-svg-icons'
+
 import styles from './style.module.css'
 
 const Payment = () => (
     <div>
         <p className={styles.webTitle}>Košarica - Plaćanje</p>
+        <p className={styles.instructionTitle}>Ispunite formu za plaćanje:</p>
         <div className={styles.paymentPage}>
-            <p className={styles.instructionTitle}>Ispunite formu za plaćanje:</p>
             <div className={styles.rowInfo}>
                 <input type="text" placeholder=" Ime" className={styles.nameInput} />
                 <input type="text" placeholder=" Prezime" className={styles.nameInput} />
@@ -22,20 +25,28 @@ const Payment = () => (
             </div>
             <p className={styles.title}>Načini plaćanja:</p>
             <div className={styles.cashPayment}>
-            <p className={styles.radioButtonText}>Pouzećem </p>
-            <button type="radio" name="cash" className={styles.radioButton}></button>
+                <label className={styles.wayOfPayment1}>Pouzećem</label>
+                <input type="checkbox" id="pouzece" className={styles.checkBox1} />
             </div>
-            <p className={styles.radioButtonText}>Karticom:</p>
-            <div className={styles.cardPayments}>
+            <div className={styles.cashPayment}>
+                <label className={styles.wayOfPayment2}>Karticom</label>
+                <input type="checkbox" id="kartica" className={styles.checkBox2} />
+            </div>
+
+            <div className={styles.creditCards}>
+                <FontAwesomeIcon icon={faCcVisa} className={styles.visaIcon}/>
                 
+               <FontAwesomeIcon icon={faCcMastercard} className={styles.mastercardIcon}/>
+                
+                <FontAwesomeIcon icon={faCcAmex} className={styles.amexIcon}/>
+                
+
             </div>
-            <div className={styles.nameBox}>
-                    <p>IBAN</p>
-                    <input type="text" maxlength="12" className={styles.ibanInput} />
-            </div>
-            <div className={styles.nameBox}>
-                    <p>Kontrolni broj</p>
-                    <input type="text" maxlength="3" className={styles.controlNum} />
+            <div className={styles.cardPaymentBox}>
+                <p className={styles.name}>IBAN:</p>
+                    <input type="text" placeholder="" maxlength="12" className={styles.ibanInput} />
+                    <p className={styles.name}>Kontrolni broj:</p>
+                    <input type="text" placeholder="" maxlength="3" className={styles.controlNum} />
             </div>
         </div>
         <button className={styles.payButton}><span>Potvrdi plaćanje</span></button>

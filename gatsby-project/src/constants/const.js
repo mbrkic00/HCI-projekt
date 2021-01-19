@@ -34,6 +34,10 @@ export const productCategories = [
         categoryName: "Lončanice",
         categoryImage: require("../../src/images/loncanice5.jpg"),
         to: '/webShop1Loncanice' 
+    },
+    {
+        categoryName: "Izradi po želji",
+        to: '/makeYourOwn'
     }
 ];
 

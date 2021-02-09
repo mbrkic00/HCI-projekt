@@ -1,0 +1,28 @@
+.webTitle{
+    margin-top: 45px;
+    margin-left: 75px;
+    color:#E12F8F;
+    font-size: 27px;
+}
+.webShop{
+    display: flex;
+    flex-flow: row;
+}
+.imageGallery{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: 850px;
+    height: 1000px;
+    margin-top:30px;
+    margin-left: 75px;
+    border: 1px solid black;
+    margin-right: 50px;
+}
+.choicesBox{
+    margin-right: 75px;
+    width: 450px;
+    height: 700px;
+    margin-top:30px;
+    border: 1px solid black;
+}

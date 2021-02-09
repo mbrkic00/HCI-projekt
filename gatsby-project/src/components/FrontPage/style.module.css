@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 .frontpage {
     font-family: 'Nunito';
-
 }
 
 .welcome {
-    font-size: 30px;
+    font-size: 27px;
     list-style: none;
     color: #E12F8F;
-    display: flex;
+    text-align: center;
+    
+    font-family: 'Courgette', cursive;
+    margin-left: 280px;
+    margin-right: 280px;
+    /*display: flex;
     flex-flow: column;
     text-align: center;
-    line-height: 3;
+    line-height: 3;*/
+    
+   
 }
 
 .webshopbutton {
@@ -25,17 +32,14 @@
 }
 
 .text {
-    /*display: flex;
-    flex-flow: column; 
-    text-align: left;
-    padding-left: 300px;*/
-    border:1px solid #cecece;
+    border:1px solid white;
     margin-left: 280px;
     margin-right: 280px;
     margin-top: 30px;
     padding-left: 20px;
     border-radius: 0px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 4px 0 #cecece, 0 6px 20px 0 #cecece;
+    background-color: whitesmoke;
 
 }
 
@@ -50,42 +54,46 @@
 .bestsellers {
     color: #E12F8F;
     font-size: 30px;
-    padding-left: 300px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 2px;
+    margin-left:280px;
+    margin-right: 280px;
 }
 
 .bestsellers1 {
-    margin-left: 165px;
-    margin-right: 164px;
+    margin-left: 280px;
+    margin-right: 280px;
     display:flex;
     flex-flow: row;
     flex-wrap: wrap;     
     padding-top:30px;
-    padding-left: 35px;
+   
 }
 
 .bestsellerStyle {
-    padding-right: 20px;
-    padding-left: 50px;
+    padding-right: 18px;
+    padding-left: 15px;
 }
 
 .imageStyle {
-    height: 265px;
-    width: 260px;
-    background-size: cover;
+
+    height: 235px;
+    width: 230px;
+    background-size: 257px 232px;
     border:1px solid #cecece;
     display: flex;
     flex-flow: row;
 }
 
 .bestsellerName {
-    padding-top: 20px;
-    font-size: 22px;
+    padding-top: 10px;
+    font-size: 19px;
     justify-content: center;
-    width: 267px;
+    width: 232px;
     height: 60px;
     text-align: center;
+    text-decoration: underline;
+    
 }
 
 .morebutton {
@@ -97,6 +105,7 @@
     font-size: 20px;
     margin-top: 140px;
     outline: none;
+    margin-left: 30px;
  }
 
  .chevronIcon {

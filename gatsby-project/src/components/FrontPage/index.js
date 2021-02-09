@@ -8,11 +8,11 @@ import {Link} from 'gatsby'
 const FrontPage = () => (
     <frontpage className={styles.frontpage}>
         <ul className={styles.welcome}>
-            <li>Dobrodošli na e-Flower.com</li>
-            <li>Online cvjećarnica, dostupna 24/7</li>
+            <div> Dobrodošli na e-Flower.com</div>
+            {/*<div>Online cvjećarnica, dostupna 24/7</div>*/}
         </ul>
 
-        <Link to='webShop0'><button className={styles.webshopbutton}>WEB SHOP</button></Link>
+        {/*<Link to='webShop0'><button className={styles.webshopbutton}>WEB SHOP</button></Link>*/}
 
         <div className={styles.text}>
         <p><span className={styles.a}> Dragi naši </span> kupci, </p>
@@ -29,6 +29,10 @@ const FrontPage = () => (
         <p className={styles.sign}>Vaš e-Flower tim</p>
         </div>
 
+        <div>
+
+        </div>
+        
         <div className={styles.bestsellers}>Bestselleri</div>
 
         <div className={styles.bestsellers1}>
@@ -40,7 +44,7 @@ const FrontPage = () => (
                         </Link>
                     </div>
                     ))}
-            <Link to='webShop0'><button className={styles.morebutton}>VIŠE<FontAwesomeIcon icon={faChevronRight} className={styles.chevronIcon}/></button></Link>
+            <Link to='webShop0'><button className={styles.morebutton}>Više<FontAwesomeIcon icon={faChevronRight} className={styles.chevronIcon}/></button></Link>
         </div>
 
     </frontpage>

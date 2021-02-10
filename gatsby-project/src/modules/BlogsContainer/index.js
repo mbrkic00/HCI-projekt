@@ -37,11 +37,11 @@ const BlogContainers = () => {
  
     return (
       <section className={styles.container}>
-        <h2>Read our blogposts!</h2>
+        <h2 className={styles.h2}>Dobrodošli na naš blog!</h2>
         <ul className={styles.list}>
           {data.allContentfulBlogPost.nodes.map(node => {
             return (
-              <Link to={`/post/${node.slug}`}>
+              <Link to={`/posts/${node.slug}`}>
                 <li>
                   <Img fixed={node.coverImage.fixed} />
                   <h3>{node.title}</h3>

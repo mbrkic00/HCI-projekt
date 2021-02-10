@@ -5,6 +5,7 @@ import BlogsContainer from '../modules/BlogsContainer'
 const Blogs = () => (
   <main>
     <HeaderFooterLayout activeTab="Blog" >
+        <BlogsContainer />
     </HeaderFooterLayout>
   </main>
 )

@@ -20,7 +20,7 @@ const BlogContainers = () => {
           slug
           updatedAt
           coverImage {
-            fixed(width: 300) {
+            fixed(width: 400) {
               src
               srcSet
               srcSetWebp
@@ -38,19 +38,19 @@ const BlogContainers = () => {
     return (
       <section className={styles.container}>
         <h2 className={styles.h2}>Dobrodošli na naš blog!</h2>
-        <ul className={styles.list}>
+        <li className={styles.list}>
           {data.allContentfulBlogPost.nodes.map(node => {
             return (
               <Link to={`/posts/${node.slug}`}>
-                <li>
+                <ul>
                   <Img fixed={node.coverImage.fixed} />
                   <h3>{node.title}</h3>
                   <span>{node.summary.internal.content}</span>
-                </li>
+                </ul>
               </Link>
             )
           })}
-        </ul>
+        </li>
       </section>
   )
 }

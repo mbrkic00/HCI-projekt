@@ -23,7 +23,7 @@ exports.createPages = async ({ graphql, actions }) => {
         slug
         updatedAt
         coverImage {
-          fixed(width: 300) {
+          fixed(width: 500) {
             src
             srcSet
             srcSetWebp
@@ -40,12 +40,10 @@ exports.createPages = async ({ graphql, actions }) => {
  
   const res = raw.data.allContentfulBlogPost.nodes
  
-  res.forEach((e, index, array) => actions.createPage({
+  res.forEach((e) => actions.createPage({
     component: path.resolve(`./src/layouts/blog.js`),
     context: {
       ...e,
-      next: index < array.length ? array[index + 1] : null,
-      prev: index > 0 ? array[index - 1] : null
     },
     path: `posts/${e.slug}`,
     slug: `posts/${e.slug}`

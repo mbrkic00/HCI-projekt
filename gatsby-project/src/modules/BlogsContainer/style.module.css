@@ -1,5 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap'); */
-
 .h2 { 
     font-size: 30px;
     /* line-height: 3; */
@@ -12,6 +10,7 @@
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    font-family: 'Nunito';
   }
    
   .list {
@@ -21,12 +20,8 @@
     flex-wrap: wrap;
     width: fit-content;
     margin: 0 100px;
-    /* border:1px solid white;
-    border-radius: 0px;
-    box-shadow: 0 4px 4px 0 #cecece, 0 6px 20px 0 #cecece;
-    background-color: whitesmoke; */
-  }
-   
+  } 
+
   .list ul {
     list-style: none;
     margin: 5px 12px;
@@ -39,4 +34,16 @@
    
   .list ul span {
     word-wrap: break-word;
+  }
+
+  .pt1 {
+    display: flex;
+    flex-flow: row;
+    margin-right: 10px;
+  }
+
+  .pt2 {
+    display: flex;
+    flex-flow: column;
+    padding-left: 15px;
   }

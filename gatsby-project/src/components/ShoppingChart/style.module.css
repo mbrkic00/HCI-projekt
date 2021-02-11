@@ -15,14 +15,13 @@
 .frames {
     display: flex;
     flex-flow: row;
-    
 }
 
 .frame1 {
     border: 2px solid darkgray;
     margin-left: 200px;
     width: 750px;
-    height: 485px;
+    height: 290px;
     display: flex;
     flex-flow: column;
     /* position: absolute;

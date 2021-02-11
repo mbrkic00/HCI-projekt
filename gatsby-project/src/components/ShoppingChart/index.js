@@ -39,15 +39,15 @@ const ShoppingChart = () => (
             <div className={styles.total}>Ukupan iznos</div>
             <div className={styles.productPrice}>
                 <p>Cijena proizvoda:</p>
-                <p className={styles.pP1}>715.00 kn</p>
+                <p className={styles.pP1}></p>
             </div>
             <div className={styles.shipping}>
                 <p>Trošak dostave:</p>
-                <p className={styles.pP2}>0.00 kn</p>
+                <p className={styles.pP2}></p>
             </div>
             <div className={styles.billing}>
                 <p>Ukupno za naplatu:</p>
-                <p className={styles.pP3}>715.00 kn</p>
+                <p className={styles.pP3}></p>
             </div>
             <div className={styles.buttonStyle}><button className={styles.continue}>Nastavi<FontAwesomeIcon icon={faChevronRight} className={styles.chevronIcon}/></button></div>
             <div className={styles.delivery}>Za sigurnu dostavu brine se HP Express/Overseas.</div>

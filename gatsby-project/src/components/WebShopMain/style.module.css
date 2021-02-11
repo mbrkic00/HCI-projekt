@@ -4,11 +4,13 @@
     margin-left: 75px;
     color:#E12F8F;
     font-size: 27px;
+    font-weight: bold;
 }
 .webMsg{
     margin-left: 75px;
-    margin-top:45px;
+    margin-top:25px;
     margin-bottom: 50px;
+    
 }
 .categories{
     
@@ -33,6 +35,7 @@
     height:280px;
     border:1px solid #cecece;
     background-size: 275px 290px;
+    
 }
 
 .image5{
@@ -40,20 +43,23 @@
     height:290px;
     border:1px solid #cecece;
     background: url("https://www.metroflowermarket.com/wp-content/uploads/2018/03/rose-coral-coral_reef-2.jpg") left top no-repeat, url("https://media.istockphoto.com/photos/yellow-ranunculus-flower-picture-id172480464?k=6&m=172480464&s=612x612&w=0&h=_yFupr-3BkkgyWtJbXsAXafSVuj5d7H8Y23adficPEI=") right top no-repeat, url("https://i.pinimg.com/600x315/00/54/ae/0054ae1c231487c4820e6cbc05044d24.jpg") left bottom no-repeat, url("https://www.charlotteflowermarket.com/wp-content/uploads/2018/03/fresh_lavender-300x300.jpg") right bottom no-repeat;
-    background-size: 137.5px 145px, 137.5px 145px, 137.5px 145px, 137.5px 145px ;
+    background-size: 137.5px 145px, 137.5px 145px, 137.5px 145px, 137.5px 145px;
 }
 
 
 
 .categoryInfo{
-    padding-top: 20px;
+    padding-top: 7px;
     font-size: 22px;
     justify-content: center;
     width: 267px;
-    height: 60px;
+    height: 40px;
     text-align: center;
-   text-decoration: underline; 
-   color:#E12F8F;
+    color: #E12F8F;
+    font-weight: bold;
+    background-color: white;
+    margin-top: 5px;
+    text-decoration: underline;    
 }
 .openButton span{
     color:white;

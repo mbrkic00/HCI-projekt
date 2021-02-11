@@ -1,16 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { productsBuketi } from '../../constants/const'
 import Combobox from '../ComboBox'
 import {Link} from 'gatsby'
 import styles from './style.module.css'
 
+const buketiNiz = [
+	{ title: "Jednostavne ruže", for: ["ruža", "ruže"] },
+	{ title: "Ljiljani i ruže mix", for: ["ljiljani", "ruža", "ruže", "mix"] },
+	{ title: "Šareni tulipani", for: ["šareni", "tulipani"] },
+	{ title: "Šareni buket", for: ["šareni", "buket"] },
+	{ title: "Buket Amarilis", for: ["buket", "amarilis"] }
+];
 
-const WebShopBuketi = () => (
+const WebShopBuketi = () => {
+    const [showFilter, setShowFilter] = useState(false); {/* ide li ovo ovde? */}
+    return(
         <div>
             <p className={styles.webTitle}>Web shop - Buketi</p>
             <div className={styles.searchAndSort}>
                 <div>
-                    <input type="search" placeholder=" Trazi..." className={styles.searchBar} />
+                    <div className={styles.search}>
+                        <input type="search" placeholder=" Trazi..." className={styles.searchBar} onClick={() => setShowFilter(!showFilter)} />
+                        <Link to={'/webShop1Buketi'}><div className={styles.searchBttn}>🔍</div></Link>
+                        </div>
+                        {showFilter?
+                            <div className={styles.filterList} style={{display: showFilter ? 'flex' : 'none'}}>
+                                { buketiNiz.map(({title}) => 
+                                    <li className={styles.filterListElement}>{title}</li>
+                                )
+                                }
+                            </div>
+                            :null
+                        }
+                    
+                    
                 </div>
             <Combobox />
             </div>
@@ -25,6 +48,7 @@ const WebShopBuketi = () => (
                 ))}
             </div> 
         </div>
-   
-)
+    )
+}
 export default WebShopBuketi
+

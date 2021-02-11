@@ -3,15 +3,42 @@
     margin-left: 75px;
     color:#E12F8F;
     font-size: 27px;
+    font-weight: bold;
+}
+.search{
+    display: flex;
+    flex-flow: row;
+
 }
 .searchBar{
     border: 1px solid #cecece;
     margin-left: 75px;
-    width: 300px;
+    width: 240px;
     height: 35px;
     font-size: 17px;
     outline: none;
-    
+}
+.searchBttn{
+    height: 33px;
+    width: 29px;
+    outline: none;
+    background-color: white;
+    border:1px solid #cecece;
+}
+.filterList{
+    margin-left: 75px;
+    width: 269px;
+    height: 125px;
+    border:1px solid #cecece;
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    background-color: white;
+}
+.filterListElement{
+    list-style: none;
+    font-size: 18px;
+    padding-left: 4px;
 }
 .searchAndSort{
     display: flex;
@@ -31,7 +58,7 @@
     height: 430px;
     padding-right: 30px;
     padding-left: 30px;
-    padding-top: 40px;
+    padding-top: 20px;
    /* border:3px solid red;*/
     
 }

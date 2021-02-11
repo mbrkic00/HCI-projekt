@@ -8,10 +8,14 @@ const MakeYourOwn = () => (
             <div className={styles.imageGallery}>
                 
             </div>   
-            <div className={styles.choicesBox}>
-
-            </div>  
+            <div className={styles.boxAndBttn}>
+                <div className={styles.choicesBox}>
+                    <div className={styles.choicesBoxTitle}>Vaš odabir</div>
+                </div>  
+                <button className={styles.addBttn}><span>Dodaj u košaricu</span></button>
+            </div>
         </div>
+
         
     </div>
 )

@@ -3,26 +3,54 @@
     margin-left: 75px;
     color:#E12F8F;
     font-size: 27px;
+    font-weight: bold;
 }
 .webShop{
     display: flex;
     flex-flow: row;
+    margin-left: 130px;
 }
 .imageGallery{
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
-    width: 850px;
+    width: 800px;
     height: 1000px;
     margin-top:30px;
-    margin-left: 75px;
-    border: 1px solid black;
     margin-right: 50px;
+}
+.boxAndBttn{
+    display: flex;
+    flex-flow: column;
 }
 .choicesBox{
     margin-right: 75px;
-    width: 450px;
-    height: 700px;
+    width: 400px;
+    height: 550px;
     margin-top:30px;
-    border: 1px solid black;
+    border: 1px solid #cecece;
+    overflow-y: scroll;
+}
+.choicesBoxTitle{
+    border-bottom: 1px solid #cecece;
+    font-size: 22px;
+    font-weight: bold;
+    color: #E12F8F;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.addBttn{
+    background-color:#06C206;
+    outline: none;
+    border: none;
+    width: 300px;
+    height: 50px;
+    margin-top:35px;
+    text-align: center;
+    margin-left: 100px;
+}
+.addBttn span{
+    color: white;
+    font-size: 19px;
 }

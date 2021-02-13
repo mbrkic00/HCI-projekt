@@ -7,8 +7,6 @@
     align-items: center;
     margin-left:100px;
     /*border: 2px solid yellow;*/
-    
-    
   }
   
   .navigationBar li {
@@ -31,3 +29,16 @@
   .navigationBar .active, .navigationBar .active:hover{
     border-bottom: 1px solid #555555;
   }
+
+  @media screen and (max-width: 415px) {
+    .navigationBar {
+      width: 71vw;
+    }
+
+    .navigationBar li {
+      font-size: 11px;
+      line-height: 3px;
+      padding: 7px 10px 5px;
+    }
+
+}

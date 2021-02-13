@@ -9,3 +9,16 @@
     font-size:36px;
     color:#E12F8F;
 }
+
+@media screen and (max-width: 415px) {
+    .logo {
+        margin-left: 20px;
+        
+    }
+
+    .logoText{
+        font-size: 15px;
+        
+    }
+    
+}

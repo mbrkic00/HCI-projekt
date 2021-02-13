@@ -6,8 +6,6 @@
      align-items: center;
      margin-top: 10px; 
      padding-left: 380px;
-    
-
  }
  .ShoppingCart {
     color:rgb(56, 55, 55);
@@ -26,4 +24,16 @@
     width: 220px;
     outline:none;
     border-radius: 15px;
+}
+
+@media screen and (max-width: 415px) {
+    .navigation {
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+    .ShoppingCart {
+        padding-left: 15px;
+        padding-right: 20px;
+    }
 }

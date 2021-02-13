@@ -6,7 +6,6 @@
     color: white;
     font-size: 16px;
     text-align: left;
-    
 } 
 
 .footer .info {
@@ -113,5 +112,100 @@
 .cc .amexIcon {
     margin-right: 10px;
     font-size: 35px;
+}
+
+@media screen and (max-width: 415px) {
+    .footer {
+        margin-top: 10px;
+        font-size: 11px;
+        flex-flow: column;
+    } 
     
+    .footer .info {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .contact {
+        font-size: 15px;
+        margin-bottom: 15px;
+        margin-top: 7px;
+    }
+    
+    .phone {
+        margin: 3px;
+    }
+    
+    .phone .phoneIcon {
+        margin-right: 7px;
+    }
+    
+    .email {
+        margin: 3px;
+    }
+    
+    .email .envelopeIcon {
+        margin-right: 7px;
+    }
+    
+    .address {
+        margin: 3px;
+    }
+    
+    .address .pinIcon {
+        margin-right: 7px;
+    }
+    
+    .workinghours {
+        margin: 3px;
+    }
+    
+    .copyright {
+        padding-left: 30px;
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    
+    .footer .payment {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .waysofpaying {
+        font-size: 15px;
+        margin-bottom: 15px;
+        margin-top: 7px;
+        margin-left: 30px;
+    }
+    
+    .cash {
+        margin-right: 30px;
+        margin-bottom: 7px;
+        margin-left: 30px;
+    }
+    
+    .creditcards {
+        margin-left: 30px;
+    }
+    
+    .cc {
+        margin-right: 8px;
+        margin-top: 7px;
+        margin-left: 30px;
+    }
+    
+    .cc .visaIcon {
+        margin-right: 7px;
+        font-size: 25px;
+    }
+    
+    .cc .mastercardIcon {
+        margin-right: 7px;
+        font-size: 25px;
+    }
+    
+    .cc .amexIcon {
+        margin-right: 7px;
+        font-size: 25px;
+    }
 }

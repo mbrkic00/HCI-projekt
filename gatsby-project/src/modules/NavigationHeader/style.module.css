@@ -8,3 +8,8 @@
     width: 100%;
 }
 
+@media screen and (max-width: 415px) {
+    .navigationHeader {
+      height: 45px;
+    }
+  }

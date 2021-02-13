@@ -113,3 +113,71 @@
     height: 20px;
     width: 20px;
 }
+
+@media screen and (max-width: 415px) {
+    .welcome {
+        font-size: 17px;
+        list-style: none;
+        color: #E12F8F;
+        text-align: center;
+        font-family: 'Courgette', cursive;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .text {
+        margin-left: 20px;
+        margin-right: 20px;
+       /* margin-top: 30px; */
+        padding-left: 0px;
+        font-size: 15px;
+    }
+
+    .sign {
+        padding-left: 250px;
+    }
+
+    .bestsellers {
+        font-size: 20px;
+        margin-top: 25px;
+        margin-bottom: 2px;
+        margin-left:20px;
+        margin-right: 20px;
+    }
+
+    .bestsellers1 {
+        margin-left: 25px;
+        margin-right: 25px; 
+    }
+    
+     .bestsellerStyle {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    
+    .imageStyle {
+        height: 135px;
+        width: 135px;
+        background-size: 257px 232px;
+    }
+    
+    .bestsellerName {
+        padding-top: 5px;
+        font-size: 15px;
+        width: 135px;
+        height: 40px;
+    }
+    
+    .morebutton {
+        height: 25px;
+        width: 70px;
+        font-size: 15px;
+        margin-top: 60px;
+     }
+    
+     .chevronIcon {
+        height: 15px;
+        width: 15px;
+    }
+    
+}

@@ -46,8 +46,6 @@
     background-size: 137.5px 145px, 137.5px 145px, 137.5px 145px, 137.5px 145px;
 }
 
-
-
 .categoryInfo{
     padding-top: 7px;
     font-size: 22px;
@@ -65,4 +63,49 @@
     color:white;
     font-size: 18px;
     
+}
+
+@media screen and (max-width: 415px) {
+    .webTitle{
+        margin-top: 20px;
+        margin-left: 45px;
+        font-size: 17px;
+    }
+    .webMsg{
+        margin-left: 45px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    
+    .categories{
+        margin-left: 50px;
+        flex-flow: column;    
+        padding-top:10px;
+    
+    }
+    .flowerCategory{
+        width: 147px;
+        height: 250px;
+    }
+
+    .imageStyle{
+        width: 165px;
+        height: 180px;
+        background-size: 175px 190px;
+    }
+    
+    .image5{
+        width:175px;
+        height:190px;
+        background-size: 87.5px 85px, 87.5px 85px, 87.5px 85px, 87.5px 85px;
+    }
+    
+    .categoryInfo{
+        padding-top: 3px;
+        font-size: 17px;
+        width: 167px;
+        height: 20px;
+        margin-top: 0px;
+    }
 }

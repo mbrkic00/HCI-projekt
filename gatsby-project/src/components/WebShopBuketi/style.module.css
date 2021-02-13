@@ -103,3 +103,69 @@
     text-align: center;
     color: #555555;
 }
+
+@media screen and (max-width: 415px) {
+    .webTitle{
+        margin-top: 20px;
+        margin-left: 45px;
+        font-size: 17px;
+    }
+    
+    .searchBar{
+        margin-left: 45px;
+        width: 140px;
+        height: 25px;
+        font-size: 12px;
+    }
+    .searchBttn{
+        height: 23px;
+        width: 27px;
+    }
+    .filterList{
+        margin-left: 75px;
+        width: 269px;
+        height: 125px;
+        flex-flow: column;
+        position: absolute;
+    }
+/* 
+     .filterListElement{
+        font-size: 12px;
+        padding-left: 4px;
+    } */
+
+    .categories{
+        margin-left: 50px;
+        flex-flow: column;    
+        padding-top: 10px;
+    }
+
+    .flowerCategory{
+        width: 147px;
+        height: 270px;
+        padding-right: 50px;
+        padding-left: 50px;
+        padding-top: 10px;
+    }
+
+    .imageStyle{
+        width: 165px;
+        height: 190px;
+        background-size: 175px 190px;
+    }
+
+    .productInfo{
+        padding-top: 3px;
+        font-size: 17px;
+        width: 167px;
+        height: 20px;
+        margin-top: 0px;
+    }
+    .productInfo .justPrice{
+        font-size: 17px;
+        padding-top: 5px;
+    }
+    .productInfo .justName{
+        font-size: 18px;
+    }
+}

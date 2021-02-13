@@ -35,6 +35,7 @@
   flex-flow: column;
   text-align: center;
   color: #E12F8F;
+  font-weight: bold;
 }
 
 .container {
@@ -180,4 +181,83 @@
 .container .error.show,
 .success.show {
   opacity: 1;
+}
+
+@media screen and (max-width: 415px) {
+  .h {
+    font-size: 17px;
+  }
+  
+  .container {
+    width: 200px;
+    height: 280px;
+    left: 105px;
+    top: 50%;
+    padding: 10px 20px;
+  }
+  
+  .container2 {
+    width: 200px;
+    height: 280px;
+    left: 295px;
+    top: 50%;
+    padding: 10px 20px;
+  }
+  
+  .xIcon {
+    margin-left: 203px;
+    margin-bottom: 0px;
+    margin-top: 70px;
+  }
+   
+  .field {
+    margin: 5px;
+    font-size: 11px;
+  }
+   
+  .field input {
+    margin: 0;
+    font-size: 11px;
+    margin-right: 40px;
+  }
+   
+  .field label {
+    font-size: 12px;
+  }
+  
+  .field2 {
+    font-size: 11px;
+    margin: 5px;
+  }
+   
+  .field2 input {
+    margin: 0;
+    font-size: 11px;
+    
+  } 
+  
+  .field2 label {
+    font-size: 12px;
+  }
+  
+  .container button {
+    font-size: 11px;
+    width: 100px;
+    padding: 7px 10px;
+    margin-bottom: 30px;
+  }
+  
+  .container2 button {
+    font-size: 11px;
+    width: 135px;
+    padding: 7px 10px;
+    margin-bottom: 80px;
+  }
+   
+  
+  .error {
+    font-size: 15px;
+    margin: 20px auto;
+    margin-top: 0;
+  }
 }

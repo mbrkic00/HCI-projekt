@@ -8,7 +8,7 @@ import HeaderFooterLayout from '../layouts/headerFooter'
  
 const BlogPost = ({ pageContext }) => {
   const { body, title, coverImage, summary } = pageContext
-  // const { body, title, coverImage, summary, next, prev } = pageContext
+
   return (
     <HeaderFooterLayout>
       <main className={styles.container}>

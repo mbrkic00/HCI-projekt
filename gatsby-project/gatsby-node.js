@@ -50,3 +50,42 @@ exports.createPages = async ({ graphql, actions }) => {
   }))
 } 
 
+// exports.createPages = async ({ graphql, actions }) => {
+//   const raw = await graphql(`query {
+//     allContentfulFlowers {
+//       nodes {
+//         flowerName
+//         internal {
+//           content
+//         }
+//         flowerDescription {
+//           raw
+//         }
+//         flowerPrice
+//         image  {
+//           fixed(width: 500) {
+//               src
+//               srcSet
+//               srcSetWebp
+//               srcWebp
+//               width
+//               height
+//               base64
+//               aspectRatio
+//               }
+//           }
+//       }
+//   }
+//     }`)
+
+//     const res = raw.data.allContentfulFlowers.nodes
+ 
+//     res.forEach((e) => actions.createPage({
+//       component: path.resolve(`./src/layouts/buketi.js`),
+//       context: {
+//         ...e,
+//       },
+//       path: `posts/${e.flowerName}`,
+//       slug: `posts/${e.flowerName}`
+//     }))
+//   } 

@@ -37,6 +37,7 @@ export const productCategories = [
     },
     {
         categoryName: "Izradi po želji",
+        categoryImage:require("../../src/images/asYouWish.png"),
         to: '/makeYourOwn'
     }
 ];

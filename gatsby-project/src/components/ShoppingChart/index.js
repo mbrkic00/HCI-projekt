@@ -23,7 +23,7 @@ const ShoppingChart = () => (
             <div className={styles.inChart}>
             {InChart.map(({image, name, price, quantity, sum}) => (
                     <div className={styles.productStyle}>
-                        <FontAwesomeIcon icon={faTimes} className={styles.xIcon}/>
+                        <FontAwesomeIcon icon={faTimes} className={styles.xIcon} onClick={() => (0)} /> 
                         <img src={image} alt="img001" className={styles.imageStyle} />
                         <div className={styles.nameStyle}>{name}</div>
                         <div className={styles.priceStyle}>{price}</div>

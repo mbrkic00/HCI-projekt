@@ -8,3 +8,4 @@ const TitleImage = () => (
 )
  
 export default TitleImage
+

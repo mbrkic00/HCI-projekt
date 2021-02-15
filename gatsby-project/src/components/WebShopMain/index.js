@@ -19,11 +19,6 @@ const WebShopMain = () => (
                         </Link>
                     </div>
                     ))}
-            
-            <div className={styles.flowerCategory}>
-                <div className={styles.image5}></div>
-                <div className={styles.categoryInfo}>Izradi po želji</div>
-            </div>
             </div>
         
     </webShopPage>

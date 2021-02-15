@@ -1,15 +1,18 @@
 .h1 {
-    font-size: 30px;
-    line-height: 3;
-    color: #E12F8F;
-    padding-left: 70px;
+    margin-top: 45px;
+    margin-left: 75px;
+    color:#E12F8F;
+    font-size: 27px;
+    font-weight: bold;
 }
 
 .h2 {
-    font-size: 25px;
-    line-height: 3;
-    color: #E12F8F;
-    padding-left: 70px;
+    margin-top: 20px;
+    margin-left:197px;
+    color:#E12F8F;
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 
 .frames {
@@ -18,12 +21,13 @@
 }
 
 .frame1 {
-    border: 2px solid darkgray;
+    border: 2px solid #cecece;
     margin-left: 200px;
     width: 750px;
-    height: 290px;
+    height: 600px;
     display: flex;
     flex-flow: column;
+    overflow-y: scroll;
     /* position: absolute;
     box-sizing: border-box; */
 }
@@ -48,13 +52,12 @@
     flex-flow: column;
     /* border-top: 2px solid darkgray; */
     margin-top: 20px;
-    overflow-y: scroll;
 }
 
 .productStyle {
     display: flex;
     flex-flow: row;
-    border-top: 2px solid darkgray;
+    border-top: 2px solid #cecece;
 }
 
 .xIcon {
@@ -93,7 +96,7 @@
 
 .frame2 {
     margin-left: 40px;
-    border: 2px solid darkgray;
+    border: 2px solid #cecece;
     display: flex;
     flex-flow: column;
     width: 330px;
@@ -108,7 +111,7 @@
 .productPrice {
     display: flex;
     flex-flow: row;
-    border-top: 2px solid darkgray;
+    border-top: 2px solid #cecece;
     padding-left: 20px;
 }
 
@@ -134,7 +137,7 @@
 .billing {
     display: flex;
     flex-flow: row;
-    border-bottom: 2px solid darkgray;
+    border-bottom: 2px solid #cecece;
     padding-left: 20px;
     color: black;
 }
@@ -164,8 +167,8 @@
 }
 
 .delivery {
-    border-bottom: 2px solid darkgray;
-    border-top: 2px solid darkgray;
+    border-bottom: 2px solid #cecece;
+    border-top: 2px solid #cecece;
     height: 70px;
     padding-top: 15px;
     padding-left: 20px;

@@ -34,13 +34,9 @@ const Payment = () => (
             </div>
 
             <div className={styles.creditCards}>
-                <FontAwesomeIcon icon={faCcVisa} className={styles.visaIcon}/>
-                
-               <FontAwesomeIcon icon={faCcMastercard} className={styles.mastercardIcon}/>
-                
-                <FontAwesomeIcon icon={faCcAmex} className={styles.amexIcon}/>
-                
-
+                <div className={styles.visaIcon}></div>
+                <div className={styles.mastercardIcon}></div>
+                <div className={styles.maestroIcon}></div>
             </div>
             <div className={styles.cardPaymentBox}>
                 <p className={styles.name}>IBAN:</p>

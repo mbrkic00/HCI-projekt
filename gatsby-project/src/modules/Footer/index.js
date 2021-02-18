@@ -43,12 +43,9 @@ const Footer = () => (
                 Karticom
             </li>
             <li className={styles.cc}>
-              {/*  <FontAwesomeIcon icon={faCcVisa} className={styles.visaIcon}/>
-                <FontAwesomeIcon icon={faCcMastercard} className={styles.mastercardIcon}/>
-                <FontAwesomeIcon icon={faCcAmex} className={styles.amexIcon}/> */}
                 <div className={styles.visaIcon}></div>
                 <div className={styles.mastercardIcon}></div>
-                <div className={styles.amexIcon}></div>
+                <div className={styles.maestroIcon}></div>
             </li>
 
         </ul>

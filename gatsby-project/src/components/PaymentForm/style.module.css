@@ -102,24 +102,52 @@
     width: 18px;
 
 }
- .visaIcon {
-    margin-right: 30px;
-    font-size: 28px;
-    stroke-width:50px
-}
- .mastercardIcon {
-    margin-right: 30px;
-    font-size: 28px;
+.visaIcon {
+    margin-right: 10px;
+    width: 40px;
+    height: 30px;
+    background-image: url("https://pngimg.com/uploads/visa/visa_PNG10.png");
+    background-size: cover;
+    padding-bottom:5px ;
+    background-position-y: center;
+    background-position-x:center;
+
 }
 
- .amexIcon {
-    margin-right: 30px;
-    font-size: 28px;
-    
+.mastercardIcon {
+    margin-right: 10px;
+    width: 40px;
+    height: 24px;
+    background-image: url('https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/206_Mastercard_Credit_Card_logo_logos-512.png');
+    background-size: 40px 40px;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    background-position-y: center;
+    background-position-x:center;
+    /*margin-top: 4px;*/
+    margin-top: 5px;
+
+   
 }
+
+.maestroIcon {
+    margin-right: 10px;
+    width: 40px;
+    height: 30px;
+    background-image:url("https://cdn.iconscout.com/icon/free/png-512/maestro-credit-debit-card-bank-transaction-32299.png");
+    background-size: 58px 58px;   
+   /* padding-bottom: 5px;*/
+   background-position-y: center;
+   background-position-x:center;    /*margin-top: 2px;
+    padding-right: 1px;*/
+    padding-bottom: 5px;
+}
+
 .creditCards {
     margin-top: 20px;
     list-style: none;
+    display: flex;
+    flex-flow: row;
 }
 .cardPaymentBox{
     display: flex;

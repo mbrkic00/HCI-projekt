@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './style.module.css'
+import {Link} from 'gatsby'
 import { InChart } from '../../constants/const'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes, faChevronRight } from '@fortawesome/free-solid-svg-icons'
@@ -9,7 +10,7 @@ const ShoppingChart = () => (
     <shoppingchartpage>
         <span>
         <div className={styles.h1}>Košarica</div>
-        <div className={styles.h2}>Proizvodi u Vašoj košarici</div>
+        {/*<div className={styles.h2}>Proizvodi u Vašoj košarici</div>*/}
         </span>
 
     <section className={styles.frames}>
@@ -49,12 +50,12 @@ const ShoppingChart = () => (
                 <p>Ukupno za naplatu:</p>
                 <p className={styles.pP3}></p>
             </div>
-            <div className={styles.buttonStyle}><button className={styles.continue}>Nastavi<FontAwesomeIcon icon={faChevronRight} className={styles.chevronIcon}/></button></div>
+            <Link to={'/payment'} className={styles.buttonStyle}><button className={styles.continue}>Nastavi</button></Link>
             <div className={styles.delivery}>Za sigurnu dostavu brine se HP Express/Overseas.</div>
             <div className={styles.creditCards}>
-                <FontAwesomeIcon icon={faCcVisa} className={styles.visaIcon}/>
-                <FontAwesomeIcon icon={faCcMastercard} className={styles.mastercardIcon}/>
-                <FontAwesomeIcon icon={faCcAmex} className={styles.amexIcon}/>
+                <div className={styles.visaIcon}></div>
+                <div className={styles.mastercardIcon}></div>
+                <div className={styles.maestroIcon}></div>
             </div>
         </section>
     </section>

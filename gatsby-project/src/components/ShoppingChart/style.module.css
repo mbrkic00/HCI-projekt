@@ -1,9 +1,10 @@
 .h1 {
     margin-top: 45px;
-    margin-left: 75px;
+    margin-left: 90px;
     color:#E12F8F;
     font-size: 27px;
     font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .h2 {
@@ -22,14 +23,15 @@
 
 .frame1 {
     border: 2px solid #cecece;
-    margin-left: 200px;
-    width: 750px;
+    margin-left:90px;
+    width: 950px;
     height: 600px;
     display: flex;
     flex-flow: column;
     overflow-y: scroll;
     /* position: absolute;
     box-sizing: border-box; */
+    margin-right: 30px;
 }
 
 .description {
@@ -100,6 +102,7 @@
     display: flex;
     flex-flow: column;
     width: 330px;
+    height: 480px;
 }
 
 .total {
@@ -157,6 +160,7 @@
     font-size: 20px;
     align-items: center;
     outline: none;
+    cursor: pointer;
 }
 
 .chevronIcon {
@@ -194,4 +198,51 @@
     /* margin-right: 50px; */
     font-size: 35px;
     
+}
+.visaIcon {
+    margin-right: 10px;
+    width: 40px;
+    height: 30px;
+    background-image: url("https://pngimg.com/uploads/visa/visa_PNG10.png");
+    background-size: cover;
+    padding-bottom:5px ;
+    background-position-y: center;
+    background-position-x:center;
+
+}
+
+.mastercardIcon {
+    margin-right: 10px;
+    width: 40px;
+    height: 24px;
+    background-image: url('https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/206_Mastercard_Credit_Card_logo_logos-512.png');
+    background-size: 40px 40px;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    background-position-y: center;
+    background-position-x:center;
+    /*margin-top: 4px;*/
+    margin-top: 5px;
+
+   
+}
+
+.maestroIcon {
+    margin-right: 10px;
+    width: 40px;
+    height: 30px;
+    background-image:url("https://cdn.iconscout.com/icon/free/png-512/maestro-credit-debit-card-bank-transaction-32299.png");
+    background-size: 58px 58px;   
+   /* padding-bottom: 5px;*/
+   background-position-y: center;
+   background-position-x:center;    /*margin-top: 2px;
+    padding-right: 1px;*/
+    padding-bottom: 5px;
+}
+
+.creditCards {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
 }

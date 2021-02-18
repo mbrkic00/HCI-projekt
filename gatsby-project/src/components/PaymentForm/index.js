@@ -1,6 +1,6 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faCcVisa, faCcMastercard, faCcAmex} from '@fortawesome/free-brands-svg-icons'
+import {Link} from 'gatsby'
+
 
 import styles from './style.module.css'
 
@@ -45,7 +45,7 @@ const Payment = () => (
                     <input type="text" placeholder="" maxlength="3" className={styles.controlNum} />
             </div>
         </div>
-        <button className={styles.payButton}><span>Potvrdi plaćanje</span></button>
+        <Link to={'/thankYou'}><button className={styles.payButton}><span>Potvrdi plaćanje</span></button></Link>
     </div>
 )
 

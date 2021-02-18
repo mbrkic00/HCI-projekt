@@ -1,0 +1,14 @@
+.thanks{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    height: 600px;
+}
+.checkIcon{
+    color: #06C206;
+    margin-left: 745px;
+    margin-top: 80px;
+}
+.text{
+    font-weight: bold;
+}

@@ -96,22 +96,39 @@
     margin-top: 10px;
     list-style: none;
     margin-left: 20px;
+    display: flex;
+    flex-flow: row;
 }
 
 .cc .visaIcon {
     margin-right: 10px;
-    font-size: 35px;
-    stroke-width:50px
+    background-image: url("https://pngimg.com/uploads/visa/visa_PNG10.png");
+    background-size: cover;
+    width: 30px;
+    height: 20px;
+    padding-bottom:5px ;
+
 }
 
 .cc .mastercardIcon {
     margin-right: 10px;
-    font-size: 35px;
+    width: 30px;
+    height: 20px;
+    background-image: url('https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/206_Mastercard_Credit_Card_logo_logos-512.png');
+    background-size: 30px 30px;
+    padding-bottom:5px ;
 }
 
 .cc .amexIcon {
     margin-right: 10px;
-    font-size: 35px;
+    width: 30px;
+    height: 20px;
+    background-image:url("https://cdn.iconscout.com/icon/free/png-512/maestro-credit-debit-card-bank-transaction-32299.png");
+    background-size: 46px 46px;   
+    padding-bottom: 5px;
+    background-position:center;
+    margin-top: 2px;
+
 }
 
 @media screen and (max-width: 415px) {

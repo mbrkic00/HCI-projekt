@@ -3,6 +3,7 @@ import { productsBuketi } from '../../constants/const'
 import Combobox from '../ComboBox'
 import {Link} from 'gatsby'
 import styles from './style.module.css'
+import SearchIcon from '@material-ui/icons/Search';
 
 const buketiNiz = [
 	{ title: "Jednostavne ruže", for: ["ruža", "ruže"] },
@@ -13,7 +14,7 @@ const buketiNiz = [
 ];
 
 const WebShopBuketi = () => {
-    const [showFilter, setShowFilter] = useState(false); {/* ide li ovo ovde? */}
+    const [showFilter, setShowFilter] = useState(false);
     return(
         <div>
             <p className={styles.webTitle}>Web shop - Buketi</p>
@@ -21,7 +22,7 @@ const WebShopBuketi = () => {
                 <div>
                     <div className={styles.search}>
                         <input type="search" placeholder=" Trazi..." className={styles.searchBar} onClick={() => setShowFilter(!showFilter)} />
-                        <Link to={'/webShop1Buketi'}><div className={styles.searchBttn}>🔍</div></Link>
+                        <Link to={'/webShop1Buketi'}><div className={styles.searchBttn}><SearchIcon /></div></Link>
                         </div>
                         {showFilter?
                             <div className={styles.filterList} style={{display: showFilter ? 'flex' : 'none'}}>

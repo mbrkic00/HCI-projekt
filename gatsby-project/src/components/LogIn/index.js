@@ -46,7 +46,7 @@ const Login = () => {
       return submit()
   }}>
     <section className={styles.container}>
-    <p className={styles.h}>Prijava</p>
+    <p className={styles.loginTitle}>Prijava</p>
       <section className={styles.field}>
         <label htmlFor="email">
           e-mail
@@ -55,19 +55,20 @@ const Login = () => {
       </section>
       <section className={styles.field}>
         <label htmlFor="password">
-          lozinka
+          Lozinka
         </label>
         <input name="password" type="password" onChange={e => setPassword(e.target.value)} />
       </section>
       <p className={`${styles[error !== "Success" ? 'error' : 'success']} ${error ? styles.show : ''}`}>{error}</p>
       <button className={styles.loginButton} onClick={() => submit()}>
-        {loading ? 'Loading...' : 'PRIJAVI SE'}
+        {loading ? 'Loading...' : 'Prijavi se'}
       </button>
     </section>
 
     <section className={styles.container2}>
-      <Link to='/'><FontAwesomeIcon icon={faTimes} className={styles.xIcon}/></Link>
-      <p className={styles.h}>Registracija</p>
+    <Link to='/'><FontAwesomeIcon icon={faTimes} className={styles.xIcon}/></Link>
+
+      <p className={styles.registerTitle}>Registracija</p>
       <section className={styles.field2}>
         <label htmlFor="email">
           e-mail
@@ -88,13 +89,13 @@ const Login = () => {
       </section>
       <section className={styles.field2}>
         <label htmlFor="password">
-          lozinka
+          Lozinka
         </label>
         <input name="password" type="password" onChange={e => setPassword(e.target.value)} />
       </section>
       <p className={`${styles[error !== "Success" ? 'error' : 'success']} ${error ? styles.show : ''}`}>{error}</p>
       <button className={styles.signupButton} onClick={() => submit()}>
-        {loading ? 'Loading...' : 'REGISTRIRAJ SE'}
+        {loading ? 'Loading...' : 'Registriraj se'}
       </button>
     </section>
   </main>

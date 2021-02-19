@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'gatsby'
 import styles from './style.module.css'
 
 const MakeYourOwn = () => (
@@ -12,7 +13,7 @@ const MakeYourOwn = () => (
                 <div className={styles.choicesBox}>
                     <div className={styles.choicesBoxTitle}>Vaš odabir</div>
                 </div>  
-                <button className={styles.addBttn}><span>Dodaj u košaricu</span></button>
+                <Link to={'/kosarica'}><button className={styles.addBttn}><span>Dodaj u košaricu</span></button></Link>
             </div>
         </div>
 

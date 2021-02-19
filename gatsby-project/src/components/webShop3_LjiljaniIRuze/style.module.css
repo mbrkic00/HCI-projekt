@@ -45,14 +45,8 @@
     font-weight: bold;
     color: #E12F8F;
 }
-/*.quantity{
-    border: 1px solid #555555;
-    width: 70px;
-    height: 35px;
-    margin-bottom: 25px;
-}*/
 .numBox{
-    width: 35px;
+    width: 40px;
     height: 31px;
     text-align: center;
     border: 1px solid #cecece;
@@ -68,6 +62,7 @@
     text-align: center;
     outline: #555555;
     font-size: 19px;
+    cursor: pointer;
 }
 .plus{
     width: 30px;
@@ -77,6 +72,7 @@
     text-align: center;
     outline: #555555;
     font-size: 19px;
+    cursor: pointer;
 }
 .addButton{
     background-color:#06C206;
@@ -207,3 +203,4 @@
         font-size: 15px;
     }
 }
+

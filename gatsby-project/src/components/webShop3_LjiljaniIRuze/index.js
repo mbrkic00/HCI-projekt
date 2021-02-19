@@ -1,11 +1,11 @@
 import React from 'react'
 import {Link} from 'gatsby'
-import ImageLoader from '../ImageLoader'
-
 import styles from './style.module.css'
+import {useState} from 'react'
 
-
-const WebShop3_LjiljaniIRuze = () => (  
+const WebShop3_LjiljaniIRuze = () => {
+    const [quantity, setQuantity] = useState(1);
+return(
     <div>
         <p className={styles.webTitle}>Web shop - Buketi - Ljiljani i ruže mix</p>
         <div className={styles.allInfo}>
@@ -15,9 +15,11 @@ const WebShop3_LjiljaniIRuze = () => (
                 <div className={styles.description}>Buket sadrži ruže, ljiljane, gumbeke i dekorativno zelenilo, umotan u elegantan papir sa satenskom mašnom.</div>
                 <p className={styles.price}>175.00 kn</p>
                 <div className={styles.quantity}>
-                    <input type="button" value="-" className={styles.minus}></input>
-                    <input type="number" step="1" min="1" max="" value="1" className={styles.numBox}></input>
-                    <input type="button" value="+" className={styles.plus}></input>
+                    <input type="button" value="-" onClick={() => (
+                        quantity == 1 ? 1 :
+                        setQuantity(quantity-1))} className={styles.minus}></input>
+                    <input type="number" value={quantity} className={styles.numBox}></input>
+                    <input type="button" value="+" onClick={() => setQuantity(quantity+1)}  className={styles.plus}></input>
                 </div>
                 <Link to={'/kosarica'}><button className={styles.addButton}><span>Dodaj u košaricu</span></button></Link>
             </div>
@@ -43,10 +45,11 @@ const WebShop3_LjiljaniIRuze = () => (
             <div  className={styles.suggestionBox}>
                 <img src={require("../../images/buketi6.jpg")} alt="img001" className={styles.galleryImage}></img>
                 <p className={styles.imageName}>Šareni buket</p>
-            </div>
+            </div> 
         </div>
     </div>
 )
+}
 
 export default WebShop3_LjiljaniIRuze 
 

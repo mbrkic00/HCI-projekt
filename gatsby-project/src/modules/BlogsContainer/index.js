@@ -6,7 +6,7 @@ import styles from './style.module.css'
 const BlogContainers = () => {
   const data = useStaticQuery(graphql`
     query {
-      allContentfulBlogPost {
+      allContentfulBlogPost(filter: {node_locale: {eq: "en-US"}}) {
         nodes {
           summary {
             internal {

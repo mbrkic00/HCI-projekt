@@ -9,7 +9,7 @@ const path = require('path')
 
 exports.createPages = async ({ graphql, actions }) => {
   const raw = await graphql(`query {
-    allContentfulBlogPost {
+    allContentfulBlogPost(filter: {node_locale: {eq: "en-US"}}) {
       nodes {
         summary {
           internal {

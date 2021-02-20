@@ -54,10 +54,12 @@
 .bestsellers {
     color: #E12F8F;
     font-size: 30px;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 2px;
     margin-left:280px;
     margin-right: 280px;
+    padding-top: 15px;
+    font-weight: bold;
 }
 
 .bestsellers1 {
@@ -66,7 +68,7 @@
     display:flex;
     flex-flow: row;
     flex-wrap: wrap;     
-    padding-top:30px;
+    padding-top:20px;
    
 }
 
@@ -83,6 +85,9 @@
     border:1px solid #cecece;
     display: flex;
     flex-flow: row;
+    border-radius: 0px;
+    box-shadow: 0 4px 4px 0 #cecece, 0 6px 20px 0 #cecece;
+    background-color: whitesmoke;
 }
 
 .bestsellerName {

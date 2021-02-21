@@ -3,8 +3,9 @@ import styles from './style.module.css'
 import {Link} from 'gatsby'
 import { InChart } from '../../constants/const'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimes, faChevronRight } from '@fortawesome/free-solid-svg-icons'
-import {faCcVisa, faCcMastercard, faCcAmex} from '@fortawesome/free-brands-svg-icons'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
+
+
 
 const ShoppingChart = () => (
     <shoppingchartpage>

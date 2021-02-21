@@ -63,7 +63,7 @@ exports.createPages = async ({ graphql, actions }) => {
         }
         flowerPrice
         image  {
-          fixed(width: 500) {
+          fixed(width: 400) {
               src
               srcSet
               srcSetWebp

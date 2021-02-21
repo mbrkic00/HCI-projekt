@@ -12,14 +12,14 @@ const Buket = ({ pageContext }) => {
   return (
     <HeaderFooterLayout>
       <main className={styles.container}>
-          <h2 className={styles.Title}>
-            {flowerName}
-          </h2>
-        <h3>{flowerPrice}</h3>
-        <Img fixed={image.fixed} />
-        <article>
-        {renderRichText(flowerDescription)}
-        </article>
+        <h2 className={styles.title}>Web shop - Buketi - {flowerName}</h2>
+        <div className={styles.imageStyle}><Img fixed={image.fixed} /></div>
+        <ul>
+          <article>
+            {renderRichText(flowerDescription)}
+            <h3>{flowerPrice}</h3>
+          </article>
+        </ul>
       </main>
       <Link to='/webShopBuketi'><button className={styles.returnButton}>Povratak na ostale bukete...</button></Link>
     </HeaderFooterLayout>

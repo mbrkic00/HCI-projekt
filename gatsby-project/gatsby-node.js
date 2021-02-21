@@ -129,3 +129,43 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: `cvjetnekutije/${e.flowerName}`
       }))
     } 
+
+    exports.createPages = async ({ graphql, actions }) => {
+      const raw = await graphql(`query {
+        allContentfulAranzmanix(filter: {node_locale: {eq: "en-US"}}) {
+          nodes {
+            flowerName
+            internal {
+              content
+            }
+            flowerDescription {
+              raw
+            }
+            flowerPrice
+            image  {
+              fixed(width: 400) {
+                  src
+                  srcSet
+                  srcSetWebp
+                  srcWebp
+                  width
+                  height
+                  base64
+                  aspectRatio
+                  }
+              }
+          }
+      }
+        }`)
+    
+        const res = raw.data.allContentfulFlowerBox.nodes
+     
+        res.forEach((e) => actions.createPage({
+          component: path.resolve(`./src/layouts/aranzmani.js`),
+          context: {
+            ...e,
+          },
+          path: `aranzmani/${e.flowerName}`,
+          slug: `aranzmani/${e.flowerName}`
+        }))
+      } 

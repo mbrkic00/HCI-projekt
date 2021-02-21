@@ -1,0 +1,66 @@
+.title { 
+    font-size: 30px;
+    color: #E12F8F;
+    padding-left: 70px;
+}
+
+ .container {
+    /* display: inline-flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito';
+    flex-wrap: wrap; */
+
+    margin-left: 100px;
+    display:flex;
+    flex-flow: row;
+    flex-wrap: wrap;     
+    padding-top:30px;
+  }
+   
+  .list {
+    padding-left: 0;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 0 100px;
+  } 
+
+  .list ul {
+    list-style: none;
+    margin: 5px 12px;
+    border:1px solid #cecece;
+    box-shadow: 0 4px 4px 0 #cecece, 0 6px 20px 0 #cecece;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-flow: column;
+  }
+   
+  .list ul span {
+    word-wrap: break-word;
+  }
+
+  .category {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+  }
+
+    .flower_name {
+        color: #555555;
+        text-align:start;
+        font-size: 23px;
+        font-weight: bold;
+        padding-top: 9px;
+     }
+
+     .flower_price {
+        color: #E12F8F;
+        font-size: 21px;
+        text-align: start;
+        font-weight: bold;
+     }

@@ -1,0 +1,24 @@
+.title {
+    color: #E12F8F;
+    padding-left: 70px;
+}
+
+.container {
+  }
+
+.imageStyle {
+    border:1px solid #cecece;
+}
+
+.returnButton{
+    background: transparent;
+    border: transparent;
+    text-decoration: underline;
+    font-size: 20px;
+    color: #555555;
+    margin-left: 990px;
+    margin-top: 50px;
+    width: 290px;
+    outline: none;
+    font-weight: bold;
+  }

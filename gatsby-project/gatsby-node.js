@@ -89,3 +89,43 @@ exports.createPages = async ({ graphql, actions }) => {
       slug: `buketi/${e.flowerName}`
     }))
   } 
+
+  exports.createPages = async ({ graphql, actions }) => {
+    const raw = await graphql(`query {
+      allContentfulFlowerBox(filter: {node_locale: {eq: "en-US"}}) {
+        nodes {
+          flowerName
+          internal {
+            content
+          }
+          flowerDescription {
+            raw
+          }
+          flowerPrice
+          image  {
+            fixed(width: 400) {
+                src
+                srcSet
+                srcSetWebp
+                srcWebp
+                width
+                height
+                base64
+                aspectRatio
+                }
+            }
+        }
+    }
+      }`)
+  
+      const res = raw.data.allContentfulFlowerBox.nodes
+   
+      res.forEach((e) => actions.createPage({
+        component: path.resolve(`./src/layouts/flowerBoxes.js`),
+        context: {
+          ...e,
+        },
+        path: `cvjetnekutije/${e.flowerName}`,
+        slug: `cvjetnekutije/${e.flowerName}`
+      }))
+    } 

@@ -85,7 +85,7 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         ...e,
       },
-      path: `posts/${e.flowerName}`,
-      slug: `posts/${e.flowerName}`
+      path: `buketi/${e.flowerName}`,
+      slug: `buketi/${e.flowerName}`
     }))
   } 

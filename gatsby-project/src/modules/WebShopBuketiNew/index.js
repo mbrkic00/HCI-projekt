@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {useStaticQuery, graphql, Link} from 'gatsby'
 import Img from 'gatsby-image'
 import styles from './style.module.css'
+
  
 const WebShopBuketiNew = () => {
   const data = useStaticQuery(graphql`
@@ -32,20 +33,21 @@ const WebShopBuketiNew = () => {
         }
     }`)
  
+
+    
     return (
       <section className={styles.container}>
-        <h1 className={styles.title}>Buketi</h1>
+        <h1 className={styles.title}>Web shop - Buketi</h1>
         <li className={styles.list}>
           {data.allContentfulFlowers.nodes.map(node => {
             return (
               <Link to={`/buketi/${node.flowerName}`}>
-                <ul className={styles.pt1}>
+                <ul className={styles.category}>
                   <Img fixed={node.image.fixed} />
-                  <li className={styles.pt2}>
-                    <div>{node.flowerName}</div>
-                    <div>{node.flowerPrice}</div>
+                  <li className={styles.flower_name}>{node.flowerName}</li>
+                  <li className={styles.flower_price}>{node.flowerPrice}</li>
+                    
                     {/* <span>{JSON.parse(node.flowerDescription.raw).content[0].content[0].value}</span> */}
-                  </li>
                 </ul>
               </Link>
             )

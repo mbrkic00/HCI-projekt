@@ -21,7 +21,7 @@ const FlowerBox = ({ pageContext }) => {
           </article>
         </ul>
       </main>
-      <Link to='/webShopFlowerBoxes'><button className={styles.returnButton}>Povratak na ostale bukete...</button></Link>
+      <Link to='/webShopFlowerBoxes'><button className={styles.returnButton}>Povratak na ostale cvjetne kutije...</button></Link>
     </HeaderFooterLayout>
   )
 }

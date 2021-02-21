@@ -3,16 +3,16 @@ import { renderRichText } from "gatsby-source-contentful/rich-text"
 import Img from 'gatsby-image'
 import {Link} from 'gatsby'
  
-import styles from './aranzmani.module.css'
+import styles from './loncanice.module.css'
 import HeaderFooterLayout from '../layouts/headerFooter'
  
-const Aranzmani = ({ pageContext }) => {
+const Loncanice = ({ pageContext }) => {
   const { flowerDescription, flowerName, image, flowerPrice } = pageContext
 
   return (
     <HeaderFooterLayout>
       <main className={styles.container}>
-        <h2 className={styles.title}>Web shop - Aranžmani - {flowerName}</h2>
+        <h2 className={styles.title}>Web shop - Lončanice - {flowerName}</h2>
         <div className={styles.imageStyle}><Img fixed={image.fixed} /></div>
         <ul>
           <article>
@@ -21,9 +21,9 @@ const Aranzmani = ({ pageContext }) => {
           </article>
         </ul>
       </main>
-      <Link to='/webShopAranzmani'><button className={styles.returnButton}>Povratak na ostale aranžmane...</button></Link>
+      <Link to='/webShopLončanice'><button className={styles.returnButton}>Povratak na ostale lončanice...</button></Link>
     </HeaderFooterLayout>
   )
 }
  
-export default Aranzmani
+export default Loncanice

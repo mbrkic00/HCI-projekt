@@ -90,11 +90,51 @@ exports.createPages = async ({ graphql, actions }) => {
     }))
   } 
 
-  exports.createPages = async ({ graphql, actions }) => {
-    const raw = await graphql(`query {
-      allContentfulFlowerBox(filter: {node_locale: {eq: "en-US"}}) {
-        nodes {
-          flowerName
+exports.createPages = async ({ graphql, actions }) => {
+  const raw = await graphql(`query {
+    allContentfulFlowerBox(filter: {node_locale: {eq: "en-US"}}) {
+      nodes {
+        flowerName
+        internal {
+          content
+        }
+        flowerDescription {
+          raw
+        }
+        flowerPrice
+        image  {
+          fixed(width: 400) {
+              src
+              srcSet
+              srcSetWebp
+              srcWebp
+              width
+              height
+              base64
+              aspectRatio
+              }
+          }
+      }
+  }
+    }`)
+  
+    const res = raw.data.allContentfulFlowerBox.nodes
+   
+    res.forEach((e) => actions.createPage({
+      component: path.resolve(`./src/layouts/flowerBoxes.js`),
+      context: {
+        ...e,
+      },
+      path: `cvjetnekutije/${e.flowerName}`,
+      slug: `cvjetnekutije/${e.flowerName}`
+    }))
+  } 
+
+exports.createPages = async ({ graphql, actions }) => {
+  const raw = await graphql(`query {
+    allContentfulAranzmani(filter: {node_locale: {eq: "en-US"}}) {
+      nodes {
+        flowerName
           internal {
             content
           }
@@ -117,55 +157,55 @@ exports.createPages = async ({ graphql, actions }) => {
         }
     }
       }`)
-  
+    
       const res = raw.data.allContentfulFlowerBox.nodes
-   
+     
       res.forEach((e) => actions.createPage({
-        component: path.resolve(`./src/layouts/flowerBoxes.js`),
+        component: path.resolve(`./src/layouts/aranzmani.js`),
         context: {
           ...e,
         },
-        path: `cvjetnekutije/${e.flowerName}`,
-        slug: `cvjetnekutije/${e.flowerName}`
+        path: `aranzmani/${e.flowerName}`,
+        slug: `aranzmani/${e.flowerName}`
       }))
     } 
 
-    exports.createPages = async ({ graphql, actions }) => {
-      const raw = await graphql(`query {
-        allContentfulAranzmanix(filter: {node_locale: {eq: "en-US"}}) {
-          nodes {
-            flowerName
-            internal {
-              content
-            }
-            flowerDescription {
-              raw
-            }
-            flowerPrice
-            image  {
-              fixed(width: 400) {
-                  src
-                  srcSet
-                  srcSetWebp
-                  srcWebp
-                  width
-                  height
-                  base64
-                  aspectRatio
-                  }
+exports.createPages = async ({ graphql, actions }) => {
+  const raw = await graphql(`query {
+    allContentfulLoncanice(filter: {node_locale: {eq: "en-US"}}) {
+      nodes {
+        flowerName
+        internal {
+          content
+        }
+        flowerDescription {
+          raw
+        }
+        flowerPrice
+        image  {
+          fixed(width: 400) {
+              src
+              srcSet
+              srcSetWebp
+              srcWebp
+              width
+              height
+              base64
+              aspectRatio
               }
           }
       }
-        }`)
-    
-        const res = raw.data.allContentfulFlowerBox.nodes
-     
-        res.forEach((e) => actions.createPage({
-          component: path.resolve(`./src/layouts/aranzmani.js`),
-          context: {
-            ...e,
-          },
-          path: `aranzmani/${e.flowerName}`,
-          slug: `aranzmani/${e.flowerName}`
-        }))
-      } 
+  }
+    }`)
+      
+    const res = raw.data.allContentfulLoncanice.nodes
+       
+      res.forEach((e) => actions.createPage({
+        component: path.resolve(`./src/layouts/loncanice.js`),
+        context: {
+          ...e,
+        },
+        path: `loncanice/${e.flowerName}`,
+        slug: `loncanice/${e.flowerName}`
+      }))
+    } 

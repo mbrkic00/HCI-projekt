@@ -19,7 +19,7 @@ const FlowerBox = ({ pageContext }) => {
           <Img className={styles.imageStyle} fixed={image.fixed} />
           <ul className={styles.productInfo}>
             <article className={styles.description}>
-              <p className={styles.title2}>Opis proizvoda:</p>
+              <p className={styles.title}>Opis proizvoda:</p>
               {renderRichText(flowerDescription)}
               <p className={styles.price}>{flowerPrice}</p>
             </article>
@@ -41,7 +41,7 @@ const FlowerBox = ({ pageContext }) => {
       
 
       <p className={styles.suggestionTitle}>Možda Vam se sviđa:</p>
-      <div className={styles.suggestionGallery}>
+      <div className={styles.suggestionsGallery}>
             {Suggestions.map(({suggestion, galleryImage, to}) => (
                     <div className={styles.suggestionBox}>
                         <Link to={to}>

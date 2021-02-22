@@ -1,125 +1,111 @@
-.title {
-  color: #E12F8F;
-  padding-left: 70px;
+.webTitle{
+  margin-top: 45px;
+  margin-left: 75px;
+  color:#E12F8F;
+  font-size: 27px;
+  font-weight: bold;
 }
-
- .allInfo{
+.allInfo{
   display:flex;
   flex-flow:row;
+  flex-wrap: wrap;
   width: 1000px;
-  height: 400px;
-  margin-left: 50px;
+  height: 360px;
+  margin-left: 200px;
   padding-top: 30px;
-  padding-bottom: 90px;
+  padding-bottom: 90px;  
 }
 .productInfo{
   display:flex;
   flex-flow:column;
+  flex-wrap: wrap;
   padding-left: 70px;
-  height: 362px;
+  height: 450px; /*362*/
   width: 500px;
-}
-.imageStyle {
-  border:1px solid #cecece;
-  width:360px;
-  height: 360px;
-  margin-left: 200px;
-}
 
-.title2{
-text-decoration: underline;
-padding-left: 0px;
+}
+.imageStyle{
+  width:340px;
+  height: 360px;
+  margin-left: 0px;
+  border:1px solid #cecece;
+}
+.title{
+  text-decoration: underline;
+  padding-left: 0px;
 }
 .description{
-width: 500px;
-padding-top: 20px;
+  width: 500px;
+  padding-top: 20px;
+
+}
+.price{
+  font-size: 21px;
+  text-shadow: 2px 2px 8px #cecece;
+  font-weight: bold;
+  color: #E12F8F;
 }
 
-.price{
-font-size: 21px;
-text-shadow: 2px 2px 8px #cecece;
-font-weight: bold;
-color: #E12F8F;
-} 
 .numBox{
-width: 40px;
-height: 31px;
-text-align: center;
-border: 1px solid #cecece;
-font-size: 19px;
-outline: #555555;
-background-color: white;
+  width: 40px;
+  height: 31px;
+  text-align: center;
+  border: 1px solid #cecece;
+  font-size: 19px;
+  outline: #555555;
+  background-color: white;
 }
 .minus{
-width: 30px;
-height: 35px;
-border: 1px solid #cecece;
-background-color: whitesmoke;
-text-align: center;
-outline: #555555;
-font-size: 19px;
-cursor: pointer;
+  width: 30px;
+  height: 35px;
+  border: 1px solid #cecece;
+  background-color: whitesmoke;
+  text-align: center;
+  outline: #555555;
+  font-size: 19px;
+  cursor: pointer;
 }
 .plus{
-width: 30px;
-height: 35px;
-border: 1px solid #cecece;
-background-color: whitesmoke;
-text-align: center;
-outline: #555555;
-font-size: 19px;
-cursor: pointer;
+  width: 30px;
+  height: 35px;
+  border: 1px solid #cecece;
+  background-color: whitesmoke;
+  text-align: center;
+  outline: #555555;
+  font-size: 19px;
+  cursor: pointer;
 }
 .addButton{
-background-color:#06C206;
-outline: none;
-border: none;
-width: 200px;
-height: 50px;
-margin-top:35px;
-cursor: pointer;
+  background-color:#06C206;
+  outline: none;
+  border: none;
+  width: 200px;
+  height: 50px;
+  margin-top:35px;
+  cursor: pointer;
 }
 .addButton span{
-color:white;
-font-size: 19px;
+  color:white;
+  font-size: 19px;
 }
 
-/* .returnButton{
-  background: transparent;
-  border: transparent;
-  text-decoration: underline;
-  font-size: 20px;
-  color: #555555;
-  margin-left: 990px;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  width: 310px;
-  outline: none;
-  font-weight: bold;
-} */
-
 .suggestionTitle{
-  margin-left: 100px;
+  margin-left: 200px;
   color:#E12F8F;
   font-size: 24px;
   font-weight: bold;
 }
-
-.suggestionGallery {
-margin-left: 150px;
-width: 1150px;
-height: 300px;
-display: flex;
-flex-flow: row;
+.suggestionsGallery{
+  margin-left: 170px;
+  width: 1150px;
+  height: 300px;
+  display: flex;
+  flex-flow: row;
 }
-
-
 .suggestionBox{
   display:flex;
-  flex-flow: column;
-
-} 
-
+  flex-flow: row;
+}
 .galleryImage{
   width:170px;
   height: 190px;
@@ -129,7 +115,91 @@ flex-flow: row;
   background-size: 170px 190px;
 }
 .imageName{
-  text-decoration: underline;
   padding-top: 10px;
+  text-decoration: underline;
   text-align: center;
+}
+
+@media screen and (max-width: 415px) {
+  .webTitle{
+      margin-top: 20px;
+      margin-left: 45px;
+      font-size: 17px;
+  }
+  
+  .allInfo{
+      width: 300px;
+      margin-left: 55px;
+      padding-top: 10px;
+      padding-bottom: 130px;
+  }
+  .productInfo{
+      padding-left: 0px;
+      width: 300px;
+  }
+  .imageStyle{
+      width:130px;
+      height: 150px;
+      background-size: 130px 150px;
+  }
+  .title{
+      font-size: 17px;
+  }
+  .description{
+      width: 300px;
+      padding-top: 0px;
+      font-size: 17px;
+  }
+  .price{
+      font-size: 17px;
+  }
+
+  .numBox{
+      width: 25px;
+      height: 21px;
+      font-size: 17px;
+  }
+
+  .minus{
+      width: 20px;
+      height: 25px;
+      font-size: 17px;
+  }
+
+  .plus{
+      width: 20px;
+      height: 25px;
+      font-size: 17px;
+  }
+  .addButton{
+      width: 150px;
+      height: 35px;
+      margin-top:15px;
+  }
+  .addButton span{
+      font-size: 17px;
+  }
+  
+  .suggestionTitle{
+      margin-left: 45px;
+      font-size: 17px;
+  }
+  .suggestionsGallery{
+      margin-left: 35px;
+      width: 300px;
+      height: 540px;
+      flex-flow: column;
+      flex-wrap: wrap;
+  }
+  
+  .galleryImage{
+      width:110px;
+      height: 130px;
+      margin-top: 5px;
+      background-size: 110px 130px;
+  }
+  .imageName{
+      padding-top: 0px;
+      font-size: 15px;
+  }
 }

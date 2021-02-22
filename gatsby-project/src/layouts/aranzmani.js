@@ -14,12 +14,12 @@ const Aranzmani = ({ pageContext }) => {
   return (
     <HeaderFooterLayout>
       <main className={styles.container}>
-        <h2 className={styles.title}>Web shop - Aranžmani - {flowerName}</h2>
+        <h2 className={styles.webTitle}>Web shop - Aranžmani - {flowerName}</h2>
         <div className={styles.allInfo}>
-          <div className={styles.imageStyle}><Img fixed={image.fixed} /></div>
+          <Img className={styles.imageStyle} fixed={image.fixed} />
           <ul className={styles.productInfo}>
             <article className={styles.description}>
-              <p className={styles.title2}>Opis proizvoda:</p>
+              <p className={styles.title}>Opis proizvoda:</p>
               {renderRichText(flowerDescription)}
               <p className={styles.price}>{flowerPrice}</p>
             </article>
@@ -41,7 +41,7 @@ const Aranzmani = ({ pageContext }) => {
     
 
       <p className={styles.suggestionTitle}>Možda Vam se sviđa:</p>
-      <div className={styles.suggestionGallery}>
+      <div className={styles.suggestionsGallery}>
             {Suggestions.map(({suggestion, galleryImage, to}) => (
                     <div className={styles.suggestionBox}>
                         <Link to={to}>

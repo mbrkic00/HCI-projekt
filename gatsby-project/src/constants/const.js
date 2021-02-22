@@ -18,22 +18,22 @@ export const productCategories = [
     {
         categoryName: "Buketi",
         categoryImage: require("../../src/images/buketi1.jpg"),
-        to: '/webShop1Buketi'      
+        to: '/webShopBuketi'      
     },
     {
         categoryName: "Cvijeće u kutiji",
         categoryImage: require("../../src/images/flowerbox1.jpg"),
-        to: '/webShop1FlowerBoxes' 
+        to: '/webShopFlowerBoxes' 
     },
     {
         categoryName: "Aranžmani",
         categoryImage: require("../../src/images/aranzman1.jpg"),
-        to: '/webShop1Aranzmani' 
+        to: '/webShopAranzmani' 
     },
     {
         categoryName: "Lončanice",
         categoryImage: require("../../src/images/loncanice5.jpg"),
-        to: '/webShop1Loncanice' 
+        to: '/webShopLoncanice' 
     },
     {
         categoryName: "Izradi po želji",
@@ -287,5 +287,33 @@ export const InChart = [
         price: "215.00 kn",
         quantity: "1x",
         sum: "215.00 kn"
+    }
+];
+
+export const Suggestions = [
+    {
+        suggestion: "Jednostavne ruže",
+        galleryImage: require("../../src/images/buketi2.jpg"),
+        to: '/webShopBuketi'
+    },
+    {
+        suggestion: "Nježne orhideje",
+        galleryImage: require("../../src/images/buketi3.jpg"),
+        to: '/webShop0'
+    },
+    {
+        suggestion: "Egzotični mix",
+        galleryImage: require("../../src/images/buketi4.jpg"),
+        to: '/webShop0'
+    },
+    {
+        suggestion: "Šareni tulipani",
+        galleryImage: require("../../src/images/buketi5.jpg"),
+        to: '/webShop0'
+    },
+    {
+        suggestion: "Šareni buket",
+        galleryImage: require("../../src/images/buketi6.jpg"),
+        to: '/webShopBuketi'
     }
 ];

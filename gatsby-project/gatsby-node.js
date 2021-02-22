@@ -5,90 +5,93 @@
  */
 
 // You can delete this file if you're not using it
+
 const path = require('path')
 
-exports.createPages = async ({ graphql, actions }) => {
-  const raw = await graphql(`query {
-    allContentfulBlogPost(filter: {node_locale: {eq: "en-US"}}) {
-      nodes {
-        summary {
-          internal {
-            content
-          }
-        }
-        body {
-          raw
-        }
-        title
-        slug
-        updatedAt
-        coverImage {
-          fixed(width: 500) {
-            src
-            srcSet
-            srcSetWebp
-            srcWebp
-            width
-            height
-            base64
-            aspectRatio
-          }
-        }
-      }
-    }
-  }`)
+// exports.createPages = async ({ graphql, actions }) => {
+//   const raw = await graphql(`query {
+//     allContentfulBlogPost(filter: {node_locale: {eq: "en-US"}}) {
+//       nodes {
+//         summary {
+//           internal {
+//             content
+//           }
+//         }
+//         body {
+//           raw
+//         }
+//         title
+//         slug
+//         updatedAt
+//         coverImage {
+//           fixed(width: 500) {
+//             src
+//             srcSet
+//             srcSetWebp
+//             srcWebp
+//             width
+//             height
+//             base64
+//             aspectRatio
+//           }
+//         }
+//       }
+//     }
+//   }`)
  
-  const res = raw.data.allContentfulBlogPost.nodes
+//   const res = raw.data.allContentfulBlogPost.nodes
  
-  res.forEach((e) => actions.createPage({
-    component: path.resolve(`./src/layouts/blog.js`),
-    context: {
-      ...e,
-    },
-    path: `posts/${e.slug}`,
-    slug: `posts/${e.slug}`
-  }))
-} 
+//   res.forEach((e) => actions.createPage({
+//     component: path.resolve(`./src/layouts/blog.js`),
+//     context: {
+//       ...e,
+//     },
+//     path: `posts/${e.slug}`,
+//     slug: `posts/${e.slug}`
+//   }))
+// } 
 
-exports.createPages = async ({ graphql, actions }) => {
-  const raw = await graphql(`query {
-    allContentfulFlowers(filter: {node_locale: {eq: "en-US"}}) {
-      nodes {
-        flowerName
-        internal {
-          content
-        }
-        flowerDescription {
-          raw
-        }
-        flowerPrice
-        image  {
-          fixed(width: 400) {
-              src
-              srcSet
-              srcSetWebp
-              srcWebp
-              width
-              height
-              base64
-              aspectRatio
-              }
-          }
-      }
-  }
-    }`)
 
-    const res = raw.data.allContentfulFlowers.nodes
+// exports.createPages = async ({ graphql, actions }) => {
+//   const raw = await graphql(`query {
+//     allContentfulFlowers(filter: {node_locale: {eq: "en-US"}}) {
+//       nodes {
+//         flowerName
+//         internal {
+//           content
+//         }
+//         flowerDescription {
+//           raw
+//         }
+//         flowerPrice
+//         image  {
+//           fixed(width: 350) {
+//               src
+//               srcSet
+//               srcSetWebp
+//               srcWebp
+//               width
+//               height
+//               base64
+//               aspectRatio
+//               }
+//           }
+//       }
+//   }
+//     }`)
+
+//     const res = raw.data.allContentfulFlowers.nodes
  
-    res.forEach((e) => actions.createPage({
-      component: path.resolve(`./src/layouts/buketi.js`),
-      context: {
-        ...e,
-      },
-      path: `buketi/${e.flowerName}`,
-      slug: `buketi/${e.flowerName}`
-    }))
-  } 
+//     res.forEach((e) => actions.createPage({
+//       component: path.resolve(`./src/layouts/buketi.js`),
+//       context: {
+//         ...e,
+//       },
+//         path: `buketi/${e.flowerName}`,
+//         slug: `buketi/${e.flowerName}`
+//     }))
+//   }
+
 
 exports.createPages = async ({ graphql, actions }) => {
   const raw = await graphql(`query {
@@ -103,7 +106,7 @@ exports.createPages = async ({ graphql, actions }) => {
         }
         flowerPrice
         image  {
-          fixed(width: 400) {
+          fixed(width: 350) {
               src
               srcSet
               srcSetWebp
@@ -130,82 +133,84 @@ exports.createPages = async ({ graphql, actions }) => {
     }))
   } 
 
-exports.createPages = async ({ graphql, actions }) => {
-  const raw = await graphql(`query {
-    allContentfulAranzmani(filter: {node_locale: {eq: "en-US"}}) {
-      nodes {
-        flowerName
-          internal {
-            content
-          }
-          flowerDescription {
-            raw
-          }
-          flowerPrice
-          image  {
-            fixed(width: 400) {
-                src
-                srcSet
-                srcSetWebp
-                srcWebp
-                width
-                height
-                base64
-                aspectRatio
-                }
-            }
-        }
-    }
-      }`)
-    
-      const res = raw.data.allContentfulFlowerBox.nodes
-     
-      res.forEach((e) => actions.createPage({
-        component: path.resolve(`./src/layouts/aranzmani.js`),
-        context: {
-          ...e,
-        },
-        path: `aranzmani/${e.flowerName}`,
-        slug: `aranzmani/${e.flowerName}`
-      }))
-    } 
 
-exports.createPages = async ({ graphql, actions }) => {
-  const raw = await graphql(`query {
-    allContentfulLoncanice(filter: {node_locale: {eq: "en-US"}}) {
-      nodes {
-        flowerName
-        internal {
-          content
-        }
-        flowerDescription {
-          raw
-        }
-        flowerPrice
-        image  {
-          fixed(width: 400) {
-              src
-              srcSet
-              srcSetWebp
-              srcWebp
-              width
-              height
-              base64
-              aspectRatio
-              }
-          }
-      }
-  }
-    }`)
+// exports.createPages = async ({ graphql, actions }) => {
+//   const raw = await graphql(`query {
+//     allContentfulAranzmani(filter: {node_locale: {eq: "en-US"}}) {
+//       nodes {
+//         flowerName
+//           internal {
+//             content
+//           }
+//           flowerDescription {
+//             raw
+//           }
+//           flowerPrice
+//           image  {
+//             fixed(width: 350) {
+//                 src
+//                 srcSet
+//                 srcSetWebp
+//                 srcWebp
+//                 width
+//                 height
+//                 base64
+//                 aspectRatio
+//                 }
+//             }
+//         }
+//     }
+//       }`)
+    
+//       const res = raw.data.allContentfulAranzmani.nodes
+     
+//       res.forEach((e) => actions.createPage({
+//         component: path.resolve(`./src/layouts/aranzmani.js`),
+//         context: {
+//           ...e,
+//         },
+//         path: `aranzmani/${e.flowerName}`,
+//         slug: `aranzmani/${e.flowerName}`
+//       }))
+//     } 
+
+
+// exports.createPages = async ({ graphql, actions }) => {
+//   const raw = await graphql(`query {
+//     allContentfulLoncanice(filter: {node_locale: {eq: "en-US"}}) {
+//       nodes {
+//         flowerName
+//         internal {
+//           content
+//         }
+//         flowerDescription {
+//           raw
+//         }
+//         flowerPrice
+//         image  {
+//           fixed(width: 350) {
+//               src
+//               srcSet
+//               srcSetWebp
+//               srcWebp
+//               width
+//               height
+//               base64
+//               aspectRatio
+//               }
+//           }
+//       }
+//   }
+//     }`)
       
-    const res = raw.data.allContentfulLoncanice.nodes
+//     const res = raw.data.allContentfulLoncanice.nodes
        
-      res.forEach((e) => actions.createPage({
-        component: path.resolve(`./src/layouts/loncanice.js`),
-        context: {
-          ...e,
-        },
-        path: `loncanice/${e.flowerName}`,
-        slug: `loncanice/${e.flowerName}`
-      }))
-    } 
+//       res.forEach((e) => actions.createPage({
+//         component: path.resolve(`./src/layouts/loncanice.js`),
+//         context: {
+//           ...e,
+//         },
+//         path: `loncanice/${e.flowerName}`,
+//         slug: `loncanice/${e.flowerName}`
+//       }))
+//     } 

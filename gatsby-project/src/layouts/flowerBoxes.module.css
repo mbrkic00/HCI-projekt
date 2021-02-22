@@ -1,0 +1,135 @@
+.title {
+    color: #E12F8F;
+    padding-left: 70px;
+}
+
+   .allInfo{
+    display:flex;
+    flex-flow:row;
+    width: 1000px;
+    height: 400px;
+    margin-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 90px;
+}
+.productInfo{
+    display:flex;
+    flex-flow:column;
+    padding-left: 70px;
+    height: 362px;
+    width: 500px;
+}
+.imageStyle {
+    border:1px solid #cecece;
+    width:360px;
+    height: 360px;
+    margin-left: 200px;
+}
+
+.title2{
+  text-decoration: underline;
+  padding-left: 0px;
+}
+.description{
+  width: 500px;
+  padding-top: 20px;
+}
+
+.price{
+  font-size: 21px;
+  text-shadow: 2px 2px 8px #cecece;
+  font-weight: bold;
+  color: #E12F8F;
+} 
+.numBox{
+  width: 40px;
+  height: 31px;
+  text-align: center;
+  border: 1px solid #cecece;
+  font-size: 19px;
+  outline: #555555;
+  background-color: white;
+}
+.minus{
+  width: 30px;
+  height: 35px;
+  border: 1px solid #cecece;
+  background-color: whitesmoke;
+  text-align: center;
+  outline: #555555;
+  font-size: 19px;
+  cursor: pointer;
+}
+.plus{
+  width: 30px;
+  height: 35px;
+  border: 1px solid #cecece;
+  background-color: whitesmoke;
+  text-align: center;
+  outline: #555555;
+  font-size: 19px;
+  cursor: pointer;
+}
+.addButton{
+  background-color:#06C206;
+  outline: none;
+  border: none;
+  width: 200px;
+  height: 50px;
+  margin-top:35px;
+  cursor: pointer;
+}
+.addButton span{
+  color:white;
+  font-size: 19px;
+}
+
+/* .returnButton{
+    background: transparent;
+    border: transparent;
+    text-decoration: underline;
+    font-size: 20px;
+    color: #555555;
+    margin-left: 990px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 310px;
+    outline: none;
+    font-weight: bold;
+  } */
+
+  .suggestionTitle{
+    margin-left: 100px;
+    color:#E12F8F;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.suggestionGallery {
+  margin-left: 150px;
+  width: 1150px;
+  height: 300px;
+  display: flex;
+  flex-flow: row;
+}
+
+
+.suggestionBox{
+    display:flex;
+    flex-flow: column;
+
+} 
+
+.galleryImage{
+    width:170px;
+    height: 190px;
+    border: 1px solid #cecece;
+    margin:30px;
+    margin-bottom: -10px;
+    background-size: 170px 190px;
+}
+.imageName{
+    text-decoration: underline;
+    padding-top: 10px;
+    text-align: center;
+}

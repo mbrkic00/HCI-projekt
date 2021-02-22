@@ -44,10 +44,10 @@ const WebShopBuketiNew = () => {
               <Link to={`/buketi/${node.flowerName}`}>
                 <ul className={styles.category}>
                 <span className={styles.imageStyle}><Img fixed={node.image.fixed} /></span>
-                  <div className={styles.productInfo}>
-                    <li className={styles.flower_name}>{node.flowerName}</li>
-                    <li className={styles.flower_price}>{node.flowerPrice}</li>
-                  </div>
+                <div className={styles.productInfo}>
+                  <li className={styles.flower_name}>{node.flowerName}</li>
+                  <li className={styles.flower_price}>{node.flowerPrice}</li>
+                </div>
                     {/* <span>{JSON.parse(node.flowerDescription.raw).content[0].content[0].value}</span> */}
                 </ul>
               </Link>

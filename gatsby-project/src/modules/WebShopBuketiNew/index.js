@@ -43,9 +43,11 @@ const WebShopBuketiNew = () => {
             return (
               <Link to={`/buketi/${node.flowerName}`}>
                 <ul className={styles.category}>
-                  <Img fixed={node.image.fixed} />
-                  <li className={styles.flower_name}>{node.flowerName}</li>
-                  <li className={styles.flower_price}>{node.flowerPrice}</li>
+                  <Img className={styles.flower_image} fixed={node.image.fixed} />
+                  <div className={styles.flower_info}>
+                    <li className={styles.flower_name}>{node.flowerName}</li>
+                    <li className={styles.flower_price}>{node.flowerPrice}</li>
+                  </div>
                     
                     {/* <span>{JSON.parse(node.flowerDescription.raw).content[0].content[0].value}</span> */}
                 </ul>

@@ -1,11 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Link} from 'gatsby'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import styles from './style.module.css'
 
-const MakeYourOwn = () => {
 
+const MakeYourOwn = () => {
+  const [pickedBox, setPickedBox] = useState (false)
+  const [quantity, setQuantity] = useState(1);
     const data = useStaticQuery (graphql`
     query{
         allContentfulMakeYourOwnProduct(filter: {node_locale: {eq: "en-US"}}) {
@@ -39,12 +41,28 @@ const MakeYourOwn = () => {
                             <div className={styles.productName}>{node.name}</div>
                             <div className={styles.checkingRow}>
                                 <div className={styles.productPrice}>{node.price}</div>
-                                <input type="checkbox" className={styles.pickBox} />
+                                <input type="checkbox" className={styles.pickBox} onClick={() => setPickedBox(!pickedBox)}/>
+                                {
+                                  pickedBox ?
+                                    <div className={styles.pickedProduct}>
+                                      <Img className={styles.pickedProductImage} fixed={node.image.fixed}/>
+                                      <div className={styles.quantity}>
+                                          <input type="button" value="-" onClick={() => (
+                                              quantity == 1 ? 1 :
+                                              setQuantity(quantity-1))} className={styles.minus}></input>
+                                          <input type="number" value={quantity} className={styles.numBox}></input>
+                                          <input type="button" value="+" onClick={() => setQuantity(quantity+1)}  className={styles.plus}></input>
+                                      </div>
+                                      <div className={styles.pickedProductPrice}>{node.price}</div>
+                                    </div>
+                                    :null
+                                }
                             </div>
                           </div>                     
                          )
                   }
                     )}
+                    <div className={styles.loadMore}>Učitaj još...</div>
                 </div>   
                 <div className={styles.boxAndBttn}>
                     <div className={styles.choicesBox}>

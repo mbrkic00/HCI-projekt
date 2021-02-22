@@ -14,9 +14,9 @@ const Loncanice = ({ pageContext }) => {
   return (
     <HeaderFooterLayout>
       <main className={styles.container}>
-        <h2 className={styles.title}>Web shop - Lončanice - {flowerName}</h2>
+        <h2 className={styles.webTitle}>Web shop - Lončanice - {flowerName}</h2>
         <div className={styles.allInfo}>
-          <div className={styles.imageStyle}><Img fixed={image.fixed} /></div>
+          <Img fixed={image.fixed} className={styles.imageStyle}/>
           <ul className={styles.productInfo}>
             <article className={styles.description}>
               <p className={styles.title2}>Opis proizvoda:</p>
@@ -37,7 +37,7 @@ const Loncanice = ({ pageContext }) => {
           
           
       </main>
-      {/* <Link to='/webShopLončanice'><button className={styles.returnButton}>Povratak na ostale lončanice...</button></Link> */}
+      {/* <Link to='/webShopLoncanice'><button className={styles.returnButton}>Povratak na ostale lončanice...</button></Link> */}
       
 
       <p className={styles.suggestionTitle}>Možda Vam se sviđa:</p>

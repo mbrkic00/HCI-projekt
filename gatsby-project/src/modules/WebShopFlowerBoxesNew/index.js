@@ -18,7 +18,7 @@ const WebShopFlowerBoxesNew = () => {
               }
               flowerPrice
               image  {
-                fixed(width: 300) {
+                fixed(width: 280) {
                     src
                     srcSet
                     srcSetWebp
@@ -43,10 +43,11 @@ const WebShopFlowerBoxesNew = () => {
             return (
               <Link to={`/cvjetnekutije/${node.flowerName}`}>
                 <ul className={styles.category}>
-                  <Img fixed={node.image.fixed} />
-                  <li className={styles.flower_name}>{node.flowerName}</li>
-                  <li className={styles.flower_price}>{node.flowerPrice}</li>
-                    
+                <span className={styles.imageStyle}><Img fixed={node.image.fixed} /></span>
+                  <div className={styles.productInfo}>
+                    <li className={styles.flower_name}>{node.flowerName}</li>
+                    <li className={styles.flower_price}>{node.flowerPrice}</li>
+                  </div>
                     {/* <span>{JSON.parse(node.flowerDescription.raw).content[0].content[0].value}</span> */}
                 </ul>
               </Link>

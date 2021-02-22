@@ -35,30 +35,22 @@
     height:280px;
     border:1px solid #cecece;
     background-size: 275px 290px;
-    
-}
-
-.image5{
-    width:275px;
-    height:290px;
-    border:1px solid #cecece;
-    background: url("https://www.metroflowermarket.com/wp-content/uploads/2018/03/rose-coral-coral_reef-2.jpg") left top no-repeat, url("https://media.istockphoto.com/photos/yellow-ranunculus-flower-picture-id172480464?k=6&m=172480464&s=612x612&w=0&h=_yFupr-3BkkgyWtJbXsAXafSVuj5d7H8Y23adficPEI=") right top no-repeat, url("https://i.pinimg.com/600x315/00/54/ae/0054ae1c231487c4820e6cbc05044d24.jpg") left bottom no-repeat, url("https://www.charlotteflowermarket.com/wp-content/uploads/2018/03/fresh_lavender-300x300.jpg") right bottom no-repeat;
-    background-size: 137.5px 145px, 137.5px 145px, 137.5px 145px, 137.5px 145px;
+    box-shadow: 0 2px 2px 0 #cecece, 0 3px 10px 0 #cecece;
 }
 
 .categoryInfo{
     padding-top: 7px;
-    font-size: 22px;
+    font-size: 24px;
     justify-content: center;
     width: 267px;
     height: 40px;
     text-align: center;
-    color: #E12F8F;
-    font-weight: bold;
-    background-color: white;
+    color: white;
+   color: #E12F8F;
+   font-weight: bold;
     margin-top: 5px;
-    text-decoration: underline;    
 }
+
 .openButton span{
     color:white;
     font-size: 18px;

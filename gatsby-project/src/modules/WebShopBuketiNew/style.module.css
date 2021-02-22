@@ -41,7 +41,7 @@
   padding-top:30px;
 }
 .productInfo {
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: 22px;
   justify-content: center;
   width: 267px;
@@ -50,20 +50,23 @@
 }
 
 .flower_name {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   font-size: 22px;
-  text-align: center;
+  text-align: left;
+  margin-left: 5px;
   color: #555555;
+
 }
 
 .flower_price {
   display: block;
-  text-align: center;
+  text-align: left;
   font-size: 19px;
   text-decoration: none;
   color: #E12F8F;
   padding-top: 10px;
   font-weight: bold;
+  margin-left: 5px;
 }
 
 .imageStyle {
@@ -71,4 +74,5 @@
   height:280px;
   border:1px solid #cecece;
   background-size: 275px 290px;
+  box-shadow: 0 2px 2px 0 #cecece, 0 3px 10px 0 #cecece;
 }

@@ -294,26 +294,26 @@ export const Suggestions = [
     {
         suggestion: "Jednostavne ruže",
         galleryImage: require("../../src/images/buketi2.jpg"),
-        to: '/webShopBuketi'
+        to: '/buketi/Jednostavne%20ruže'
     },
     {
         suggestion: "Nježne orhideje",
         galleryImage: require("../../src/images/buketi3.jpg"),
-        to: '/webShop0'
+        to: '/buketi/Nježne%20orhideje'
     },
     {
         suggestion: "Egzotični mix",
         galleryImage: require("../../src/images/buketi4.jpg"),
-        to: '/webShop0'
+        to: '/buketi/Egzotični%20mix'
     },
     {
         suggestion: "Šareni tulipani",
         galleryImage: require("../../src/images/buketi5.jpg"),
-        to: '/webShop0'
+        to: '/buketi/Šareni%20tulipani'
     },
     {
         suggestion: "Šareni buket",
         galleryImage: require("../../src/images/buketi6.jpg"),
-        to: '/webShopBuketi'
+        to: '/buketi/Šareni%20buket'
     }
 ];

@@ -23,7 +23,7 @@ return(
                 </div>
                 <Link to={'/kosarica'}><button className={styles.addButton}><span>Dodaj u košaricu</span></button></Link>
             </div>
-        </div>
+        {/*</div>
         <p className={styles.suggestionTitle}>Možda Vam se sviđa:</p>
         <div className={styles.suggestionsGallery}>
             <div className={styles.suggestionBox}>
@@ -46,6 +46,7 @@ return(
                 <img src={require("../../images/buketi6.jpg")} alt="img001" className={styles.galleryImage}></img>
                 <p className={styles.imageName}>Šareni buket</p>
             </div> 
+        */}
         </div>
     </div>
 )

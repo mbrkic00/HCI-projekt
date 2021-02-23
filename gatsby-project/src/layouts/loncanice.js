@@ -14,12 +14,12 @@ const Loncanice = ({ pageContext }) => {
   return (
     <HeaderFooterLayout>
       <main className={styles.container}>
-        <h2 className={styles.title}>Web shop - Lončanice - {flowerName}</h2>
+        <h2 className={styles.webTitle}>Web shop - Lončanice - {flowerName}</h2>
         <div className={styles.allInfo}>
-          <div className={styles.imageStyle}><Img fixed={image.fixed} /></div>
-          <ul className={styles.productInfo}>
+          <Img fixed={image.fixed} className={styles.imageStyle}/>
+          <div className={styles.productInfo}>
             <article className={styles.description}>
-              <p className={styles.title2}>Opis proizvoda:</p>
+              <p className={styles.title}>Opis proizvoda:</p>
               {renderRichText(flowerDescription)}
               <p className={styles.price}>{flowerPrice}</p>
             </article>
@@ -32,16 +32,16 @@ const Loncanice = ({ pageContext }) => {
                     <input type="button" value="+" onClick={() => setQuantity(quantity+1)}  className={styles.plus}></input>
             </div>
             <Link to={'/kosarica'}><button className={styles.addButton}><span>Dodaj u košaricu</span></button></Link>
-            </ul>
+          </div>
           </div>
           
           
       </main>
-      {/* <Link to='/webShopLončanice'><button className={styles.returnButton}>Povratak na ostale lončanice...</button></Link> */}
+      {/* <Link to='/webShopLoncanice'><button className={styles.returnButton}>Povratak na ostale lončanice...</button></Link> */}
       
 
       <p className={styles.suggestionTitle}>Možda Vam se sviđa:</p>
-      <div className={styles.suggestionGallery}>
+      <div className={styles.suggestionsGallery}>
             {Suggestions.map(({suggestion, galleryImage, to}) => (
                     <div className={styles.suggestionBox}>
                         <Link to={to}>

@@ -20,11 +20,13 @@
 .frames {
     display: flex;
     flex-flow: row;
+    align-items: center;
+    margin-left: 90px;
 }
 
 .frame1 {
-    border: 2px solid #cecece;
-    margin-left:70px;
+    border: 1px solid #cecece;
+    /* margin-left:0px; */
     width: 950px;
     height: 480px;
     display: flex;
@@ -37,9 +39,10 @@
 
 .description {
     padding-top: 10px;
-    padding-left: 490px;
+    padding-left: 510px;
     display: flex;
     flex-flow: row;
+    border-bottom: 1px solid #cecece;
 }
 
 .price {
@@ -60,7 +63,7 @@
 .productStyle {
     display: flex;
     flex-flow: row;
-    border-top: 2px solid #cecece;
+    border-top: 1px solid #cecece;
 }
 
 .xIcon {
@@ -98,8 +101,8 @@
 }
 
 .frame2 {
-    margin-left: 40px;
-    border: 2px solid #cecece;
+    /* margin-left: 40px; */
+    border: 1px solid #cecece;
     display: flex;
     flex-flow: column;
     width: 330px;
@@ -115,7 +118,7 @@
 .productPrice {
     display: flex;
     flex-flow: row;
-    border-top: 2px solid #cecece;
+    border-top: 1px solid #cecece;
     padding-left: 20px;
     font-size: 19px;
 }
@@ -143,7 +146,7 @@
 .billing {
     display: flex;
     flex-flow: row;
-    border-bottom: 2px solid #cecece;
+    border-bottom: 1px solid #cecece;
     padding-left: 20px;
     color: black;
     font-size: 19px;
@@ -176,8 +179,8 @@
 }
 
 .delivery {
-    border-bottom: 2px solid #cecece;
-    border-top: 2px solid #cecece;
+    border-bottom: 1px solid #cecece;
+    border-top: 1px solid #cecece;
     height: 70px;
     padding-top: 15px;
     padding-left: 20px;

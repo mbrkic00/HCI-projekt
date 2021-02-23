@@ -2,9 +2,22 @@ import React, { useState } from 'react'
 import {useStaticQuery, graphql, Link} from 'gatsby'
 import Img from 'gatsby-image'
 import styles from './style.module.css'
+import SearchIcon from '@material-ui/icons/Search';
+// import Combobox from './components/ComboBox' 
+
+
+const loncaniceNiz = [
+	{ title: "Yucca", for: ["yucca", "Yucca"] },
+	{ title: "Agava", for: ["Agava", "agava"] },
+	{ title: "Drvo života", for: ["drvo", "života", "zivota"] },
+	{ title: "Fikus", for: ["Fikus", "fikus"] },
+  { title: "Fejka", for: ["fejka", "Fejka"] },
+  { title: "Monstera", for: ["monstera", "Monstera"] }
+];
 
  
 const WebShopLoncaniceNew = () => {
+  const [showFilter, setShowFilter] = useState(false);
   const data = useStaticQuery(graphql`
     query {
         allContentfulLoncanice(filter: {node_locale: {eq: "en-US"}}) {
@@ -37,7 +50,28 @@ const WebShopLoncaniceNew = () => {
     
     return (
       <section className={styles.container}>
+        <div className={styles.titleAndSearch}>
         <h1 className={styles.title}>Web shop - Lončanice</h1>
+        <div className={styles.searchAndSort}>
+                <div>
+                    <div className={styles.search}>
+                        <input type="search" placeholder=" Trazi..." className={styles.searchBar} onClick={() => setShowFilter(!showFilter)} />
+                        <Link to={'/webShopLoncanice'}><div className={styles.searchBttn}><SearchIcon /></div></Link>
+                        </div>
+                        {showFilter?
+                            <div className={styles.filterList} style={{display: showFilter ? 'flex' : 'none'}}>
+                                { loncaniceNiz.map(({title}) => 
+                                    <li className={styles.filterListElement}>{title}</li>
+                                )
+                                }
+                            </div>
+                            :null
+                        }
+                    
+                    </div>  
+                </div>
+            {/* <Combobox /> */}
+            </div>
         <li className={styles.list}>
           {data.allContentfulLoncanice.nodes.map(node => {
             return (

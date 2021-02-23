@@ -73,5 +73,49 @@
   border:1px solid #cecece;
   background-size: 275px 290px;
   box-shadow: 0 2px 2px 0 #cecece, 0 3px 10px 0 #cecece;
+}
 
+.search{
+  display: flex;
+  flex-flow: row;
+}
+.searchBar{
+  border: 1px solid #cecece;
+  margin-left: 0px;
+  width: 240px;
+  height: 35px;
+  font-size: 17px;
+  outline: none;
+}
+.searchBttn{
+  height: 33px;
+  width: 29px;
+  outline: none;
+  background-color: white;
+  border:1px solid #cecece;
+}
+.filterList{
+  margin-left: 0px;
+  width: 269px;
+  height: 135px;
+  border:1px solid #cecece;
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  background-color: white;
+}
+.filterListElement{
+  list-style: none;
+  font-size: 18px;
+  padding-left: 4px;
+}
+.searchAndSort{
+  display: flex;
+  flex-flow: row;
+  padding-left: 70px;
+}
+
+.titleAndSearch {
+  display: flex;
+  flex-flow: column;
 }

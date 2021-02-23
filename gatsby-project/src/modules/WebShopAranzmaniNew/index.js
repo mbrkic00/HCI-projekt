@@ -2,9 +2,19 @@ import React, { useState } from 'react'
 import {useStaticQuery, graphql, Link} from 'gatsby'
 import Img from 'gatsby-image'
 import styles from './style.module.css'
-
+import SearchIcon from '@material-ui/icons/Search';
+// import Combobox from './components/ComboBox' 
  
+
+const aranzmaniNiz = [
+	{ title: "Aranžman ruže i irisi", for: ["ruža", "ruže", "Aranzman", "aranzman", "aranžman", "Aranžman", "irisi"] },
+	{ title: "Aranžman crveni gerberi", for: ["Aranzman", "aranzman", "aranžman", "Aranžman", "crveni", "gerberi"] },
+	{ title: "Crveno bijeli aranžman", for: ["crveno", "bijeli", "aranzman", "aranžman", "Crveno"] },
+	{ title: "Rozi aranžman", for: ["Rozi", "rozi", "aranzman", "aranžman"] },
+	{ title: "Nježni aranžman", for: ["Njezni", "Nježni", "njezni", "nježni", "aranzman", "aranžman"] }
+];
 const WebShopAranzmaniNew = () => {
+  const [showFilter, setShowFilter] = useState(false);
   const data = useStaticQuery(graphql`
     query {
         allContentfulAranzmani(filter: {node_locale: {eq: "en-US"}}) {
@@ -37,7 +47,28 @@ const WebShopAranzmaniNew = () => {
     
     return (
       <section className={styles.container}>
+        <div className={styles.titleAndSearch}>
         <h1 className={styles.title}>Web shop - Aranžmani</h1>
+        <div className={styles.searchAndSort}>
+                <div>
+                    <div className={styles.search}>
+                        <input type="search" placeholder=" Trazi..." className={styles.searchBar} onClick={() => setShowFilter(!showFilter)} />
+                        <Link to={'/webShopAranzmani'}><div className={styles.searchBttn}><SearchIcon /></div></Link>
+                        </div>
+                        {showFilter?
+                            <div className={styles.filterList} style={{display: showFilter ? 'flex' : 'none'}}>
+                                { aranzmaniNiz.map(({title}) => 
+                                    <li className={styles.filterListElement}>{title}</li>
+                                )
+                                }
+                            </div>
+                            :null
+                        }
+                    
+                    </div>  
+                </div>
+            {/* <Combobox /> */}
+            </div>
         <li className={styles.list}>
           {data.allContentfulAranzmani.nodes.map(node => {
             return (

@@ -1,8 +1,8 @@
 import React from 'react'
 import {useState} from 'react'
 import { sortings } from '../../constants/const'
-import ComboBoxItem from './ComboBoxItem'
 import styles from './style.module.css' 
+import ComboBoxItem from './ComboBoxItem'
  
 const ComboBox = () => {
   const [selectedItem, setSelectedItem] = useState(sortings.find(el => el.name === "recommended"))

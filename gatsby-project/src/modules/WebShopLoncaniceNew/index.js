@@ -3,7 +3,7 @@ import {useStaticQuery, graphql, Link} from 'gatsby'
 import Img from 'gatsby-image'
 import styles from './style.module.css'
 import SearchIcon from '@material-ui/icons/Search';
-// import Combobox from './components/ComboBox' 
+import ComboBox from '../../components/ComboBox'
 
 
 const loncaniceNiz = [
@@ -70,7 +70,7 @@ const WebShopLoncaniceNew = () => {
                     
                     </div>  
                 </div>
-            {/* <Combobox /> */}
+             <ComboBox /> 
             </div>
         <li className={styles.list}>
           {data.allContentfulLoncanice.nodes.map(node => {

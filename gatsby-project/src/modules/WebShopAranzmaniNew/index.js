@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import {useStaticQuery, graphql, Link} from 'gatsby'
 import Img from 'gatsby-image'
-import styles from './style.module.css'
 import SearchIcon from '@material-ui/icons/Search';
-// import Combobox from './components/ComboBox' 
+import ComboBox from '../../components/ComboBox'
+
+import styles from './style.module.css'
  
+
 
 const aranzmaniNiz = [
 	{ title: "Aranžman ruže i irisi", for: ["ruža", "ruže", "Aranzman", "aranzman", "aranžman", "Aranžman", "irisi"] },
@@ -67,7 +69,7 @@ const WebShopAranzmaniNew = () => {
                     
                     </div>  
                 </div>
-            {/* <Combobox /> */}
+             <ComboBox /> 
             </div>
         <li className={styles.list}>
           {data.allContentfulAranzmani.nodes.map(node => {

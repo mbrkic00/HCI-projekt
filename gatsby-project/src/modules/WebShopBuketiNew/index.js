@@ -3,7 +3,7 @@ import {useStaticQuery, graphql, Link} from 'gatsby'
 import Img from 'gatsby-image'
 import styles from './style.module.css'
 import SearchIcon from '@material-ui/icons/Search';
-// import Combobox from './components/ComboBox' 
+import ComboBox from '../../components/ComboBox'
 
 
 const buketiNiz = [
@@ -68,7 +68,7 @@ const WebShopBuketiNew = () => {
                     
                     </div>  
                 </div>
-            {/* <Combobox /> */}
+             <ComboBox /> 
             </div>
         <li className={styles.list}>
           {data.allContentfulFlowers.nodes.map(node => {

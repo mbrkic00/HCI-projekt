@@ -3,6 +3,7 @@ import {useStaticQuery, graphql, Link} from 'gatsby'
 import Img from 'gatsby-image'
 import styles from './style.module.css'
 import SearchIcon from '@material-ui/icons/Search';
+import { colors } from '@material-ui/core';
 // import Combobox from './components/ComboBox' 
 
 
@@ -15,6 +16,8 @@ const buketiNiz = [
 ];
 
 const WebShopBuketiNew = () => {
+const [arrayToShow, setArray] = useState(buketiNiz);
+  const filters = ["buket"];
   const [showFilter, setShowFilter] = useState(false);
   const data = useStaticQuery(graphql`
     query {
@@ -50,8 +53,8 @@ const WebShopBuketiNew = () => {
       <section className={styles.container}>
         <div className={styles.titleAndSearch}>
         <h1 className={styles.title}>Web shop - Buketi</h1>
-        <div className={styles.searchAndSort}>
-                <div>
+              {/* <div className={styles.searchAndSort}>
+                 <div>
                     <div className={styles.search}>
                         <input type="search" placeholder=" Trazi..." className={styles.searchBar} onClick={() => setShowFilter(!showFilter)} />
                         <Link to={'/webShopBuketi'}><div className={styles.searchBttn}><SearchIcon /></div></Link>
@@ -67,9 +70,55 @@ const WebShopBuketiNew = () => {
                         }
                     
                     </div>  
-                </div>
+                </div> */}
             {/* <Combobox /> */}
-            </div>
+
+
+            <div className={styles.searchAndSort}>
+                 <div>
+                    {/* <div className={styles.search}>
+                        <input type="search" placeholder=" Trazi..." className={styles.searchBar} onClick={() => {const filteredarray = buketiNiz.filter((el) => !!el.for.find((e) => filters.includes(e)));
+                        setArray(filteredarray);}} />
+                        <Link to={'/webShopBuketi'}><div className={styles.searchBttn}><SearchIcon /></div></Link>
+                        </div> */}
+                        {/* {showFilter?
+                            <div className={styles.filterList} style={{display: showFilter ? 'flex' : 'none'}}>
+                                { buketiNiz.map(({title}) => 
+                                    <li className={styles.filterListElement}>{title}</li>
+                                )
+                                }
+                            </div>
+                            :null
+                        } */}
+
+      <div style={{display:"flex", 
+                  flexflow:"row"}}>
+        <input placeholder=" Trazi..."  style={{border: "1px solid #cecece", 
+                                              height: "31px",
+                                              width: "189px",
+                                              outline: "none",
+                                              fontSize: "17px",
+                                              backgroundcolor: "white"
+                                              }} 
+            onChange={(e) => {
+          const value = e.target.value;
+          const newArray = buketiNiz.filter((el) => el.title.includes(value));
+          setArray(newArray);
+        }}
+      />
+      <div className={styles.searchBttn}><SearchIcon /></div>
+      </div>
+
+      <div style={{border: "1px solid #cecece" }}>{arrayToShow.map((el) => (
+        <div style={{ margin: "10px 0" }}>{el.title}</div>
+      ))}</div>
+                    
+                    </div>  
+                </div>
+
+            </div> 
+            
+
         <li className={styles.list}>
           {data.allContentfulFlowers.nodes.map(node => {
             return (

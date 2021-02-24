@@ -8,21 +8,11 @@ import ComboBox from '../../components/ComboBox'
 
 
 const buketiNiz = [
-<<<<<<< HEAD
 	{ title: "Jednostavne ruže", for: ["ruža", "ruže", "Ruža"], to:'/buketi/Jednostavne ruže'},
-	/*{ title: "Ljiljani i ruže mix", for: ["ljiljani", "Ljiljani", "ruža", "ruže", "mix", "Ruža"], to:'/buketi/'}*/
 	{ title: "Šareni tulipani", for: ["šareni", "tulipani", "Tulipani"], to:'/buketi/Šareni tulipani' },
 	{ title: "Šareni buket", for: ["šareni", "buket"], to:'/buketi/Šareni buket'},
 	{ title: "Egzotični mix", for: ["mix", "Mix", "Egzotični", "egzotični"], to:'/buketi/Egzotični mix'},
   {title: "Nježne orhideje", for: ["orhideje", "Orhideje"], to:'/buketi/Nježne orhideje'}
-=======
-	{ title: "Jednostavne ruže", for: ["ruža", "ruže", "jednostavne"] },
-	// { title: "Ljiljani i ruže mix", for: ["ljiljani", "ruža", "ruže", "mix"] },
-	{ title: "Šareni tulipani", for: ["šareni", "tulipani"] },
-  { title: "Šareni buket", for: ["šareni", "buket"] },
-  {title: "Egzotični mix", for: ["egzoticni", "egzotični", "mix"]},
-	{ title: "Buket Amarilis", for: ["buket", "amarilis"] }
->>>>>>> 7550af5207fee03475490befdcbb5c3d1c5cac7d
 ];
 
 const WebShopBuketiNew = () => {

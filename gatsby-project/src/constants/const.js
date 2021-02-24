@@ -48,7 +48,7 @@ export const productsBuketi =[
         productPrice: "175.00 kn",
         productImage: require("../../src/images/buketi1.jpg"),
         productDescription: "Buket sadrži ljiljan, ruže, gumbeke, dekorativno zelenilo, umotan u ukrasni papir sa satenskom mašnom.",
-        to: '/ljiljaniIRuze'
+        to: '/'
     },
     {
         productName: "Jednostavne ruže",

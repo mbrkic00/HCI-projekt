@@ -43,9 +43,9 @@ const BlogContainers = () => {
             return (
               <Link to={`/posts/${node.slug}`}>
                 <ul className={styles.pt1}>
-                  <Img fixed={node.coverImage.fixed} />
+                  <Img fixed={node.coverImage.fixed} className={styles.coverImage} />
                   <li className={styles.pt2}>
-                    <h3>{node.title}</h3>
+                    <h3 className={styles.articleTitle}>{node.title}</h3>
                     <span>{node.summary.internal.content}</span>
                   </li>
                 </ul>

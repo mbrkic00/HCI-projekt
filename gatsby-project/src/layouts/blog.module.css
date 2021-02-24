@@ -1,17 +1,28 @@
 .container {
     background-color: whitesmoke;
+    width: 1000px;
     display: flex;
     flex-flow: column;
+    justify-content: center;
     align-items: center;
     /* padding: 0 100px; */
     padding-left: 70px;
     padding-right: 70px;
+    margin-left: 180px;
+    margin-top: 50px;
   }
 
   .Title{
     color: #E12F8F;
   }
-   
+  .coverImage{
+    max-height: 200px;
+    max-width: 300px;
+  }
+   .textArticle{
+     padding-top: 30px;
+     width: 900px;
+   }
   .returnButton{
     background: transparent;
     border: transparent;
@@ -22,7 +33,7 @@
     margin-top: 50px;
     width: 270px;
     outline: none;
-    font-weight: bold;
+    cursor: pointer;
   }
    
   .container article {

@@ -15,8 +15,8 @@ const BlogPost = ({ pageContext }) => {
           <h2 className={styles.Title}>
             {title}
           </h2>
-        <Img fixed={coverImage.fixed} />
-        <article>
+        <Img fixed={coverImage.fixed} className={styles.coverImage}/>
+        <article className={styles.textArticle}>
         {renderRichText(body)}
         </article>
       </main>

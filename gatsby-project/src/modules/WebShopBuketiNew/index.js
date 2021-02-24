@@ -3,7 +3,7 @@ import {useStaticQuery, graphql, Link} from 'gatsby'
 import Img from 'gatsby-image'
 import styles from './style.module.css'
 import SearchIcon from '@material-ui/icons/Search';
-import { colors } from '@material-ui/core';
+// import { colors } from '@material-ui/core';
 import ComboBox from '../../components/ComboBox' 
 
 

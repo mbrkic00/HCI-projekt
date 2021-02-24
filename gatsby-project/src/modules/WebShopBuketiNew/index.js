@@ -8,11 +8,12 @@ import ComboBox from '../../components/ComboBox'
 
 
 const buketiNiz = [
-	{ title: "Jednostavne ruže", for: ["ruža", "ruže"] },
-	{ title: "Ljiljani i ruže mix", for: ["ljiljani", "ruža", "ruže", "mix"] },
-	{ title: "Šareni tulipani", for: ["šareni", "tulipani"] },
-	{ title: "Šareni buket", for: ["šareni", "buket"] },
-	{ title: "Buket Amarilis", for: ["buket", "amarilis"] }
+	{ title: "Jednostavne ruže", for: ["ruža", "ruže", "Ruža"], to:'/buketi/Jednostavne ruže'},
+	/*{ title: "Ljiljani i ruže mix", for: ["ljiljani", "Ljiljani", "ruža", "ruže", "mix", "Ruža"], to:'/buketi/'}*/
+	{ title: "Šareni tulipani", for: ["šareni", "tulipani", "Tulipani"], to:'/buketi/Šareni tulipani' },
+	{ title: "Šareni buket", for: ["šareni", "buket"], to:'/buketi/Šareni buket'},
+	{ title: "Egzotični mix", for: ["mix", "Mix", "Egzotični", "egzotični"], to:'/buketi/Egzotični mix'},
+  {title: "Nježne orhideje", for: ["orhideje", "Orhideje"], to:'/buketi/Nježne orhideje'}
 ];
 
 const WebShopBuketiNew = () => {
@@ -91,16 +92,9 @@ const [arrayToShow, setArray] = useState(buketiNiz);
                             :null
                         } */}
 
-      <div style={{display:"flex", 
-                  flexflow:"row"}}>
-        <input placeholder=" Trazi..."  style={{border: "1px solid #cecece", 
-                                              height: "31px",
-                                              width: "189px",
-                                              outline: "none",
-                                              fontSize: "17px",
-                                              backgroundcolor: "white"
-                                              }} 
-            onChange={(e) => {
+      <div onClick={() => setShowFilter(!showFilter)} className={styles.search}>
+        <input placeholder=" Trazi..."  className={styles.searchBar} 
+          onChange={(e) => {
           const value = e.target.value;
           const newArray = buketiNiz.filter((el) => el.title.includes(value));
           setArray(newArray);
@@ -108,10 +102,16 @@ const [arrayToShow, setArray] = useState(buketiNiz);
       />
       <div className={styles.searchBttn}><SearchIcon /></div>
       </div>
-
-      <div style={{border: "1px solid #cecece" }}>{arrayToShow.map((el) => (
-        <div style={{ margin: "10px 0" }}>{el.title}</div>
-      ))}</div>
+     
+      {showFilter?
+      <div className={styles.filterList} style={{display: showFilter ? 'flex' : 'none'}}>
+        {arrayToShow.map((el) => (
+        <Link to={el.to}><div className={styles.filterListElement}>{el.title}</div></Link>
+       
+      ))}
+      </div>
+      :null
+      }
                     
                     </div>  
                 </div>

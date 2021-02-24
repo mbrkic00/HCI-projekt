@@ -47,7 +47,7 @@ const MakeYourOwn = () => {
                                 <div className={styles.productPrice}>{node.price}</div>
                                 <input type="checkbox" className={styles.pickBox}  onClick={() => setPickedBox(!pickedBox)} />
                               {
-                                      ((pickedBox)  )?
+                                      ((node.pickedBox))?
                                       <div className={styles.pickedProduct}>
                                         <Img className={styles.pickedProductImage} fixed={node.image.fixed}/>
                                         <div className={styles.quantityNum}>

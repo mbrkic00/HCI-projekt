@@ -97,6 +97,7 @@
     align-items: center;
     border-bottom: 1px solid #cecece;
     width: 400px;
+    height: 80px;
     justify-content: center;
 }
 .pickedProductImage{
@@ -109,7 +110,7 @@
 .pickedProductName{
     padding-left: 30px;
 }
-.quantity{
+.quantityNum{
     padding-left: 30px;
 }
 .numBox{

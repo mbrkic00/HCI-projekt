@@ -44,7 +44,7 @@ const FrontPage = () => (
                         </Link>
                     </div>
                     ))}
-            <Link to='webShop0'><button className={styles.morebutton}>Više<FontAwesomeIcon icon={faChevronRight} className={styles.chevronIcon}/></button></Link>
+            <Link to='webShop0'><button className={styles.morebutton}>Web shop</button></Link>
         </div>
 
     </frontpage>

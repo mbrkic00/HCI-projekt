@@ -12,7 +12,14 @@
     justify-content: center;
     font-family: 'Nunito';
   }
+  .coverImage{
+    max-height: 200px;
+    max-width: 220px;
+  }
    
+  .articleTitle{
+    text-decoration: underline;
+  }
   .list {
     padding-left: 0;
     display: flex;

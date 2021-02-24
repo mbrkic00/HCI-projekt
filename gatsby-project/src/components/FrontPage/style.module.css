@@ -11,13 +11,7 @@
     
     font-family: 'Courgette', cursive;
     margin-left: 280px;
-    margin-right: 280px;
-    /*display: flex;
-    flex-flow: column;
-    text-align: center;
-    line-height: 3;*/
-    
-   
+    margin-right: 280px; 
 }
 
 .webshopbutton {
@@ -60,6 +54,7 @@
     margin-right: 280px;
     padding-top: 15px;
     font-weight: bold;
+    padding-bottom: 15px;  
 }
 
 .bestsellers1 {
@@ -69,7 +64,9 @@
     flex-flow: row;
     flex-wrap: wrap;     
     padding-top:20px;
-   
+    box-shadow: 0 4px 4px 0 #cecece, 0 6px 20px 0 #cecece;
+    background-color: whitesmoke; 
+    
 }
 
 .bestsellerStyle {
@@ -93,12 +90,10 @@
 .bestsellerName {
     padding-top: 10px;
     font-size: 19px;
-    justify-content: center;
-    width: 232px;
+    width: 228px;
     height: 60px;
-    text-align: center;
-    text-decoration: underline;
-    
+    text-align: left;
+    margin-left: 5px;
 }
 
 .morebutton {
@@ -110,7 +105,8 @@
     font-size: 20px;
     margin-top: 140px;
     outline: none;
-    margin-left: 30px;
+    margin-left: 5px;
+    cursor: pointer;
  }
 
  .chevronIcon {

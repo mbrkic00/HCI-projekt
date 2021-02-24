@@ -21,7 +21,7 @@ export const productCategories = [
         to: '/webShopBuketi'      
     },
     {
-        categoryName: "Cvijeće u kutiji",
+        categoryName: "Cvjetne kutije",
         categoryImage: require("../../src/images/flowerbox1.jpg"),
         to: '/webShopFlowerBoxes' 
     },

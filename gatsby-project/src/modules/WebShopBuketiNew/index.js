@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 import styles from './style.module.css'
 import SearchIcon from '@material-ui/icons/Search';
 import { colors } from '@material-ui/core';
-// import Combobox from './components/ComboBox' 
+import ComboBox from '../../components/ComboBox' 
 
 
 const buketiNiz = [
@@ -117,7 +117,7 @@ const [arrayToShow, setArray] = useState(buketiNiz);
                 </div>
 
             </div> 
-            
+            <ComboBox />
 
         <li className={styles.list}>
           {data.allContentfulFlowers.nodes.map(node => {

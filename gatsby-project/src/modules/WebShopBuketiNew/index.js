@@ -8,10 +8,11 @@ import ComboBox from '../../components/ComboBox'
 
 
 const buketiNiz = [
-	{ title: "Jednostavne ruže", for: ["ruža", "ruže"] },
-	{ title: "Ljiljani i ruže mix", for: ["ljiljani", "ruža", "ruže", "mix"] },
+	{ title: "Jednostavne ruže", for: ["ruža", "ruže", "jednostavne"] },
+	// { title: "Ljiljani i ruže mix", for: ["ljiljani", "ruža", "ruže", "mix"] },
 	{ title: "Šareni tulipani", for: ["šareni", "tulipani"] },
-	{ title: "Šareni buket", for: ["šareni", "buket"] },
+  { title: "Šareni buket", for: ["šareni", "buket"] },
+  {title: "Egzotični mix", for: ["egzoticni", "egzotični", "mix"]},
 	{ title: "Buket Amarilis", for: ["buket", "amarilis"] }
 ];
 

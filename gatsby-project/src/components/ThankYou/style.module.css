@@ -12,3 +12,10 @@
 .text{
     font-weight: bold;
 }
+
+@media screen and (max-width: 415px) {
+    .checkIcon{
+        margin-left: 185px;
+        margin-top: 80px;
+    }  
+}

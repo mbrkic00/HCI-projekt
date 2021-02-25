@@ -153,3 +153,129 @@ input[type=number]::-webkit-outer-spin-button {
     font-weight: bold;
     padding-left: 30px;
 }
+
+@media screen and (max-width: 415px) {
+    .webTitle{
+        margin-top: 30px;
+        margin-left: 45px;
+        font-size: 17px;
+    }
+    .webShop{
+        flex-flow: column;
+        margin-left: 85px;
+    }
+    .imageGallery{
+        flex-flow: column;
+        /* flex-wrap: wrap; */
+        width: 380px;
+        margin-top:20px;
+    }
+    .productBox{
+        flex-flow: column;
+        padding-right: 50px;
+        font-size: 17px;
+    }
+    .productImage{
+        max-height: 200px;
+    }
+    .productName{
+        padding-bottom: 5px;
+    }
+    .checkingRow{
+        font-size: 17px;
+    
+    }
+    
+    .pickBox{
+        width: 20px;
+        height: 20px;
+    }
+    /* .boxAndBttn{
+        padding-left: -70px;
+    } */
+    .choicesBox{
+        width: 300px;
+        height: 450px;
+        margin-top:30px;
+    }
+    .choicesBoxTitle{
+        font-size: 17px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .addBttn{
+        width: 260px;
+        height: 45px;
+        margin-left: 0px;
+        font-size: 19px;
+    }
+    .addBttn span{
+        font-size: 19px;
+    }
+    
+    .loadMore{
+        visibility: hidden;
+        text-decoration: underline;
+    text-align: left;
+    padding-top: 0px;
+    } 
+    
+    
+    .pickedProduct{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        border-bottom: 1px solid #cecece;
+        width: 400px;
+        height: 80px;
+        justify-content: center;
+    }
+    .pickedProductImage{
+        max-width: 50px;
+        max-height: 50px;
+        margin-bottom: 2px;
+        
+        border: 1px solid #cecece;
+    }
+    .pickedProductName{
+        padding-left: 30px;
+    }
+    .quantityNum{
+        padding-left: 30px;
+    }
+    .numBox{
+        width: 35px;
+        height: 26px;
+        text-align: center;
+        border: 1px solid #cecece;
+        font-size: 19px;
+        outline: #555555;
+        background-color: white;
+    }
+    .minus{
+        width: 25px;
+        height: 30px;
+        border: 1px solid #cecece;
+        background-color: whitesmoke;
+        text-align: center;
+        outline: #555555;
+        font-size: 19px;
+        cursor: pointer;
+    }
+    .plus{
+        width: 25px;
+        height: 30px;
+        border: 1px solid #cecece;
+        background-color: whitesmoke;
+        text-align: center;
+        outline: #555555;
+        font-size: 19px;
+        cursor: pointer;
+    }
+    .pickedProductPrice{
+        font-size: 19px;
+        font-weight: bold;
+        padding-left: 30px;
+    }
+    
+}

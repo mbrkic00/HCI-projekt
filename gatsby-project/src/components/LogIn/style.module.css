@@ -221,7 +221,7 @@
   .xIcon {
     margin-left: 203px;
     margin-bottom: 0px;
-    margin-top: 70px;
+    margin-top: -10px;
   }
    
   .field {
@@ -260,6 +260,8 @@
     padding: 7px 10px;
     margin-bottom: 30px;
   }
+
+  
   
   .container2 button {
     font-size: 11px;
@@ -278,6 +280,6 @@
 /*.loginButton{
   outline: none;
 }
-.signuoButton{
+.signupButton{
   outline: none;;
 }*/

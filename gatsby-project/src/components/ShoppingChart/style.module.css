@@ -255,3 +255,198 @@
     flex-flow: row;
     justify-content: center;
 }
+
+@media screen and (max-width: 415px) {
+    .h1 {
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        font-size: 19px;
+        padding-left: 40px;
+    }
+    
+    .frames {
+        flex-flow: column;
+        margin-left: 40px;
+    }
+    
+    .frame1 {
+        width: 380px;
+        height: 480px;
+        margin-right: 30px;
+    }
+    
+    .description {
+        padding-top: 10px;
+        padding-left: 190px;
+        font-size: 15px;
+    }
+    
+    .price {
+        margin-right: 20px;
+    }
+    
+    .sum {
+        margin-left: 20px;
+    }
+    
+    .inChart {
+        margin-top: 15px;
+    }
+    
+    /* .productStyle {
+        display: flex;
+        flex-flow: row;
+        border-top: 1px solid #cecece;
+    } */
+    
+    .xIcon {
+        color: red;
+        padding-top: 95px;
+        margin-left: 10px;
+    }
+    
+    .imageStyle {
+        width: 175px;
+        height: 190px;
+        border: 1px solid #cecece;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .nameStyle {
+        padding-top: 95px;
+        margin-right: 50px;
+    }
+    
+    .priceStyle {
+        padding-top: 95px;
+        margin-right: 30px;
+    }
+    
+    .quantityStyle {
+        padding-top: 95px;
+        margin-right: 10px;
+    }
+    
+    .sumStyle {
+        padding-top: 95px;
+        margin-right: 10px;
+    }
+    
+    .frame2 {
+        margin-top: 30px;
+        width: 300px;
+        height: 390px;
+    }
+    
+    .total {
+        padding-top: 15px;
+        height: 30px;
+        font-size: 17px;
+    }
+    
+    .productPrice {
+        padding-left: 15px;
+        font-size: 15px;
+    }
+    
+    /* .pP1 {
+        margin-left: 30px;
+    }
+    
+    .pP2 {
+        margin-left: 95px;
+    }
+    
+    .pP3 {
+        margin-left: 37px;
+        color: #06C206;
+    } */
+    
+    .shipping {
+        padding-left: 15px;
+        font-size: 15px;
+    }
+    
+    .billing {
+        padding-left: 15px;
+        font-size: 17px;
+    }
+    
+    .buttonStyle {
+        height: 40px;
+        padding-top: 5px;
+    }
+    
+    .continue {
+        height: 35px;
+        font-size: 17px;
+    }
+    
+    .delivery {
+        height: 50px;
+        padding-top: 10px;
+        padding-left: 15px;
+        font-size: 17px;
+    }
+    
+    .creditCards {
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    .visaIcon {
+        margin-right: 50px;
+        font-size: 35px;
+        stroke-width:50px
+    }
+    
+    .mastercardIcon {
+        margin-right: 50px;
+        font-size: 35px;
+    }
+    
+    .amexIcon {
+        /* margin-right: 50px; */
+        font-size: 35px;
+        
+    }
+    .visaIcon {
+        margin-right: 10px;
+        width: 40px;
+        height: 30px;
+        padding-bottom:5px ;
+    
+    }
+    
+    .mastercardIcon {
+        margin-right: 10px;
+        width: 40px;
+        height: 24px;
+        background-image: url('https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/206_Mastercard_Credit_Card_logo_logos-512.png');
+        background-size: 40px 40px;
+        border: 1px solid #cecece;
+        border-radius: 4px;
+        background-position-y: center;
+        background-position-x:center;
+        /*margin-top: 4px;*/
+        margin-top: 5px;
+    
+       
+    }
+    
+    .maestroIcon {
+        margin-right: 10px;
+        width: 40px;
+        height: 30px;
+        background-image:url("https://cdn.iconscout.com/icon/free/png-512/maestro-credit-debit-card-bank-transaction-32299.png");
+        background-size: 58px 58px;   
+       /* padding-bottom: 5px;*/
+       background-position-y: center;
+       background-position-x:center;    /*margin-top: 2px;
+        padding-right: 1px;*/
+        padding-bottom: 5px;
+    }
+    
+}

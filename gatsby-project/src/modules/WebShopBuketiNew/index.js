@@ -117,7 +117,11 @@ const [arrayToShow, setArray] = useState(buketiNiz);
                 </div>
 
             </div> 
+<<<<<<< HEAD
            {/* <ComboBox /> */}
+=======
+    <ComboBox />
+>>>>>>> a4197caca2a0dc87d1b61dcb66d52850be4ae864
 
         <li className={styles.list}>
           {data.allContentfulFlowers.nodes.map(node => {

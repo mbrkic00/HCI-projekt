@@ -19,7 +19,7 @@ const Payment = () => (
                 <input type="text" placeholder=" Poštanski broj" className={styles.nameInput} />
             </div>
             <input type="text" placeholder=" e-mail" className={styles.adressInput} />
-            <div className={styles.rowInfo}>
+            <div className={styles.rowInfo1}>
                 <input type="text" className={styles.dialingNum} value="+385" />
                 <input type="text" placeholder=" Kontakt" className={styles.numInput} />  
             </div>

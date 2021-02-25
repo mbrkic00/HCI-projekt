@@ -89,7 +89,7 @@ const WebShopFlowerBoxesNew = () => {
         <li className={styles.list}>
           {data.allContentfulFlowerBox.nodes.map(node => {
             return (
-              <Link to={`/flowerBoxes/${node.flowerName}`}>
+              <Link to={`/cvjetnekutije/${node.flowerName}`}>
                 <ul className={styles.category}>
                 <span className={styles.imageStyle}><Img fixed={node.image.fixed} /></span>
                 <div className={styles.productInfo}>

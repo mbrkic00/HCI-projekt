@@ -36,15 +36,16 @@ const FrontPage = () => (
         <div className={styles.bestsellers}>Bestselleri</div>
 
         <div className={styles.bestsellers1}>
-            {Bestsellers.map(({bestseller, productImage, to}) => (
+            {Bestsellers.map(({bestseller, productImage, to, price}) => (
                     <div className={styles.bestsellerStyle}>
                         <Link to={to}>
                         <img src={productImage} alt="img001" className={styles.imageStyle} />
                         <div className={styles.bestsellerName}>{bestseller}</div>
+                        <div className={styles.bestsellerPrice}>{price}</div>
                         </Link>
                     </div>
                     ))}
-            <Link to='webShop0'><button className={styles.morebutton}>Web shop</button></Link>
+            <Link to='webShop0'><div className={styles.morebutton}>Posjeti Web shop</div></Link>
         </div>
 
     </frontpage>

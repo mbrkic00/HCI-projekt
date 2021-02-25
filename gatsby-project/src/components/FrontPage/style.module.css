@@ -15,9 +15,9 @@
 }
 
 .webshopbutton {
-   background-color:  #E12F8F;
-   border: #E12F8F;
-   color: white;
+ 
+   color: #E12F8F;
+   font-weight: bold;
    height: 40px;
    width: 130px;
    font-size: 20px;
@@ -64,14 +64,14 @@
     flex-flow: row;
     flex-wrap: wrap;     
     padding-top:20px;
-    box-shadow: 0 4px 4px 0 #cecece, 0 6px 20px 0 #cecece;
-    background-color: whitesmoke; 
     
 }
 
 .bestsellerStyle {
-    padding-right: 18px;
+    padding-right: 20px;
     padding-left: 15px;
+    margin-right: 30px;
+    margin-left: 20px;
 }
 
 .imageStyle {
@@ -91,21 +91,29 @@
     padding-top: 10px;
     font-size: 19px;
     width: 228px;
-    height: 60px;
+    height: 30px;
     text-align: left;
     margin-left: 5px;
 }
+.bestsellerPrice{
+    font-size: 18px;
+    width: 228px;
+    height: 50px;
+    text-align: left;
+    margin-left: 5px;
+    color: #E12F8F;
+    font-weight: bold;
+}
 
 .morebutton {
-    background-color: #E12F8F;
-    border: #E12F8F;
-    color: white;
-    height: 40px;
-    width: 130px;
+    
+    color: #E12F8F;
+    font-weight: bold;
+    text-decoration: underline;
+    height: 60px;
+    width: 180px;
     font-size: 20px;
-    margin-top: 140px;
-    outline: none;
-    margin-left: 5px;
+    margin-left: 835px;
     cursor: pointer;
  }
 

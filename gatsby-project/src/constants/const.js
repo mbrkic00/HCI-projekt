@@ -236,19 +236,22 @@ export const productsLoncanice = [
 ];
 export const Bestsellers = [
     {
-        bestseller: "Jednostavne ruže u rozom",
+        bestseller: "Roze ruže",
         productImage: require("../../src/images/bestseller1.jpg"),
-        to: '/webShop0'
+        to: '/webShopBuketi',
+        price:'215.00 kn'
     },
     {
         bestseller: "Bonsai",
         productImage: require("../../src/images/bestseller2.jpeg"),
-        to: '/webShop0'
+        to: '/webShopLoncanice',
+        price:'220.00 kn'
     },
     {
         bestseller: "Cvjetna kutija roze ruže",
         productImage: require("../../src/images/bestseller3.jpeg"),
-        to: '/webShop0'
+        to: '/webShopFlowerBoxes',
+        price:'200.00 kn'
     }
 ];
 

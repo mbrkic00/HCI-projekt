@@ -288,8 +288,8 @@
     
     
     .frame1 {
-        width: 400px;
-        height: 350px;
+        width: 414px;
+        height: 300px;
         margin-right: 30px;
         margin-top:20px;
     }
@@ -302,20 +302,22 @@
     
     
     .inChart {
-        margin-top: 5px;
+        margin-top: -60px;
     }
     .productStyle {
         flex-flow: row;
         align-items: center;
+        border-bottom: 1px solid #cecece;
     }
 
     .nameStyle {
-        padding-left: 20px ;
+        padding-left: 0px ;
         margin-right: 0px;
         width: 130px;
         font-size: 15px;
-        margin-top: -65px;
+        margin-top: -60px;
         color: #E12F8F;
+        margin-left: 0px;
     }
     
     .priceStyle {
@@ -337,15 +339,6 @@
 
         }
 
-        /* .imageStyle {
-            max-width: 110px;
-            max-height: 120px;
-            margin-left: 10px;
-            margin-right: 10px;
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
-     */
     .xIcon {
         color: red;
         padding-top: 95px;

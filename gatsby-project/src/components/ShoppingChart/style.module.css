@@ -273,11 +273,11 @@
 }
 
 @media screen and (max-width: 415px) {
-    .h1 {
-        margin-top: 30px;
+    .webTitle {
+        margin-top: 20px;
         margin-left: 0px;
-        margin-bottom: 20px;
-        font-size: 19px;
+        margin-bottom: 10px;
+        font-size: 17px;
         padding-left: 40px;
     }
     
@@ -286,67 +286,98 @@
         margin-left: 40px;
     }
     
-    .frame1 {
-        width: 380px;
-        height: 480px;
-        margin-right: 30px;
-    }
     
+    .frame1 {
+        width: 400px;
+        height: 350px;
+        margin-right: 30px;
+        margin-top:20px;
+    }
     .description {
         padding-top: 10px;
-        padding-left: 190px;
+        padding-left: 80px;
+        font-size: 15px;
+        visibility: hidden;
+    } 
+    
+    
+    .inChart {
+        margin-top: 5px;
+    }
+    .productStyle {
+        flex-flow: row;
+        align-items: center;
+    }
+
+    .nameStyle {
+        padding-left: 20px ;
+        margin-right: 0px;
+        width: 130px;
+        font-size: 15px;
+        margin-top: -65px;
+        color: #E12F8F;
+    }
+    
+    .priceStyle {
+        margin-right: 20px;
         font-size: 15px;
     }
     
-    .price {
-        margin-right: 20px;
+    .quantityStyle {
+        margin-right: 70px;
+        font-size: 15px;
     }
-    
-    .sum {
-        margin-left: 20px;
+    .sumStyle{
+        font-size: 15px;
     }
-    
-    .inChart {
-        margin-top: 15px;
-    }
-    
-    /* .productStyle {
-        display: flex;
-        flex-flow: row;
-        border-top: 1px solid #cecece;
-    } */
-    
+
+        .info{
+            display: flex;
+            flex-flow: column;
+
+        }
+
+        /* .imageStyle {
+            max-width: 110px;
+            max-height: 120px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+     */
     .xIcon {
         color: red;
         padding-top: 95px;
         margin-left: 10px;
+        margin-top: -100px;
     }
     
     .imageStyle {
         width: 175px;
         height: 190px;
-        border: 1px solid #cecece;
         margin-left: 10px;
         margin-right: 10px;
+        margin-top: 0px;
     }
     
     .nameStyle {
-        padding-top: 95px;
+        padding-top: 45px;
         margin-right: 50px;
     }
     
     .priceStyle {
-        padding-top: 95px;
+        padding-top: 15px;
         margin-right: 30px;
     }
     
     .quantityStyle {
-        padding-top: 95px;
+        padding-top: 15px;
         margin-right: 10px;
     }
     
     .sumStyle {
-        padding-top: 95px;
+        padding-top: 15px;
         margin-right: 10px;
     }
     

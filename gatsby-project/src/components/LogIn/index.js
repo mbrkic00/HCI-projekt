@@ -67,7 +67,7 @@ const Login = () => {
     <Link to='/'><FontAwesomeIcon icon={faTimes} className={styles.xIcon2}/></Link>
 
     <section className={styles.container2}>
-    <Link to='/'><FontAwesomeIcon icon={faTimes} className={styles.xIcon}/></Link>
+    {/* <Link to='/'><FontAwesomeIcon icon={faTimes} className={styles.xIcon}/></Link> */}
 
       <p className={styles.registerTitle}>Registracija</p>
       <section className={styles.field2}>
@@ -99,6 +99,8 @@ const Login = () => {
         {loading ? 'Loading...' : 'Registriraj se'}
       </button>
     </section>
+
+    <Link to='/'><FontAwesomeIcon icon={faTimes} className={styles.xIcon2}/></Link>
   </main>
 )
 

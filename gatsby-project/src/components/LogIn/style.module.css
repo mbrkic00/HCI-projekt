@@ -81,14 +81,16 @@
 
 .xIcon {
   position:absolute;
-  margin-left: 374px;
+  margin-left: 574px;
   border: 2px solid darkgray;
-  /* color: #FF0000; */
   margin-top: -21px;
 }
 
 .xIcon2{
-  visibility: hidden;
+  position:absolute;
+  margin-left: 1173px;
+  border: 2px solid darkgray;
+  margin-top: 132px;
 }
 
  

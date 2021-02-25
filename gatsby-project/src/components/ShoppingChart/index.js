@@ -56,11 +56,14 @@ const ShoppingChart = () => {
                  return(
                     <div className={styles.productStyle}>
                         <FontAwesomeIcon icon={faTimes} className={styles.xIcon} onClick={() => (0)} /> 
-                        <Img fixed={el.image.fixed} className={styles.imageStyle} />
-                        <div className={styles.nameStyle}>{el.name}</div>
-                        <div className={styles.priceStyle}>{el.priceTag}</div>
-                        <div className={styles.quantityStyle}>{el.quantity}x</div>
-                        <div className={styles.sumStyle}>{el.priceNumber*el.quantity}.00 kn</div>
+                        
+                            <Img fixed={el.image.fixed} className={styles.imageStyle} />
+                            <ul className={styles.info}>
+                                <div className={styles.nameStyle}>{el.name}</div>
+                                <div className={styles.priceStyle}>{el.priceTag}</div>
+                                <div className={styles.quantityStyle}>{el.quantity}x</div>
+                                <div className={styles.sumStyle}>{el.priceNumber*el.quantity}.00 kn</div>
+                            </ul>
                     </div>
                 )  })} 
             </div>

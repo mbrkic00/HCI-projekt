@@ -138,10 +138,11 @@
   
   .container {    
     padding-top:15px;
+    
   }
    
   .list {
-    margin-left: 17px;
+    margin-left: 0px;
     flex-flow: column;
   } 
   

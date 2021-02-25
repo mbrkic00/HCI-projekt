@@ -17,7 +17,7 @@ export const sortings = [
 export const productCategories = [
     {
         categoryName: "Buketi",
-        categoryImage: require("../../src/images/buketi1.jpg"),
+        categoryImage: require("../../src/images/buketi3.jpg"),
         to: '/webShopBuketi'      
     },
     {

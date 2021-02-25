@@ -31,6 +31,7 @@ const [arrayToShow, setArray] = useState(buketiNiz);
                 raw
               }
               flowerPrice
+              priceNumber
               image  {
                 fixed(width: 280) {
                     src
@@ -116,7 +117,7 @@ const [arrayToShow, setArray] = useState(buketiNiz);
                 </div>
 
             </div> 
-            <ComboBox />
+           {/* <ComboBox /> */}
 
         <li className={styles.list}>
           {data.allContentfulFlowers.nodes.map(node => {

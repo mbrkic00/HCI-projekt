@@ -70,7 +70,7 @@ const WebShopFlowerBoxesNew = () => {
                     
                     </div>  
                 </div>
-             <ComboBox />
+            {/* <ComboBox /> */}
             </div>
         <li className={styles.list}>
           {data.allContentfulFlowerBox.nodes.map(node => {

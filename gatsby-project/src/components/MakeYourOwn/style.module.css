@@ -35,7 +35,6 @@
 .checkingRow{
     display: flex;
     flex-flow: row;
-
 }
 .productPrice{
     color: #E12F8F;
@@ -59,8 +58,8 @@
     overflow-y: scroll;
 }
 .choicesBoxTitle{
-    border-bottom: 1px solid #cecece;
-    font-size: 22px;
+    border-bottom: 2px solid #cecece;
+    font-size: 23px;
     font-weight: bold;
     color: #E12F8F;
     text-align: center;
@@ -96,8 +95,8 @@
     flex-flow: row;
     align-items: center;
     border-bottom: 1px solid #cecece;
-    width: 400px;
-    height: 80px;
+    width: 383px;
+    height: 75px;
     justify-content: center;
 }
 .pickedProductImage{
@@ -121,6 +120,13 @@
     font-size: 19px;
     outline: #555555;
     background-color: white;
+    color:black;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+
+   opacity: 1;
+
 }
 .minus{
     width: 25px;

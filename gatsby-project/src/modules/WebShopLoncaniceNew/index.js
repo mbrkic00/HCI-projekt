@@ -70,7 +70,7 @@ const WebShopLoncaniceNew = () => {
                     
                     </div>  
                 </div>
-             <ComboBox /> 
+          {/*   <ComboBox /> */}
             </div>
         <li className={styles.list}>
           {data.allContentfulLoncanice.nodes.map(node => {

@@ -69,7 +69,7 @@ const WebShopAranzmaniNew = () => {
                     
                     </div>  
                 </div>
-             <ComboBox /> 
+           {/*  <ComboBox /> */}
             </div>
         <li className={styles.list}>
           {data.allContentfulAranzmani.nodes.map(node => {

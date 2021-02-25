@@ -8,8 +8,8 @@ import SearchIcon from '@material-ui/icons/Search';
 const buketiNiz = [
 	{ title: "Jednostavne ruže", for: ["ruža", "ruže"] },
 	{ title: "Ljiljani i ruže mix", for: ["ljiljani", "ruža", "ruže", "mix"] },
-	{ title: "Šareni tulipani", for: ["šareni", "tulipani"] },
-	{ title: "Šareni buket", for: ["šareni", "buket"] },
+	{ title: "Šareni tulipani", for: ["šareni", "sareni", "tulipani"] },
+	{ title: "Šareni buket", for: ["šareni", "sareni", "buket"] },
 	{ title: "Buket Amarilis", for: ["buket", "amarilis"] }
 ];
 

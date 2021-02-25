@@ -281,6 +281,13 @@ export const InChart = [
         quantity: "2x",
         sum: "500.00 kn"
      },
+     {
+        name: "Margarete u rozom",
+        price: "170.00 kn",
+        image: require("../../src/images/buketi8.jpg"),
+        quantity: "1x",
+        sum:"340.00 kn" 
+    },
     {
         image: require("../../src/images/jednostavne-ruze.jpg"),
         name: "Jednostavne ruže",

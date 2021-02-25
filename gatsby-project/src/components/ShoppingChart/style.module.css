@@ -74,10 +74,12 @@
 
 .imageStyle {
     max-width: 110px;
-    max-height: 110px;
+    max-height: 120px;
     border: 1px solid #cecece;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .nameStyle {

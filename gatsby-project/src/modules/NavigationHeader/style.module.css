@@ -11,5 +11,7 @@
 @media screen and (max-width: 415px) {
     .navigationHeader {
       height: 45px;
+      margin-left: -20px;
+      font-size: 15px;
     }
   }

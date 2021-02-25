@@ -33,12 +33,14 @@
   @media screen and (max-width: 415px) {
     .navigationBar {
       width: 71vw;
+      margin-left: 20px;
     }
 
     .navigationBar li {
       font-size: 11px;
       line-height: 3px;
-      padding: 7px 10px 5px;
+      padding: 0px 0px 5px;
+      margin-left: 3px;
     }
-
+    
 }

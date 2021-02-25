@@ -64,6 +64,7 @@ const Login = () => {
         {loading ? 'Loading...' : 'Prijavi se'}
       </button>
     </section>
+    <Link to='/'><FontAwesomeIcon icon={faTimes} className={styles.xIcon2}/></Link>
 
     <section className={styles.container2}>
     <Link to='/'><FontAwesomeIcon icon={faTimes} className={styles.xIcon}/></Link>

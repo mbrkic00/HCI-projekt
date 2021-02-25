@@ -11,3 +11,9 @@
     font-family: 'Courgette', cursive;
     font-size: 12px;   
 }
+
+@media screen and (max-width: 415px) {
+    .msgToUser{
+        visibility: hidden;
+    }
+}

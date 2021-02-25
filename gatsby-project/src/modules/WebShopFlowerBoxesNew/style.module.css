@@ -50,22 +50,23 @@
 }
 
 .flower_name {
-  
+  /*text-decoration: underline;*/
   font-size: 22px;
   text-align: left;
   margin-left: 5px;
   color: #555555;
+
 }
 
 .flower_price {
   display: block;
   text-align: left;
-  margin-left: 5px;
   font-size: 19px;
   text-decoration: none;
   color: #E12F8F;
   padding-top: 10px;
   font-weight: bold;
+  margin-left: 5px;
 }
 
 .imageStyle {
@@ -85,30 +86,38 @@
   margin-left: 0px;
   width: 240px;
   height: 35px;
-  font-size: 17px;
+  font-size: 18px;
   outline: none;
+
 }
 .searchBttn{
-  height: 33px;
+  height: 37px;
   width: 29px;
   outline: none;
   background-color: white;
   border:1px solid #cecece;
+  cursor: pointer;
 }
 .filterList{
   margin-left: 0px;
-  width: 269px;
+  width: 244px; 
   height: 125px;
   border:1px solid #cecece;
   display: flex;
   flex-flow: column;
   position: absolute;
   background-color: white;
+  z-index: 1;
+  overflow-y: scroll;
 }
 .filterListElement{
   list-style: none;
   font-size: 18px;
-  padding-left: 4px;
+  padding-left: 7px;
+  cursor: pointer;
+}
+.filterList div:hover{
+  background-color: rgb(233, 232, 232);
 }
 .searchAndSort{
   display: flex;

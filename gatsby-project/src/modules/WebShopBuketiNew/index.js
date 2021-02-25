@@ -12,8 +12,9 @@ const buketiNiz = [
 	{ title: "Šareni tulipani", for: ["šareni", "tulipani", "Tulipani"], to:'/buketi/Šareni tulipani' },
 	{ title: "Šareni buket", for: ["šareni", "buket"], to:'/buketi/Šareni buket'},
 	{ title: "Egzotični mix", for: ["mix", "Mix", "Egzotični", "egzotični"], to:'/buketi/Egzotični mix'},
-  {title: "Nježne orhideje", for: ["orhideje", "Orhideje"], to:'/buketi/Nježne orhideje'}
-];
+  {title: "Nježne orhideje", for: ["orhideje", "Orhideje"], to:'/buketi/Nježne orhideje'},
+  {title: "Margarete u rozom", for: ["margarete", "Margarete"], to:'/buketi/Margarete u rozom'},
+  ];
 
 const WebShopBuketiNew = () => {
 const [arrayToShow, setArray] = useState(buketiNiz);

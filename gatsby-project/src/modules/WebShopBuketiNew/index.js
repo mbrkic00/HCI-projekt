@@ -14,10 +14,11 @@ const buketiNiz = [
 	{ title: "Egzotični mix", for: ["mix", "Mix", "Egzotični", "egzotični"], to:'/buketi/Egzotični mix'},
   {title: "Nježne orhideje", for: ["orhideje", "Orhideje"], to:'/buketi/Nježne orhideje'},
   {title: "Margarete u rozom", for: ["margarete", "Margarete"], to:'/buketi/Margarete u rozom'},
+  {title: "Buket Amarilis", for: ["amarilis", "buket", "Amarilis"], to:'/buketi/Buket Amarilis'}
   ];
 
 const WebShopBuketiNew = () => {
-const [arrayToShow, setArray] = useState(buketiNiz);
+  const [arrayToShow, setArray] = useState(buketiNiz);
   const filters = ["buket"];
   const [showFilter, setShowFilter] = useState(false);
   const data = useStaticQuery(graphql`
@@ -55,69 +56,34 @@ const [arrayToShow, setArray] = useState(buketiNiz);
       <section className={styles.container}>
         <div className={styles.titleAndSearch}>
         <h1 className={styles.title}>Web shop - Buketi</h1>
-              {/* <div className={styles.searchAndSort}>
-                 <div>
-                    <div className={styles.search}>
-                        <input type="search" placeholder=" Trazi..." className={styles.searchBar} onClick={() => setShowFilter(!showFilter)} />
-                        <Link to={'/webShopBuketi'}><div className={styles.searchBttn}><SearchIcon /></div></Link>
-                        </div>
-                        {showFilter?
-                            <div className={styles.filterList} style={{display: showFilter ? 'flex' : 'none'}}>
-                                { buketiNiz.map(({title}) => 
-                                    <li className={styles.filterListElement}>{title}</li>
-                                )
-                                }
-                            </div>
-                            :null
-                        }
-                    
-                    </div>  
-                </div> */}
-            {/* <Combobox /> */}
-
-
             <div className={styles.searchAndSort}>
-                 <div>
-                    {/* <div className={styles.search}>
-                        <input type="search" placeholder=" Trazi..." className={styles.searchBar} onClick={() => {const filteredarray = buketiNiz.filter((el) => !!el.for.find((e) => filters.includes(e)));
-                        setArray(filteredarray);}} />
-                        <Link to={'/webShopBuketi'}><div className={styles.searchBttn}><SearchIcon /></div></Link>
-                        </div> */}
-                        {/* {showFilter?
-                            <div className={styles.filterList} style={{display: showFilter ? 'flex' : 'none'}}>
-                                { buketiNiz.map(({title}) => 
-                                    <li className={styles.filterListElement}>{title}</li>
-                                )
-                                }
-                            </div>
-                            :null
-                        } */}
+            <div>
 
-      <div onClick={() => setShowFilter(!showFilter)} className={styles.search}>
-        <input placeholder=" Trazi..."  className={styles.searchBar} 
-          onChange={(e) => {
-          const value = e.target.value;
-          const newArray = buketiNiz.filter((el) => el.title.includes(value));
-          setArray(newArray);
-        }}
-      />
-      <div className={styles.searchBttn}><SearchIcon /></div>
-      </div>
+              <div onClick={() => setShowFilter(!showFilter)} className={styles.search}>
+                <input placeholder=" Trazi..."  className={styles.searchBar} 
+                  onChange={(e) => {
+                  const value = e.target.value;
+                  const newArray = buketiNiz.filter((el) => el.title.includes(value));
+                  setArray(newArray);
+                }}
+              />
+              <div className={styles.searchBttn}><SearchIcon /></div>
+            </div>
      
-      {showFilter?
-      <div className={styles.filterList} style={{display: showFilter ? 'flex' : 'none'}}>
-        {arrayToShow.map((el) => (
-        <Link to={el.to}><div className={styles.filterListElement}>{el.title}</div></Link>
-       
-      ))}
-      </div>
-      :null
-      }
+            {showFilter?
+            <div className={styles.filterList} style={{display: showFilter ? 'flex' : 'none'}}>
+              {arrayToShow.map((el) => (
+              <Link to={el.to}><div className={styles.filterListElement}>{el.title}</div></Link>
+            
+            ))}
+            </div>
+            :null
+            }
                     
-                    </div>  
-                </div>
+          </div>  
+        </div>
 
-            </div> 
+      </div> 
            {/* <ComboBox /> */}
 
         <li className={styles.list}>

@@ -43,12 +43,19 @@
 
   @media screen and (max-width: 415px) {
     .container {
-      padding-left: 40px;
-      padding-right: 40px;
+      padding-left: 0px;
+      padding-right: 0px;
+      justify-content: left;
+      align-items: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    /* margin-left: -100px; */
+    width: 380px;
     }
   
     .Title{
-      font-size: 19px;
+      font-size: 17px;
+
     }
      
     .returnButton{
@@ -58,12 +65,18 @@
     }
      
     .container article {
-      line-height: 23px;
-      font-size: 17px;
+      line-height: 21px;
+      font-size: 15px;
+      word-wrap: break-word;
     }
 
     .coverImage {
       width: 100px;
       height: 100px;
+    }
+
+    .textArticle{
+      padding-top: 30px;
+      width: 360px;
     }
   }

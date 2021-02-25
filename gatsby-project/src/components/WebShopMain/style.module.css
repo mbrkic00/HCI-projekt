@@ -59,11 +59,11 @@
 @media screen and (max-width: 415px) {
     .webTitle{
         margin-top: 20px;
-        margin-left: 45px;
+        margin-left: 25px;
         font-size: 17px;
     }
     .webMsg{
-        margin-left: 45px;
+        margin-left: 25px;
         margin-top: 15px;
         margin-bottom: 20px;
         font-size: 15px;

@@ -27,6 +27,12 @@
     margin-top: 30px;
 
 }
+.info{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin-left: -40px;
+}
 
 .description {
     padding-top: 10px;
@@ -260,8 +266,7 @@
     background-size: 58px 58px;   
    /* padding-bottom: 5px;*/
    background-position-y: center;
-   background-position-x:center;    /*margin-top: 2px;
-    padding-right: 1px;*/
+   background-position-x:center; 
     padding-bottom: 5px;
 }
 
